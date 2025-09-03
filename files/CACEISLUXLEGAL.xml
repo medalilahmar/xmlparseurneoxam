@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-07-31_11-52-20" execution="tst" file="replay/scenario.xml" gp3tester_version="3.7.7" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Scripts/scenario_caceis_global.xml" time_execution="16,59" title="scenario_caceis_global" version="GP4">
+    <execution_label>GP4-20250730-210830</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="SUN" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <set_variable name="code_environnement" value="OPCLUX"/>
+    <set_variable name="date_travail" value="@SKIP@"/>
+    <execution name="SAIENVMYH" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/SAIENV.xml">
+      <option id="1" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="0">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="OPCLUX"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="skipped" value="15/11/2018"/>
+            <field_input name="DATE_ANOMALIE_FRM" option="SAIENV" type="skipped" value="15/11/2018"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESENV_SAIENV-corei_dk_489.xml" time="2">
+            <db_obs execution="True" id="1.1" metadata="execution/1_SAIENV_1_1_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SAIENV_1_1_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_reporting" value="ST4A"/>
+    <set_variable name="date_debut" value="28/12/18"/>
+    <set_variable name="slo_objet_l1" value="82249"/>
+    <set_variable name="ok_ecran" value="D"/>
+    <execution name="VALREP2" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/VALREP2.xml">
+      <option id="2" name="VALREP" number="1" prog_name="NEWPORT_GESREP_VALREP" time="6" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="5">
+            <field_input memory="type_reporting" name="TYPE_REPORTING" option="VALREP" type="input" value="ST4A"/>
+            <field_input memory="date_debut" name="DATE_DEBUT" option="VALREP" type="input" value="28/12/18">
+              <area content="Validation totale: 2      ou consultation ."/>
+            </field_input>
+            <field_input name="TYPE_VALIDATION" option="VALREP" type="skipped" value="2"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="VALREP" type="input" value="82249"/>
+            <field_input name="SLO_OBJET_L1" option="VALREP" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="VALREP" type="input" value="D">
+              <area content="Devalidation terminee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALREP-report7e_zz2fw.xml" time="1">
+            <db_obs execution="True" id="2.1" metadata="execution/2_VALREP_1_2_query_part_00001.sqlite3" nb_inst="5" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALREP_1_2_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="FICITA"/>
+    <set_variable name="critere_saisie_1" value="ST4A"/>
+    <set_variable name="critere_saisie_2" value="."/>
+    <set_variable name="nom_champ" value="Portefeuille.non.valide"/>
+    <set_variable name="code_gestion" value="KO"/>
+    <execution name="FORPCT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/FORPCT.xml">
+      <option id="3" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="FICITA"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="ST4A">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type d'evenement !"/>
+            </field_input>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="."/>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Portefeuille.non.valide"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="KO"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORPCT-reportgnda9h7o.xml" time="0">
+            <db_obs execution="True" id="3.1" metadata="execution/3_FORPCT_1_3_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_3_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="3.2" metadata="execution/3_FORPCT_1_3_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_3_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="28/12/18"/>
+    <set_variable name="slo_objet" value="82249"/>
+    <execution name="ST4A" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/ST4A.xml">
+      <option id="4" name="ST4A" number="1" prog_name="NEWPORT_GESREP_STASIN" time="19" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="19">
+          <actions time="17">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STASIN" type="input" value="28/12/18"/>
+            <field_input name="CALCUL_COMPLET" option="STASIN" type="skipped" value="1"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STASIN" type="input" value="82249"/>
+            <field_input name="SLO_OBJET" option="STASIN" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STASIN" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/ST4A-reportyif6y4bk.xml" time="2">
+            <db_obs execution="True" id="4.1" metadata="execution/4_ST4A_1_4_query_part_00001.sqlite3" nb_inst="1658" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST4A_1_4_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="4.2" metadata="execution/4_ST4A_1_4_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST4A_1_4_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="ST4A"/>
+    <set_variable name="date_fin" value="28/12/18"/>
+    <set_variable name="slo_objet_l1" value="82249"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="5" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="4" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="2">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="ST4A"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="28/12/18"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="82249"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="82249"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_znkjmk.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="2">
+            <report_obs execution="True" file="execution/5_JUSREP_ReportObs_1_1_7_0.txt" id="5.7.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_znkjmk.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="FICITA"/>
+    <set_variable name="critere_saisie_1" value="ST4A"/>
+    <set_variable name="critere_saisie_2" value="."/>
+    <set_variable name="nom_champ" value="Portefeuille.non.valide"/>
+    <set_variable name="code_gestion" value="OK"/>
+    <execution name="FORPCT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/FORPCT.xml">
+      <option id="6" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="FICITA"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="ST4A">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type d'evenement !"/>
+            </field_input>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="."/>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Portefeuille.non.valide"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORPCT-reportgnda9h7o.xml" time="0">
+            <db_obs execution="True" id="6.1" metadata="execution/6_FORPCT_1_6_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_6_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="6.2" metadata="execution/6_FORPCT_1_6_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_6_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="ST4A"/>
+    <set_variable name="critere_saisie_1" value="T4A-61"/>
+    <set_variable name="critere_saisie_2" value="5068600"/>
+    <set_variable name="nom_champ" value="Dividende.by.datval.dco"/>
+    <set_variable name="code_gestion" value="OK"/>
+    <execution name="FORPCT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/FORPCT.xml">
+      <option id="7" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="ST4A"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="T4A-61">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type d'evenement !"/>
+            </field_input>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="5068600">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type de transaction !"/>
+            </field_input>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Dividende.by.datval.dco"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORPCT-reportgnda9h7o.xml" time="0">
+            <db_obs execution="True" id="7.1" metadata="execution/7_FORPCT_1_7_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_7_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="7.2" metadata="execution/7_FORPCT_1_7_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_7_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="ST4A"/>
+    <set_variable name="critere_saisie_1" value="T4A-61"/>
+    <set_variable name="critere_saisie_2" value="5068800"/>
+    <set_variable name="nom_champ" value="Dividende.by.datval.dco"/>
+    <set_variable name="code_gestion" value="OK"/>
+    <execution name="FORPCT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/FORPCT.xml">
+      <option id="8" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="ST4A"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="T4A-61">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type d'evenement !"/>
+            </field_input>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="5068800">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type de transaction !"/>
+            </field_input>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Dividende.by.datval.dco"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORPCT-reportgnda9h7o.xml" time="0">
+            <db_obs execution="True" id="8.1" metadata="execution/8_FORPCT_1_8_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_8_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="8.2" metadata="execution/8_FORPCT_1_8_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_8_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="ST4A"/>
+    <set_variable name="critere_saisie_1" value="T4A-61"/>
+    <set_variable name="critere_saisie_2" value="."/>
+    <set_variable name="nom_champ" value="Ligne.par.part"/>
+    <set_variable name="code_gestion" value="OK"/>
+    <execution name="FORPCT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/FORPCT.xml">
+      <option id="9" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="ST4A"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="T4A-61">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type d'evenement !"/>
+            </field_input>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="."/>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Ligne.par.part"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORPCT-reportgnda9h7o.xml" time="0">
+            <db_obs execution="True" id="9.1" metadata="execution/9_FORPCT_1_9_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_9_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="9.2" metadata="execution/9_FORPCT_1_9_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_9_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="28/12/18"/>
+    <set_variable name="slo_objet" value="82249"/>
+    <execution name="ST4A" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/ST4A.xml">
+      <option id="10" name="ST4A" number="1" prog_name="NEWPORT_GESREP_STASIN" time="5" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="5">
+          <actions time="4">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STASIN" type="input" value="28/12/18"/>
+            <field_input name="CALCUL_COMPLET" option="STASIN" type="skipped" value="1"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STASIN" type="input" value="82249"/>
+            <field_input name="SLO_OBJET" option="STASIN" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STASIN" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/ST4A-reportyif6y4bk.xml" time="1">
+            <db_obs execution="True" id="10.1" metadata="execution/10_ST4A_1_10_query_part_00001.sqlite3" nb_inst="1658" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST4A_1_10_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="10.2" metadata="execution/10_ST4A_1_10_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST4A_1_10_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="ST4A"/>
+    <set_variable name="date_fin" value="28/12/18"/>
+    <set_variable name="slo_objet_l1" value="82249"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="11" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="ST4A"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="28/12/18"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="82249"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="82249"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_mntamm.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/11_JUSREP_ReportObs_1_1_8_0.txt" id="11.8.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_mntamm.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="28/12/19"/>
+    <set_variable name="slo_objet" value="GS720"/>
+    <execution name="ST2M" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/ST2M.xml">
+      <option id="12" name="ST2M" number="1" prog_name="NEWPORT_GESREP_STAIT2" time="372" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="372">
+          <actions time="368">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STAIT2" type="input" value="28/12/19"/>
+            <field_input name="TYPE_ORIGINE" option="STAIT2" type="skipped" value="S"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STAIT2" type="input" value="GS720"/>
+            <field_input name="SLO_OBJET" option="STAIT2" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STAIT2" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/ST2M-reportos93tg8l.xml" time="4">
+            <db_obs execution="True" id="12.1" metadata="execution/12_ST2M_1_12_query_part_00001.sqlite3" nb_inst="9063" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST2M_1_12_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="ST2M"/>
+    <set_variable name="date_fin" value="28/12/19"/>
+    <set_variable name="slo_objet_l1" value="GS720"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="13" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="ST2M"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="28/12/19"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="GS720"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="GS720"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_5j4any.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/13_JUSREP_ReportObs_1_1_11_0.txt" id="13.11.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_5j4any.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="29/02/24"/>
+    <set_variable name="slo_objet" value="1356"/>
+    <execution name="ST3M" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/ST3M.xml">
+      <option id="14" name="ST3M" number="1" prog_name="NEWPORT_GESREP_STASIN" time="198" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="197">
+          <actions time="187">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STASIN" type="input" value="29/02/24"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STASIN" type="input" value="1356"/>
+            <field_input name="SLO_OBJET" option="STASIN" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STASIN" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESREP_STASIN-corej6v8h6ea.xml" time="10">
+            <db_obs execution="True" id="14.1" metadata="execution/14_ST3M_1_14_query_part_00001.sqlite3" nb_inst="18756" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST3M_1_14_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="ST3M"/>
+    <set_variable name="date_fin" value="29/02/24"/>
+    <set_variable name="slo_objet_l1" value="1356"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="15" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="4" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="4">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="ST3M"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="29/02/24"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="1356"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="1356"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_1n1qps.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/15_JUSREP_ReportObs_1_1_12_0.txt" id="15.12.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_1n1qps.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_reporting" value="ST3M"/>
+    <set_variable name="date_debut" value="31/10/18"/>
+    <set_variable name="slo_objet_l1" value="48808"/>
+    <set_variable name="ok_ecran" value="D"/>
+    <execution name="VALREP2" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/VALREP2.xml">
+      <option id="16" name="VALREP" number="1" prog_name="NEWPORT_GESREP_VALREP" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="type_reporting" name="TYPE_REPORTING" option="VALREP" type="input" value="ST3M"/>
+            <field_input memory="date_debut" name="DATE_DEBUT" option="VALREP" type="input" value="31/10/18">
+              <area content="Validation totale: 2      ou consultation ."/>
+            </field_input>
+            <field_input name="TYPE_VALIDATION" option="VALREP" type="skipped" value="2"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="VALREP" type="input" value="48808"/>
+            <field_input name="SLO_OBJET_L1" option="VALREP" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="VALREP" type="input" value="D">
+              <area content="Devalidation terminee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALREP-report7e_zz2fw.xml" time="0">
+            <db_obs execution="True" id="16.1" metadata="execution/16_VALREP_1_16_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALREP_1_16_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="31/10/18"/>
+    <set_variable name="slo_objet" value="48808"/>
+    <execution name="ST3M" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/ST3M.xml">
+      <option id="17" name="ST3M" number="1" prog_name="NEWPORT_GESREP_STASIN" time="195" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="195">
+          <actions time="183">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STASIN" type="input" value="31/10/18"/>
+            <field_input name="CALCUL_COMPLET" option="STASIN" type="skipped" value="1"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STASIN" type="input" value="48808"/>
+            <field_input name="SLO_OBJET" option="STASIN" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STASIN" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESREP_STASIN-corej6v8h6ea.xml" time="12">
+            <db_obs execution="True" id="17.1" metadata="execution/17_ST3M_1_17_query_part_00001.sqlite3" nb_inst="31190" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/ST3M_1_17_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="ST3M"/>
+    <set_variable name="date_fin" value="31/10/18"/>
+    <set_variable name="slo_objet_l1" value="48808"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="18" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="4" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="4">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="ST3M"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="31/10/18"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="48808"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="48808"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_eytpmv.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/18_JUSREP_ReportObs_1_1_13_0.txt" id="18.13.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_eytpmv.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="29/02/24"/>
+    <set_variable name="slo_objet" value="1352"/>
+    <execution name="STASIN" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/STASIN.xml">
+      <option id="19" name="STASIN" number="1" prog_name="NEWPORT_GESREP_STASIN" time="16" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="16">
+          <actions time="15">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STASIN" type="input" value="29/02/24"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STASIN" type="input" value="1352"/>
+            <field_input name="SLO_OBJET" option="STASIN" type="skipped" value="1352"/>
+            <field_input last_input="True" name="OK" option="STASIN" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/STASIN-reportqp576jmv.xml" time="1">
+            <db_obs execution="True" id="19.1" metadata="execution/19_STASIN_1_19_query_part_00001.sqlite3" nb_inst="1700" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/STASIN_1_19_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="STASIN"/>
+    <set_variable name="date_fin" value="29/02/24"/>
+    <set_variable name="slo_objet_l1" value="1352"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="20" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="STASIN"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="29/02/24"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="1352"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="1352"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_bq8kpe.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/20_JUSREP_ReportObs_1_1_16_0.txt" id="20.16.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_bq8kpe.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="31/12/23"/>
+    <execution name="STABNS" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/STABNS2.xml">
+      <option id="21" name="STABNS" number="1" prog_name="NEWPORT_GESREP_STABNS" time="73" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="73">
+          <actions time="71">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STABNS" type="input" value="31/12/23"/>
+            <field_input name="CALCUL_COMPLET" option="STABNS" type="skipped" value="1"/>
+            <field_input name="SLO_OBJET" option="STABNS" type="input" value="23399"/>
+            <field_input name="SLO_OBJET" option="STABNS" type="input" value="28612"/>
+            <field_input name="SLO_OBJET" option="STABNS" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STABNS" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/STABNS-report8rl00c8f.xml" time="2">
+            <db_obs execution="True" id="21.1" metadata="execution/21_STABNS_1_21_query_part_00001.sqlite3" nb_inst="3348" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/STABNS_1_21_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="STABNS"/>
+    <set_variable name="date_fin" value="31/12/23"/>
+    <set_variable name="slo_objet_1" value="23399"/>
+    <set_variable name="slo_objet_2" value="28612"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP2.xml">
+      <option id="22" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="STABNS"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="31/12/23"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="23399"/>
+            <field_input memory="slo_objet_2" name="SLO_OBJET_L1" option="JUSREP" type="input" value="28612"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="input" value="FIN"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_dgd7nd.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/22_JUSREP_ReportObs_1_1_19_0.txt" id="22.19.0" metadata="execution/22_JUSREP_ReportObs_1_1_19_0_line.xml" name="jusrep_sun_1115_dgd7nd.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="30/06/19"/>
+    <set_variable name="slo_objet" value="9633"/>
+    <execution name="STABNS2" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/STABNS.xml">
+      <option id="23" name="STABNS" number="1" prog_name="NEWPORT_GESREP_STABNS" time="73" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="73">
+          <actions time="71">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="STABNS" type="input" value="30/06/19"/>
+            <field_input name="CALCUL_COMPLET" option="STABNS" type="skipped" value="1"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="STABNS" type="input" value="9633"/>
+            <field_input name="SLO_OBJET" option="STABNS" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="STABNS" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/STABNS-report8rl00c8f.xml" time="2">
+            <db_obs execution="True" id="23.1" metadata="execution/23_STABNS_1_23_query_part_00001.sqlite3" nb_inst="3635" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/STABNS_1_23_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="STABNS"/>
+    <set_variable name="date_fin" value="30/06/19"/>
+    <set_variable name="slo_objet_l1" value="9633"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/CACEIS/Ecrans/JUSREP.xml">
+      <option id="24" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="3">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="STABNS"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="30/06/19"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="9633"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="9633"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_1b41h7.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/24_JUSREP_ReportObs_1_1_20_0.txt" id="24.20.0" metadata="execution/5_JUSREP_ReportObs_1_1_7_0_line.xml" name="jusrep_sun_1115_1b41h7.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+  </execution>

@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-08-14_02-13-46" execution="tst" file="replay/scenario.xml" gp3tester_version="3.7.7" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Script/Acm_Script_couverture_SPPI-copie.xml" time_execution="2,08" title="Couverture SPPI par client" version="GP4">
+    <execution_label>GP4-20250813-202032</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="NX" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <set_variable name="code_environnement" value="GRPAMA"/>
+    <set_variable name="date_travail" value="01-01-2023"/>
+    <execution name="Mise Ã  jour de l'environnement de travail" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/SAIENV.xml">
+      <option id="1" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="4" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="0">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="GRPAMA"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="input" value="01-01-2023">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="DATE_ANOMALIE_FRM" option="SAIENV" type="skipped" value="01/01/2023"/>
+            <field_input name="OKC" option="SAIENV" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESENV_SAIENV-core6qdy1yos.xml" time="3">
+            <db_obs execution="True" id="1.1" metadata="execution/1_SAIENV_1_1_query_part_00001.sqlite3" nb_inst="33" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SAIENV_1_1_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="nom_option" value="MAJTRU"/>
+    <set_variable name="nom_procedure" value="NEWPORT.GESVAL.MAJTRU"/>
+    <set_variable name="nature_option_saisie" value="T"/>
+    <execution name="MAJPROG" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJPROG.xml">
+      <option id="2" name="MAJPROG" number="1" prog_name="OSER_MENUS_MAJPROG" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="nom_option" name="OSE_CODE_PROCEDURE" option="MAJPROG" type="input" value="MAJTRU"/>
+            <field_input name="CONSULTATION" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="CONSULTATION2" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="TITRE_PROGRAMME" option="MAJPROG" type="skipped" value=""/>
+            <field_input memory="nom_procedure" name="OSE_NOM_PROCEDURE" option="MAJPROG" type="input" value="NEWPORT.GESVAL.MAJTRU">
+              <area content="compilee le 2024/01/12 02:16:34"/>
+            </field_input>
+            <field_input name="NATURE_OPTION_SAISIE" option="MAJPROG" type="input" value="T"/>
+            <field_input last_input="True" name="OK" option="MAJPROG" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_menu" value="GP"/>
+    <set_variable name="numero_option" value="043"/>
+    <set_variable name="code_option" value="MAJTRU"/>
+    <set_variable name="titre_option" value="@SKIP@"/>
+    <execution name="Mise Ã  jour des menus" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJMENU.xml">
+      <option id="3" name="MAJMENU" number="1" prog_name="OSER_MENUS_MAJMENU" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_menu" name="OSE_CODE_MENU" option="MAJMENU" type="input" value="GP"/>
+            <field_input name="OSE_TITRE_MENU" option="MAJMENU" type="skipped" value="MACHINE DE PRODUCTION"/>
+            <field_input name="CONSULTATION" option="MAJMENU" type="skipped" value=""/>
+            <field_input memory="numero_option" name="TABLEAU_OPTION[0]_OSE_NUMERO_OPTION" option="MAJMENU" type="input" value="043"/>
+            <field_input memory="nom_option" name="TABLEAU_OPTION[0]_OSE_CODE_OPTION" option="MAJMENU" type="input" value="MAJTRU"/>
+            <field_input name="TABLEAU_OPTION[1]_OSE_NUMERO_OPTION" option="MAJMENU" type="action" value="@DOWN@"/>
+            <field_input last_input="True" name="OK" option="MAJMENU" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_utilisateur" value="NXADM"/>
+    <execution name="Mise Ã  jour des options par utilisateur" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJOPT.xml">
+      <option id="4" name="MAJOPT" number="1" prog_name="OSER_MENUS_MAJOPT" time="8" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="8">
+          <actions time="6">
+            <field_input memory="code_utilisateur" name="SLO_OBJET" option="MAJOPT" type="input" value="NXADM"/>
+            <field_input name="OSE_CODE_MENU" option="MAJOPT" type="skipped" value="GPDEV"/>
+            <field_input name="FLAG_INTERDICTION" option="MAJOPT" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="MAJOPT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/OSER_MENUS_MAJOPT-coreoqej4i98.xml" time="2">
+            <db_obs execution="True" id="4.1" metadata="execution/4_MAJOPT_1_4_query_part_00001.sqlite3" nb_inst="1845" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJOPT_1_4_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_table_tmp" value="SPPI"/>
+    <set_variable name="code_detail_tmp" value="A"/>
+    <set_variable name="code_table_ref" value="A"/>
+    <execution name="MAJANX" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJANX.xml">
+      <option id="5" name="MAJANX" number="1" prog_name="NEWPORT_GESTAB_MAJANX" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_table_tmp" name="CODE_TABLE_TMP" option="MAJANX" type="input" value="SPPI"/>
+            <field_input name="LIB_TABLE_TMP" option="MAJANX" type="skipped" value="Table du test SPPI"/>
+            <field_input name="CODE_FORMAT" option="MAJANX" type="input" value="6"/>
+            <field_input memory="code_detail_tmp" name="CODE_DETAIL_TMP" option="MAJANX" type="input" value="A"/>
+            <field_input name="LIB_DETAIL_C_TMP" option="MAJANX" type="input" value="@skip@"/>
+            <field_input name="LIB_DETAIL_L_TMP" option="MAJANX" type="skipped" value="@skip@"/>
+            <field_input memory="code_table_ref" name="CODE_TABLE_REF" option="MAJANX" type="input" value="A"/>
+            <field_input last_input="True" name="OK" option="MAJANX" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTAB_MAJANX-core5_mznjwi.xml" time="1">
+            <db_obs execution="True" id="5.1" metadata="execution/5_MAJANX_1_5_query_part_00001.sqlite3" nb_inst="12" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJANX_1_5_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="BALCOL"/>
+    <set_variable name="option" value="INVAMO"/>
+    <set_variable name="nom_champ" value="Code.sppi"/>
+    <execution name="DEFBAL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/DEFBAL.xml">
+      <option id="6" name="DEFBAL" number="1" prog_name="NEWPORT_GESIHM_DEFBAL" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="DEFBAL" type="input" value="BALCOL"/>
+            <field_input memory="option" name="CRITERE_SAISIE_1" option="DEFBAL" type="input" value="INVAMO"/>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="DEFBAL" type="input" value="Code.sppi"/>
+            <field_input name="VALEUR_PAR_DEFAUT" option="DEFBAL" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="DEFBAL" type="skipped" value=""/>
+            <field_input name="CODE_GESTION" option="DEFBAL" type="input" value=""/>
+            <field_input last_input="True" name="OK" option="DEFBAL" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/DEFBAL-reportw6_3w8_e.xml" time="0">
+            <db_obs execution="True" id="6.1" metadata="execution/6_DEFBAL_1_6_query_part_00001.sqlite3" nb_inst="8" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DEFBAL_1_6_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="RTB010"/>
+    <set_variable name="portefuille_reference" value="19005"/>
+    <execution name="test" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/DUPPOR.xml">
+      <option id="7" name="DUPPOR" number="1" prog_name="NEWPORT_GESPOR_DUPPOR" time="10" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="10">
+          <actions time="5">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="DUPPOR" type="input" value="RTB010"/>
+            <field_input name="LIBELLE_PORT_C" option="DUPPOR" type="input" value="Test RGA PC"/>
+            <field_input name="LIBELLE_PORT_L" option="DUPPOR" type="skipped" value="Test RGA PC"/>
+            <field_input memory="portefuille_reference" name="CODE_PORTEFEUILLE_REF" option="DUPPOR" type="input" value="19005"/>
+            <field_input name="TABLEAU[0]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[1]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[2]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[3]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[4]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[5]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[6]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[7]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[8]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[9]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input last_input="True" name="OK" option="DUPPOR" type="input" value="O">
+              <area content="Duplication terminee."/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_DUPPOR-corep6garfrh.xml" time="5">
+            <db_obs execution="True" id="7.1" metadata="execution/7_DUPPOR_1_7_query_part_00001.sqlite3" nb_inst="151" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DUPPOR_1_7_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="RTB020"/>
+    <set_variable name="portefuille_reference" value="19005"/>
+    <execution name="test" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/DUPPOR.xml">
+      <option id="8" name="DUPPOR" number="1" prog_name="NEWPORT_GESPOR_DUPPOR" time="5" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="5">
+          <actions time="2">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="DUPPOR" type="input" value="RTB020"/>
+            <field_input name="LIBELLE_PORT_C" option="DUPPOR" type="input" value="Test RGA PC"/>
+            <field_input name="LIBELLE_PORT_L" option="DUPPOR" type="skipped" value="Test RGA PC"/>
+            <field_input memory="portefuille_reference" name="CODE_PORTEFEUILLE_REF" option="DUPPOR" type="input" value="19005"/>
+            <field_input name="TABLEAU[0]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[1]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[2]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[3]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[4]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[5]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[6]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[7]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[8]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[9]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input last_input="True" name="OK" option="DUPPOR" type="input" value="O">
+              <area content="Duplication terminee."/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_DUPPOR-corep6garfrh.xml" time="3">
+            <db_obs execution="True" id="8.1" metadata="execution/8_DUPPOR_1_8_query_part_00001.sqlite3" nb_inst="151" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DUPPOR_1_8_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_tri" value="SPPI"/>
+    <set_variable name="critere_tri" value="U"/>
+    <set_variable name="lib" value="Unknown"/>
+    <execution name="MAJTEL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTEL.xml">
+      <option id="9" name="MAJTEL" number="1" prog_name="NEWPORT_ETALEG_MAJTEL" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="type_tri" name="TYPE_TRI" option="MAJTEL" type="input" value="SPPI"/>
+            <field_input memory="critere_tri" name="CRITERE_TRI" option="MAJTEL" type="input" value="U"/>
+            <field_input memory="lib" name="LIB_ETAT_1_1" option="MAJTEL" type="input" value="Unknown"/>
+            <field_input name="LIB_ETAT_1_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_1" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJTEL" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETALEG_MAJTEL-corek5zk7_wi.xml" time="1">
+            <db_obs execution="True" id="9.1" metadata="execution/9_MAJTEL_1_9_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTEL_1_9_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_tri" value="SPPI"/>
+    <set_variable name="critere_tri" value="A"/>
+    <set_variable name="lib" value="Absent"/>
+    <execution name="MAJTEL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTEL.xml">
+      <option id="10" name="MAJTEL" number="1" prog_name="NEWPORT_ETALEG_MAJTEL" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="type_tri" name="TYPE_TRI" option="MAJTEL" type="input" value="SPPI"/>
+            <field_input memory="critere_tri" name="CRITERE_TRI" option="MAJTEL" type="input" value="A"/>
+            <field_input memory="lib" name="LIB_ETAT_1_1" option="MAJTEL" type="input" value="Absent"/>
+            <field_input name="LIB_ETAT_1_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_1" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJTEL" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETALEG_MAJTEL-corek5zk7_wi.xml" time="1">
+            <db_obs execution="True" id="10.1" metadata="execution/10_MAJTEL_1_10_query_part_00001.sqlite3" nb_inst="8" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTEL_1_10_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_tri" value="TRIV"/>
+    <set_variable name="critere_tri" value="VMOB"/>
+    <set_variable name="lib" value="Absent"/>
+    <execution name="MAJTEL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTEL.xml">
+      <option id="11" name="MAJTEL" number="1" prog_name="NEWPORT_ETALEG_MAJTEL" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="type_tri" name="TYPE_TRI" option="MAJTEL" type="input" value="TRIV"/>
+            <field_input memory="critere_tri" name="CRITERE_TRI" option="MAJTEL" type="input" value="VMOB"/>
+            <field_input memory="lib" name="LIB_ETAT_1_1" option="MAJTEL" type="input" value="Absent"/>
+            <field_input name="LIB_ETAT_1_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_1" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJTEL" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETALEG_MAJTEL-corek5zk7_wi.xml" time="1">
+            <db_obs execution="True" id="11.1" metadata="execution/11_MAJTEL_1_11_query_part_00001.sqlite3" nb_inst="8" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTEL_1_11_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_tri" value="TRIV"/>
+    <set_variable name="critere_tri" value="CPON"/>
+    <set_variable name="lib" value="Absent"/>
+    <execution name="MAJTEL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTEL.xml">
+      <option id="12" name="MAJTEL" number="1" prog_name="NEWPORT_ETALEG_MAJTEL" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="type_tri" name="TYPE_TRI" option="MAJTEL" type="input" value="TRIV"/>
+            <field_input memory="critere_tri" name="CRITERE_TRI" option="MAJTEL" type="input" value="CPON"/>
+            <field_input memory="lib" name="LIB_ETAT_1_1" option="MAJTEL" type="input" value="Absent"/>
+            <field_input name="LIB_ETAT_1_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_1" option="MAJTEL" type="skipped" value=""/>
+            <field_input name="LIB_ETAT_2_2" option="MAJTEL" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJTEL" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETALEG_MAJTEL-corek5zk7_wi.xml" time="0">
+            <db_obs execution="True" id="12.1" metadata="execution/12_MAJTEL_1_12_query_part_00001.sqlite3" nb_inst="8" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTEL_1_12_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_table_tmp" value="CODFIS"/>
+    <set_variable name="code_detail_tmp" value="A"/>
+    <set_variable name="code_table_ref" value="@SKIP@"/>
+    <execution name="MAJANX" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJANX.xml">
+      <option id="13" name="MAJANX" number="1" prog_name="NEWPORT_GESTAB_MAJANX" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_table_tmp" name="CODE_TABLE_TMP" option="MAJANX" type="input" value="CODFIS"/>
+            <field_input name="LIB_TABLE_TMP" option="MAJANX" type="skipped" value="Table des codes fiscaux"/>
+            <field_input name="CODE_FORMAT" option="MAJANX" type="input" value="6"/>
+            <field_input memory="code_detail_tmp" name="CODE_DETAIL_TMP" option="MAJANX" type="input" value="A"/>
+            <field_input name="LIB_DETAIL_C_TMP" option="MAJANX" type="input" value="@skip@"/>
+            <field_input name="LIB_DETAIL_L_TMP" option="MAJANX" type="skipped" value="@skip@"/>
+            <field_input memory="code_table_ref" name="CODE_TABLE_REF" option="MAJANX" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJANX" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTAB_MAJANX-core5_mznjwi.xml" time="0">
+            <db_obs execution="True" id="13.1" metadata="execution/13_MAJANX_1_13_query_part_00001.sqlite3" nb_inst="12" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJANX_1_13_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_valeur" value="FR12345"/>
+    <set_variable name="type_valeur" value="101"/>
+    <set_variable name="expression_cours" value="2"/>
+    <set_variable name="devise_valeur" value="EUR"/>
+    <set_variable name="nominal" value="100"/>
+    <set_variable name="devise_cotation" value="EUR"/>
+    <set_variable name="code_emetteur" value="100251"/>
+    <set_variable name="prix_emission" value="100"/>
+    <set_variable name="type_obligation" value="0"/>
+    <set_variable name="date_emission" value="21/05/2005"/>
+    <set_variable name="date_paiement" value="@SKIP@"/>
+    <set_variable name="date_echeance" value="21/11/2030"/>
+    <set_variable name="date_jouissance_cp" value="21/05/2004"/>
+    <set_variable name="date_anniv_prem_cp" value="21/05/2005"/>
+    <set_variable name="nature_indexation" value="FIX"/>
+    <set_variable name="date_depart" value="16/01/24"/>
+    <set_variable name="classe" value="1"/>
+    <set_variable name="classement_valeur_tmp" value="0000"/>
+    <set_variable name="marche_negociation" value="@SKIP@"/>
+    <set_variable name="nombre_titre_tmp" value="@SKIP@"/>
+    <set_variable name="montant_emission_tmp" value="@SKIP@"/>
+    <set_variable name="flag_opc_coordonne_tmp" value="@SKIP@"/>
+    <set_variable name="dev_coupon" value="EUR"/>
+    <set_variable name="nombre_droits_vote_tmp_ecr" value="@SKIP@"/>
+    <set_variable name="flag_action_avec_vote" value="@SKIP@"/>
+    <set_variable name="flag_vmob_liberee" value="@SKIP@"/>
+    <set_variable name="date_proch_assemblee_tmp" value="@SKIP@"/>
+    <execution name="MAJVAC" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJVAC100.xml">
+      <option id="14" name="MAJVAC" number="1" prog_name="NEWPORT_GESVAL_MAJVAC" time="20" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="19">
+          <actions time="16">
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJVAC" type="input" value="FR12345"/>
+            <field_input name="CODE_VALEUR_REF" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="LIB_VALEUR_C" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="LIB_VALEUR_L" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="LIBELLE_COUPON_C_TMP" option="MAJVAC" type="skipped" value=""/>
+            <field_input memory="type_valeur" name="TYPE_VALEUR" option="MAJVAC" type="input" value="101"/>
+            <field_input name="CODE_VALEUR_MERE" option="MAJVAC" type="skipped" value="FR12345"/>
+            <field_input name="CODE_SICOVAM_RGA" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_RGA" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_SEDOL" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_ISIN" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_TELEKURS" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_CEDEL_EURO" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_CUSIP" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_VALOR" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_WPK" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_RIC" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_CFI" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_TIKER" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_REUTER" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_BLOOMBERG" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_FININFO" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CODE_VALORDATA" option="MAJVAC" type="skipped" value=""/>
+            <field_input memory="expression_cours" name="EXPRESSION_COURS" option="MAJVAC" type="input" value="2"/>
+            <field_input name="EXPRESSION_QUANTITE" option="MAJVAC" type="skipped" value="0"/>
+            <field_input memory="devise_valeur" name="DEVISE_VALEUR" option="MAJVAC" type="input" value="EUR"/>
+            <field_input memory="nominal" name="NOMINAL_TMP" option="MAJVAC" type="input" value="100"/>
+            <field_input name="PLACE_COTATION_ECR" option="MAJVAC" type="input" value="025"/>
+            <field_input memory="devise_cotation" name="DEVISE_COTATION" option="MAJVAC" type="input" value="EUR"/>
+            <field_input memory="code_emetteur" name="CODE_EMETTEUR" option="MAJVAC" type="input" value="100251"/>
+            <field_input memory="date_emission" name="DATE_EMISSION_TMP" option="MAJVAC" type="input" value="21/05/2005">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="INDIC_MARCHE" option="MAJVAC" type="skipped" value=""/>
+            <field_input memory="classe" name="CLASSE" option="MAJVAC" type="input" value="1"/>
+            <field_input memory="prix_emission" name="PRIX_EMISSION_TMP" option="MAJVAC" type="input" value="100"/>
+            <field_input memory="classement_valeur_tmp" name="CLASSEMENT_VALEUR_TMP" option="MAJVAC" type="input" value="0000"/>
+            <field_input name="CODE_DEPOSITAIRE" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="MNEMONIQUE_VALEUR_TMP" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="MARCHE_NEGOCIATION" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="TYPE_DELAI_REGLEMENT" option="MAJVAC" type="skipped" value="0"/>
+            <field_input name="TYPE_DECALAGE" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="CALCUL_DATE_PROPRIETE" option="MAJVAC" type="input" value="VALE"/>
+            <field_input name="REGLE_CALCUL_AJUSTEMENT" option="MAJVAC" type="input" value="1"/>
+            <field_input name="TYPE_CALENDRIER" option="MAJVAC" type="input" value="FERIE"/>
+            <field_input name="TYPE_FISCALITE_VALEUR" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="LIB_ALERTE_VALEUR" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="NOMBRE_TITRE_TMP" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="MONTANT_EMISSION_TMP" option="MAJVAC" type="skipped" value=""/>
+            <field_input name="PERIODICITE_CP_TMP" option="MAJVAC" type="input" value="1"/>
+            <field_input memory="date_echeance" name="DATE_ECHEANCE_TMP" option="MAJVAC" type="input" value="21/11/2030"/>
+            <field_input name="FLAG_OPC_COORDONNE_TMP" option="MAJVAC" type="skipped" value=""/>
+            <field_input memory="dev_coupon" name="DEVISE_COUPON_TMP" option="MAJVAC" type="input" value="EUR"/>
+            <field_input name="NOMBRE_DROITS_VOTE_TMP_ECR" option="MAJVAC" type="skipped" value="0."/>
+            <field_input name="FLAG_ACTION_AVEC_VOTE" option="MAJVAC" type="skipped" value="N"/>
+            <field_input name="FLAG_VMOB_LIBEREE" option="MAJVAC" type="skipped" value="N"/>
+            <field_input name="DATE_PROCH_ASSEMBLEE_TMP" option="MAJVAC" type="skipped" value=""/>
+            <field_input last_input="True" name="OK_ACTION" option="MAJVAC" type="input" value="O"/>
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJVAE" type="skipped" value="BV.INS"/>
+            <field_input name="CATEGORIE_VALEUR" option="MAJVAE" type="skipped" value="VMOB"/>
+            <field_input name="CODE_VALEUR" option="MAJVAE" type="skipped" value="FR12345"/>
+            <field_input name="TRANSMISSION_EIS" option="MAJVAE" type="input" value="N"/>
+            <field_input name="CODE_VALEUR_SOURCE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CRITERE_TRI_1" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TRI_VALO" option="MAJVAE" type="input" value="VMOB"/>
+            <field_input name="CODE_FISCAL_VAL" option="MAJVAE" type="input" value="A"/>
+            <field_input name="CODE_COMPTABLE_VAL" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_RISQUE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CODE_GESTION" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CODE_METHODE_GEST_INST" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_VALO_VMOB" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CODE_RATING" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="DATE_RATING_ECR" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="INDICE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_PRIME_REMBOURSEMENT" option="MAJVAE" type="input" value="NULL"/>
+            <field_input name="RETENUE_SUR_COUPON_ECR" option="MAJVAE" type="skipped" value="0.00"/>
+            <field_input name="RETENUE_S_INT_COURU_ECR" option="MAJVAE" type="skipped" value="0.00"/>
+            <field_input name="INTERM_PAIEMENT_CP" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TITRE_ADMIS" option="MAJVAE" type="skipped" value="0"/>
+            <field_input name="TYPE_GARANTIE_VALEUR" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_RESERVE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_SURCOTE_DECOTE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="OK" option="MAJVAE" type="input" value="O">
+              <area content="Saisir les tris de MAJVAE pour le CPON."/>
+            </field_input>
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJVAE" type="skipped" value="BV.INS"/>
+            <field_input name="CATEGORIE_VALEUR" option="MAJVAE" type="skipped" value="CPON"/>
+            <field_input name="CODE_VALEUR" option="MAJVAE" type="skipped" value="FR12345"/>
+            <field_input name="TRANSMISSION_EIS" option="MAJVAE" type="input" value="N"/>
+            <field_input name="CODE_VALEUR_SOURCE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CRITERE_TRI_1" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TRI_VALO" option="MAJVAE" type="input" value="CPON"/>
+            <field_input name="CODE_FISCAL_VAL" option="MAJVAE" type="input" value="a"/>
+            <field_input name="CODE_COMPTABLE_VAL" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_RISQUE" option="MAJVAE" type="input" value="CF"/>
+            <field_input name="CODE_GESTION" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CODE_METHODE_GEST_INST" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="CODE_RATING" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="DATE_RATING_ECR" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="INDICE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_PRIME_REMBOURSEMENT" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="RETENUE_SUR_COUPON_ECR" option="MAJVAE" type="skipped" value="0.00"/>
+            <field_input name="RETENUE_S_INT_COURU_ECR" option="MAJVAE" type="skipped" value="0.00"/>
+            <field_input name="INTERM_PAIEMENT_CP" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TITRE_ADMIS" option="MAJVAE" type="skipped" value="0"/>
+            <field_input name="TYPE_GARANTIE_VALEUR" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_RESERVE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="TYPE_SURCOTE_DECOTE" option="MAJVAE" type="skipped" value=""/>
+            <field_input name="OK" option="MAJVAE" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESVAL_MAJVAC-corezk_fza1p.xml" time="3">
+            <db_obs execution="True" id="14.1" metadata="execution/14_MAJVAC_1_14_query_part_00001.sqlite3" nb_inst="61" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJVAC_1_14_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_valeur" value="FR12345"/>
+    <set_variable name="code_portefeuille" value="RTB010"/>
+    <set_variable name="type_transaction" value="AAC"/>
+    <set_variable name="code_interm_negoce1" value="030CM001"/>
+    <set_variable name="notre_depot" value="030CM001"/>
+    <set_variable name="date_effet_saisie" value="16/01/24"/>
+    <set_variable name="quantite_exercee" value="100"/>
+    <set_variable name="cours" value="100"/>
+    <set_variable name="compte_reglement_dp" value="5572.EUR"/>
+    <set_variable name="date_comptable" value="@SKIP@"/>
+    <set_variable name="MONTANT_IMPOT_DF_BIS" value="@SKIP@"/>
+    <set_variable name="compte_reglement_dp" value="000NE001.EUR"/>
+    <execution name="MAJTIN" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTIN.xml">
+      <option id="15" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="20" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="19">
+          <actions time="13">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR12345"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="RTB010">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="AAC">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="5CAM"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value=""/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="5CAM"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_interm_negoce1" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="030CM001"/>
+            <field_input memory="notre_depot" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="030CM001"/>
+            <field_input name="MODELE_ECONOMIQUE" option="MAJTIN" type="skipped" value="BM__2"/>
+            <field_input name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="date_effet_saisie" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="16/01/24"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="16/01/2024"/>
+            <field_input name="DATE_PROPRIETE_SAISIE" option="MAJTIN" type="skipped" value="16/01/2024"/>
+            <field_input memory="quantite_exercee" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="100">
+              <area content="Quantite a solder sur le portefeuille RTB010 pour le depositaire 030CM001, le BM BM__2  et le statut NOR    : 0."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="100">
+              <area content="Nominal Valeur : 100. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="10,000."/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input name="MONTANT_IMPOT_DF_BIS" option="MAJTIN" type="skipped" value="0."/>
+            <field_input memory="compte_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="000NE001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="skipped" value="16/01/2024">
+              <area content="PR: 10,000. PVCT: 0. EffetTitre: 0.
+Qt: 100. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="AAC/100./FR12345/"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-core8n3s_kam.xml" time="6">
+            <db_obs execution="True" id="15.1" metadata="execution/15_MAJTIN_1_15_query_part_00001.sqlite3" nb_inst="88" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_15_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_valeur" value="FR12345"/>
+    <set_variable name="code_portefeuille" value="RTB020"/>
+    <set_variable name="type_transaction" value="AAC"/>
+    <set_variable name="code_interm_negoce1" value="030CM001"/>
+    <set_variable name="notre_depot" value="030CM001"/>
+    <set_variable name="date_effet_saisie" value="16/01/24"/>
+    <set_variable name="quantite_exercee" value="100"/>
+    <set_variable name="cours" value="100"/>
+    <set_variable name="compte_reglement_dp" value="029V.EUR"/>
+    <set_variable name="date_comptable" value="@SKIP@"/>
+    <set_variable name="MONTANT_IMPOT_DF_BIS" value="@SKIP@"/>
+    <set_variable name="compte_reglement_dp" value="000NE001.EUR"/>
+    <execution name="MAJTIN" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTIN.xml">
+      <option id="16" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="10" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="9">
+          <actions time="5">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR12345"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="RTB020">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="AAC">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="5CAM"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value=""/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="5CAM"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_interm_negoce1" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="030CM001"/>
+            <field_input memory="notre_depot" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="030CM001"/>
+            <field_input name="MODELE_ECONOMIQUE" option="MAJTIN" type="skipped" value="BM__2"/>
+            <field_input name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="date_effet_saisie" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="16/01/24"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="16/01/2024"/>
+            <field_input name="DATE_PROPRIETE_SAISIE" option="MAJTIN" type="skipped" value="16/01/2024"/>
+            <field_input memory="quantite_exercee" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="100">
+              <area content="Quantite a solder sur le portefeuille RTB020 pour le depositaire 030CM001, le BM BM__2  et le statut NOR    : 0."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="100">
+              <area content="Nominal Valeur : 100. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="10,000."/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input name="MONTANT_IMPOT_DF_BIS" option="MAJTIN" type="skipped" value="0."/>
+            <field_input memory="compte_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="000NE001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="skipped" value="16/01/2024">
+              <area content="PR: 10,000. PVCT: 0. EffetTitre: 0.
+Qt: 100. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="AAC/100./FR12345/"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-core8n3s_kam.xml" time="4">
+            <db_obs execution="True" id="16.1" metadata="execution/16_MAJTIN_1_16_query_part_00001.sqlite3" nb_inst="88" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_16_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="categorie_valeur" value="vmob"/>
+    <set_variable name="code_valeur" value="FR12345"/>
+    <set_variable name="code_client" value="GRPAMA"/>
+    <set_variable name="type_tri" value="SPPI"/>
+    <set_variable name="dae_debut" value="16/01/24"/>
+    <set_variable name="critere_tri" value="O"/>
+    <set_variable name="date_fin" value="@SKIP@"/>
+    <execution name="MAJTRU" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTRU.xml">
+      <option id="17" name="MAJTRU" number="1" prog_name="NEWPORT_GESVAL_MAJTRU" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="categorie_valeur" name="CATEGORIE_VALEUR" option="MAJTRU" type="input" value="vmob"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJTRU" type="input" value="FR12345"/>
+            <field_input name="CODE_VALEUR_REF" option="MAJTRU" type="skipped" value=""/>
+            <field_input name="NIVEAU_UNIVERS" option="MAJTRU" type="input" value="C"/>
+            <field_input memory="code_client" name="SLO_OBJET" option="MAJTRU" type="input" value="GRPAMA"/>
+            <field_input memory="type_tri" name="TYPE_TRI" option="MAJTRU" type="input" value="SPPI"/>
+            <field_input memory="dae_debut" name="DATE_DEBUT_STR" option="MAJTRU" type="input" value="16/01/24"/>
+            <field_input memory="critere_tri" name="CRITERE_TRI" option="MAJTRU" type="input" value="O"/>
+            <field_input memory="date_fin" name="DATE_FIN_STR" option="MAJTRU" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJTRU" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJTRU-corefg0f13cp.xml" time="0">
+            <db_obs execution="True" id="17.1" metadata="execution/17_MAJTRU_1_17_query_part_00001.sqlite3" nb_inst="9" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTRU_1_17_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="categorie_valeur" value="vmob"/>
+    <set_variable name="code_valeur" value="FR12345"/>
+    <set_variable name="code_client" value="GRPAMA"/>
+    <set_variable name="type_tri" value="SPPI"/>
+    <set_variable name="dae_debut" value="16/01/24"/>
+    <set_variable name="critere_tri" value="A"/>
+    <set_variable name="date_fin" value="@SKIP@"/>
+    <execution name="MAJTRU" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/MAJTRU.xml">
+      <option id="18" name="MAJTRU" number="1" prog_name="NEWPORT_GESVAL_MAJTRU" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="categorie_valeur" name="CATEGORIE_VALEUR" option="MAJTRU" type="input" value="vmob"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJTRU" type="input" value="FR12345"/>
+            <field_input name="CODE_VALEUR_REF" option="MAJTRU" type="skipped" value=""/>
+            <field_input name="NIVEAU_UNIVERS" option="MAJTRU" type="input" value="C"/>
+            <field_input memory="code_client" name="SLO_OBJET" option="MAJTRU" type="input" value="GRPAMA"/>
+            <field_input memory="type_tri" name="TYPE_TRI" option="MAJTRU" type="input" value="SPPI"/>
+            <field_input memory="dae_debut" name="DATE_DEBUT_STR" option="MAJTRU" type="input" value="16/01/24"/>
+            <field_input memory="critere_tri" name="CRITERE_TRI" option="MAJTRU" type="input" value="A"/>
+            <field_input memory="date_fin" name="DATE_FIN_STR" option="MAJTRU" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJTRU" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJTRU-corefg0f13cp.xml" time="0">
+            <db_obs execution="True" id="18.1" metadata="execution/18_MAJTRU_1_18_query_part_00001.sqlite3" nb_inst="6" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTRU_1_18_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_vl" value="@SKIP@"/>
+    <set_variable name="slo_objet1" value="@SKIP@"/>
+    <set_variable name="type_stock" value="AD9"/>
+    <set_variable name="date_valorisation" value="25/01/2024"/>
+    <set_variable name="code_portefeuille" value="RTB010"/>
+    <set_variable name="date_valo_calact" value="25/01/2024"/>
+    <set_variable name="code_portefeuille_calact" value="RTB010"/>
+    <execution name="VALO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/VALO.xml">
+      <option id="19" name="VALO" number="1" prog_name="NEWPORT_GESCOU_VALO" time="8" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="8">
+          <actions time="4">
+            <field_input name="TYPE_VL" option="VALO" type="skipped" value=""/>
+            <field_input name="SAUVEGARDE" option="VALO" type="skipped" value="O"/>
+            <field_input name="SLO_OBJET1" option="VALO" type="skipped" value=""/>
+            <field_input name="BV_REMONTEE_HISTORIQUE" option="VALO" type="skipped" value="C"/>
+            <field_input memory="type_stock" name="SLO_OBJET2" option="VALO" type="input" value="AD9"/>
+            <field_input name="SLO_OBJET2" option="VALO" type="input" value="FIN"/>
+            <field_input name="V_TYPE_DEVISE" option="VALO" type="skipped" value="GEST"/>
+            <field_input name="CODE_DEVISE_FIXING" option="VALO" type="skipped" value=""/>
+            <field_input memory="date_valorisation" name="DATE_DEBUT" option="VALO" type="input" value="25/01/2024"/>
+            <field_input name="DATE_INTERETS_STR" option="VALO" type="skipped" value=""/>
+            <field_input name="DATE_COTATION_STR" option="VALO" type="skipped" value="25/01/2024"/>
+            <field_input name="DATE_CHANGE_STR" option="VALO" type="skipped" value="25/01/2024"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALO" type="input" value="RTB010"/>
+            <field_input name="SLO_OBJET" option="VALO" type="skipped" value="RTB010"/>
+            <field_input name="FLAG_VALO_PARTIELLE" option="VALO" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="VALO" type="input" value="O">
+              <area content="Traitement OK"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALO-core893s0rqk.xml" time="4">
+            <db_obs execution="True" id="19.1" metadata="execution/19_VALO_1_19_query_part_00001.sqlite3" nb_inst="72" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALO_1_19_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stock" value="AD9"/>
+    <set_variable name="date_valorisation" value="28/01/2024"/>
+    <set_variable name="code_portefeuille" value="RTB020"/>
+    <set_variable name="date_valo_calact" value="28/01/2024"/>
+    <set_variable name="code_portefeuille_calact" value="RTB020"/>
+    <execution name="VALO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/VALO.xml">
+      <option id="20" name="VALO" number="1" prog_name="NEWPORT_GESCOU_VALO" time="6" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="2">
+            <field_input name="TYPE_VL" option="VALO" type="skipped" value=""/>
+            <field_input name="SAUVEGARDE" option="VALO" type="skipped" value="O"/>
+            <field_input name="SLO_OBJET1" option="VALO" type="skipped" value=""/>
+            <field_input name="BV_REMONTEE_HISTORIQUE" option="VALO" type="skipped" value="C"/>
+            <field_input memory="type_stock" name="SLO_OBJET2" option="VALO" type="input" value="AD9"/>
+            <field_input name="SLO_OBJET2" option="VALO" type="input" value="FIN"/>
+            <field_input name="V_TYPE_DEVISE" option="VALO" type="skipped" value="GEST"/>
+            <field_input name="CODE_DEVISE_FIXING" option="VALO" type="skipped" value=""/>
+            <field_input memory="date_valorisation" name="DATE_DEBUT" option="VALO" type="input" value="28/01/2024">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="DATE_INTERETS_STR" option="VALO" type="skipped" value=""/>
+            <field_input name="DATE_COTATION_STR" option="VALO" type="skipped" value="28/01/2024"/>
+            <field_input name="DATE_CHANGE_STR" option="VALO" type="skipped" value="28/01/2024"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALO" type="input" value="RTB020"/>
+            <field_input name="SLO_OBJET" option="VALO" type="skipped" value="RTB020"/>
+            <field_input name="FLAG_VALO_PARTIELLE" option="VALO" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="VALO" type="input" value="O">
+              <area content="Traitement OK"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALO-core893s0rqk.xml" time="4">
+            <db_obs execution="True" id="20.1" metadata="execution/20_VALO_1_20_query_part_00001.sqlite3" nb_inst="72" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALO_1_20_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_valo" value="25/01/24"/>
+    <set_variable name="fichier_trame" value="33"/>
+    <set_variable name="code_portefeuille" value="RTB010"/>
+    <execution name="INVAMO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/INVAMO.xml">
+      <option id="21" name="INVAMO" number="1" prog_name="NEWPORT_ETASTK_INVAMO" time="8" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="7">
+          <actions time="3">
+            <field_input memory="date_valo" name="DATE_DEBUT" option="INVAMO" type="input" value="25/01/24"/>
+            <field_input memory="fichier_trame" name="FICHIER_TRAME_SLO" option="INVAMO" type="input" value="33"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVAMO" type="skipped" value=""/>
+            <field_input name="CHOIX" option="INVAMO" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVAMO" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="INVAMO" type="input" value="RTB010"/>
+            <field_input name="SLO_OBJET" option="INVAMO" type="skipped" value="RTB010"/>
+            <field_input name="TYPE_FIC_SLO" option="INVAMO" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVAMO" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:INVAMO_NX_1115_atpybh.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETASTK_INVAMO-reportmf0igdjv.xml" time="4">
+            <db_obs execution="True" id="21.1" metadata="execution/21_INVAMO_1_21_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/INVAMO_1_21_1_part_00001.sqlite3"/>
+            </db_obs>
+            <report_obs execution="True" file="execution/21_INVAMO_ReportObs_1_1_4_0.txt" id="21.4.0" metadata="execution/21_INVAMO_ReportObs_1_1_4_0_line.xml" name="invamo_nx_1115_atpybh.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_valo" value="28/01/24"/>
+    <set_variable name="fichier_trame" value="33"/>
+    <set_variable name="code_portefeuille" value="RTB020"/>
+    <execution name="INVAMO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/AAL/groupama/Ecrans/INVAMO.xml">
+      <option id="22" name="INVAMO" number="1" prog_name="NEWPORT_ETASTK_INVAMO" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_valo" name="DATE_DEBUT" option="INVAMO" type="input" value="28/01/24">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="fichier_trame" name="FICHIER_TRAME_SLO" option="INVAMO" type="input" value="33"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVAMO" type="skipped" value=""/>
+            <field_input name="CHOIX" option="INVAMO" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVAMO" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="INVAMO" type="input" value="RTB020"/>
+            <field_input name="SLO_OBJET" option="INVAMO" type="skipped" value="RTB020"/>
+            <field_input name="TYPE_FIC_SLO" option="INVAMO" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVAMO" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:INVAMO_NX_1115_4gmvwd.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETASTK_INVAMO-reportmf0igdjv.xml" time="1">
+            <db_obs execution="True" id="22.1" metadata="execution/22_INVAMO_1_22_query_part_00001.sqlite3" nb_inst="3" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/INVAMO_1_22_1_part_00001.sqlite3"/>
+            </db_obs>
+            <report_obs execution="True" file="execution/22_INVAMO_ReportObs_1_1_4_0.txt" id="22.4.0" metadata="execution/21_INVAMO_ReportObs_1_1_4_0_line.xml" name="invamo_nx_1115_4gmvwd.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+  </execution>

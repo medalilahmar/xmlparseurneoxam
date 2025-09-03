@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-07-30_23-32-14" execution="tst" file="replay/scenario.xml" gp3tester_version="3.5.5" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Scripts/scenario_global.xml" time_execution="1,93" title="scenario_RAPAIF/RAPAIM" version="GP4">
+    <execution_label>GP4-20250730-210830</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="SUN" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <set_variable name="code_environnement" value="BEONE"/>
+    <set_variable name="date_travail" value="@SKIP@"/>
+    <execution name="SAIENVMYH" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/SAIENV.xml">
+      <option id="1" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="BEONE"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="skipped" value="15/11/2018"/>
+            <field_input name="DATE_ANOMALIE_FRM" option="SAIENV" type="skipped" value="15/11/2018"/>
+            <field_input name="OKC" option="SAIENV" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESENV_SAIENV-corecstr0hvs.xml" time="1">
+            <db_obs execution="True" id="1.1" metadata="execution/1_SAIENV_1_1_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SAIENV_1_1_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="AFIN"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="36000"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="2" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="AFIN"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="36000"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="0">
+            <db_obs execution="True" id="2.1" metadata="execution/2_MAJHCF_1_2_query_part_00001.sqlite3" nb_inst="3" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_2_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAD"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="25"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="3" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAD"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="25"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="0">
+            <db_obs execution="True" id="3.1" metadata="execution/3_MAJHCF_1_3_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_3_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAM"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="20"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="4" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAM"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="20"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="0">
+            <db_obs execution="True" id="4.1" metadata="execution/4_MAJHCF_1_4_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_4_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAP"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="30"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="5" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAP"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="30"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="0">
+            <db_obs execution="True" id="5.1" metadata="execution/5_MAJHCF_1_5_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_5_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAQ"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="10"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="6" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAQ"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="10"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="0">
+            <db_obs execution="True" id="6.1" metadata="execution/6_MAJHCF_1_6_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_6_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAS"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="5"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="7" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAS"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="5"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="0">
+            <db_obs execution="True" id="7.1" metadata="execution/7_MAJHCF_1_7_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_7_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAW"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="25"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="8" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="0">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAW"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="25"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="1">
+            <db_obs execution="True" id="8.1" metadata="execution/8_MAJHCF_1_8_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_8_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="type_calcul" value="PFAY"/>
+    <set_variable name="date_valorisation_str" value="31/03/20"/>
+    <set_variable name="montant_calcul_str" value="3"/>
+    <execution name="MAJHCF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJHCF.xml">
+      <option id="9" name="MAJHCF" number="1" prog_name="NEWPORT_GESCOU_MAJHCF" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="0">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJHCF" type="input" value="10380"/>
+            <field_input memory="type_calcul" name="TYPE_CALCUL" option="MAJHCF" type="input" value="PFAY"/>
+            <field_input memory="date_valorisation_str" name="DATE_VALORISATION_STR" option="MAJHCF" type="input" value="31/03/20">
+              <area content="Attention la date est superieure a la date de saisie."/>
+            </field_input>
+            <field_input name="RESULTAT_CALCUL_STR" option="MAJHCF" type="skipped" value=""/>
+            <field_input memory="montant_calcul_str" name="MONTANT_CALCUL_STR" option="MAJHCF" type="input" value="3"/>
+            <field_input last_input="True" name="OK" option="MAJHCF" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJHCF-corec_ord0rp.xml" time="1">
+            <db_obs execution="True" id="9.1" metadata="execution/9_MAJHCF_1_9_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJHCF_1_9_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_zone" value="AIFST1"/>
+    <set_variable name="date_maj_ecr" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="code_valeur" value="MULT_HFND"/>
+    <set_variable name="nom_champ_ref" value="MULT_HFND"/>
+    <set_variable name="valeur_zone" value="10"/>
+    <execution name="FORDCO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/FORDCO.xml">
+      <option id="10" name="FORDCO" number="1" prog_name="NEWPORT_GESTAB_MAJDCO" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJDCO" type="skipped" value="."/>
+            <field_input name="CRITERE_TRI" option="MAJDCO" type="input" value="FUND"/>
+            <field_input memory="code_zone" name="CODE_ZONE" option="MAJDCO" type="input" value="AIFST1"/>
+            <field_input memory="date_maj_ecr" name="DATE_MAJ_ECR" option="MAJDCO" type="input" value="31/03/20"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJDCO" type="input" value="10380"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJDCO" type="input" value="MULT_HFND"/>
+            <field_input memory="nom_champ_ref" name="NOM_CHAMP_REF" option="MAJDCO" type="input" value="MULT_HFND"/>
+            <field_input memory="valeur_zone" name="VALEUR_ZONE" option="MAJDCO" type="input" value="10"/>
+            <field_input last_input="True" name="OK" option="MAJDCO" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORDCO-core71_f0geg.xml" time="0">
+            <db_obs execution="True" id="10.1" metadata="execution/10_FORDCO_1_10_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORDCO_1_10_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_zone" value="AIFST2"/>
+    <set_variable name="date_maj_ecr" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="code_valeur" value="MULT_HFND"/>
+    <set_variable name="nom_champ_ref" value="EQTY_LGBS"/>
+    <set_variable name="valeur_zone" value="60"/>
+    <execution name="FORDCO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/FORDCO.xml">
+      <option id="11" name="FORDCO" number="1" prog_name="NEWPORT_GESTAB_MAJDCO" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJDCO" type="skipped" value="."/>
+            <field_input name="CRITERE_TRI" option="MAJDCO" type="input" value="FUND"/>
+            <field_input memory="code_zone" name="CODE_ZONE" option="MAJDCO" type="input" value="AIFST2"/>
+            <field_input memory="date_maj_ecr" name="DATE_MAJ_ECR" option="MAJDCO" type="input" value="31/03/20"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJDCO" type="input" value="10380"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJDCO" type="input" value="MULT_HFND"/>
+            <field_input memory="nom_champ_ref" name="NOM_CHAMP_REF" option="MAJDCO" type="input" value="EQTY_LGBS"/>
+            <field_input memory="valeur_zone" name="VALEUR_ZONE" option="MAJDCO" type="input" value="60"/>
+            <field_input last_input="True" name="OK" option="MAJDCO" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORDCO-core71_f0geg.xml" time="0">
+            <db_obs execution="True" id="11.1" metadata="execution/11_FORDCO_1_11_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORDCO_1_11_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_zone" value="AIFST1"/>
+    <set_variable name="date_maj_ecr" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="code_valeur" value="MULT_PEQF"/>
+    <set_variable name="nom_champ_ref" value="MULT_PEQF"/>
+    <set_variable name="valeur_zone" value="10"/>
+    <execution name="FORDCO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/FORDCO.xml">
+      <option id="12" name="FORDCO" number="1" prog_name="NEWPORT_GESTAB_MAJDCO" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJDCO" type="skipped" value="."/>
+            <field_input name="CRITERE_TRI" option="MAJDCO" type="input" value="FUND"/>
+            <field_input memory="code_zone" name="CODE_ZONE" option="MAJDCO" type="input" value="AIFST1"/>
+            <field_input memory="date_maj_ecr" name="DATE_MAJ_ECR" option="MAJDCO" type="input" value="31/03/20"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJDCO" type="input" value="10380"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJDCO" type="input" value="MULT_PEQF"/>
+            <field_input memory="nom_champ_ref" name="NOM_CHAMP_REF" option="MAJDCO" type="input" value="MULT_PEQF"/>
+            <field_input memory="valeur_zone" name="VALEUR_ZONE" option="MAJDCO" type="input" value="10"/>
+            <field_input last_input="True" name="OK" option="MAJDCO" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORDCO-core71_f0geg.xml" time="0">
+            <db_obs execution="True" id="12.1" metadata="execution/12_FORDCO_1_12_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORDCO_1_12_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_zone" value="AIFST2"/>
+    <set_variable name="date_maj_ecr" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="code_valeur" value="MULT_PEQF"/>
+    <set_variable name="nom_champ_ref" value="VENT_CAPL"/>
+    <set_variable name="valeur_zone" value="60"/>
+    <execution name="FORDCO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/FORDCO.xml">
+      <option id="13" name="FORDCO" number="1" prog_name="NEWPORT_GESTAB_MAJDCO" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJDCO" type="skipped" value="."/>
+            <field_input name="CRITERE_TRI" option="MAJDCO" type="input" value="FUND"/>
+            <field_input memory="code_zone" name="CODE_ZONE" option="MAJDCO" type="input" value="AIFST2"/>
+            <field_input memory="date_maj_ecr" name="DATE_MAJ_ECR" option="MAJDCO" type="input" value="31/03/20"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJDCO" type="input" value="10380"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJDCO" type="input" value="MULT_PEQF"/>
+            <field_input memory="nom_champ_ref" name="NOM_CHAMP_REF" option="MAJDCO" type="input" value="VENT_CAPL"/>
+            <field_input memory="valeur_zone" name="VALEUR_ZONE" option="MAJDCO" type="input" value="60"/>
+            <field_input last_input="True" name="OK" option="MAJDCO" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORDCO-core71_f0geg.xml" time="0">
+            <db_obs execution="True" id="13.1" metadata="execution/13_FORDCO_1_13_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORDCO_1_13_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_zone" value="AIFST1"/>
+    <set_variable name="date_maj_ecr" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="code_valeur" value="MULT_REST"/>
+    <set_variable name="nom_champ_ref" value="MULT_REST"/>
+    <set_variable name="valeur_zone" value="10"/>
+    <execution name="FORDCO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/FORDCO.xml">
+      <option id="14" name="FORDCO" number="1" prog_name="NEWPORT_GESTAB_MAJDCO" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJDCO" type="skipped" value="."/>
+            <field_input name="CRITERE_TRI" option="MAJDCO" type="input" value="FUND"/>
+            <field_input memory="code_zone" name="CODE_ZONE" option="MAJDCO" type="input" value="AIFST1"/>
+            <field_input memory="date_maj_ecr" name="DATE_MAJ_ECR" option="MAJDCO" type="input" value="31/03/20"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJDCO" type="input" value="10380"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJDCO" type="input" value="MULT_REST"/>
+            <field_input memory="nom_champ_ref" name="NOM_CHAMP_REF" option="MAJDCO" type="input" value="MULT_REST"/>
+            <field_input memory="valeur_zone" name="VALEUR_ZONE" option="MAJDCO" type="input" value="10"/>
+            <field_input last_input="True" name="OK" option="MAJDCO" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORDCO-core71_f0geg.xml" time="0">
+            <db_obs execution="True" id="14.1" metadata="execution/14_FORDCO_1_14_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORDCO_1_14_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_zone" value="AIFST2"/>
+    <set_variable name="date_maj_ecr" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="10380"/>
+    <set_variable name="code_valeur" value="MULT_REST"/>
+    <set_variable name="nom_champ_ref" value="RESL_REST"/>
+    <set_variable name="valeur_zone" value="60"/>
+    <execution name="FORDCO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/FORDCO.xml">
+      <option id="15" name="FORDCO" number="1" prog_name="NEWPORT_GESTAB_MAJDCO" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_ENSEMBLE_VAL" option="MAJDCO" type="skipped" value="."/>
+            <field_input name="CRITERE_TRI" option="MAJDCO" type="input" value="FUND"/>
+            <field_input memory="code_zone" name="CODE_ZONE" option="MAJDCO" type="input" value="AIFST2"/>
+            <field_input memory="date_maj_ecr" name="DATE_MAJ_ECR" option="MAJDCO" type="input" value="31/03/20"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJDCO" type="input" value="10380"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="MAJDCO" type="input" value="MULT_REST"/>
+            <field_input memory="nom_champ_ref" name="NOM_CHAMP_REF" option="MAJDCO" type="input" value="RESL_REST"/>
+            <field_input memory="valeur_zone" name="VALEUR_ZONE" option="MAJDCO" type="input" value="60"/>
+            <field_input last_input="True" name="OK" option="MAJDCO" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORDCO-core71_f0geg.xml" time="0">
+            <db_obs execution="True" id="15.1" metadata="execution/15_FORDCO_1_15_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORDCO_1_15_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="31/03/20"/>
+    <set_variable name="slo_objet" value="10380"/>
+    <execution name="RAPAIF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/RAPAIF.xml">
+      <option id="16" name="RAPAIF" number="1" prog_name="NEWPORT_GESREP_RAPAIM" time="71" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="71">
+          <actions time="68">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="RAPAIM" type="input" value="31/03/20"/>
+            <field_input name="CALCUL_COMPLET" option="RAPAIM" type="skipped" value="1"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="RAPAIM" type="input" value="10380"/>
+            <field_input name="SLO_OBJET" option="RAPAIM" type="skipped" value="10380"/>
+            <field_input last_input="True" name="OK" option="RAPAIM" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/RAPAIF-coreqbx2idkp.xml" time="3">
+            <db_obs execution="True" id="16.1" metadata="execution/16_RAPAIF_1_16_query_part_00001.sqlite3" nb_inst="4352" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/RAPAIF_1_16_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="slo_objet1" value="RAPAIF"/>
+    <execution name="lisano" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/LISANO.xml">
+      <option id="17" name="LISANO" number="1" prog_name="NEWPORT_GESENV_LISANO" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="2">
+            <field_input name="SLO_OBJET_0" option="LISANO" type="input" value="All"/>
+            <field_input name="DATE_DEBUT" option="LISANO" type="skipped" value=""/>
+            <field_input name="DATE_FIN" option="LISANO" type="skipped" value=""/>
+            <field_input name="SLO_OBJET" option="LISANO" type="input" value="SUN"/>
+            <field_input name="SLO_OBJET" option="LISANO" type="input" value="fin"/>
+            <field_input memory="slo_objet1" name="SLO_OBJET1" option="LISANO" type="input" value="RAPAIF"/>
+            <field_input name="SLO_OBJET1" option="LISANO" type="input" value="fin"/>
+            <field_input name="TYPE_FIC_SLO" option="LISANO" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISANO" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISANO_SUN_1115_q7548s.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="1">
+            <raw_data_obs db_source="execution/17_LISANO_RawDataObs_1_1_2_0.sqlite3" execution="True" id="17.2.0" metadata="execution/17_LISANO_RawDataObs_1_1_2_0_columns.xml" name="lisano_sun_1115_q7548s.fic" number="1" source="execution/17_LISANO_RawDataObs_1_1_2_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="RAPAIF"/>
+    <set_variable name="date_fin" value="31/03/20"/>
+    <set_variable name="slo_objet_l1" value="10380"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/JUSREP.xml">
+      <option id="18" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="RAPAIF"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="31/03/20"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="10380"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="10380"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_rfif9i.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/18_JUSREP_ReportObs_1_1_3_0.txt" id="18.3.0" metadata="execution/18_JUSREP_ReportObs_1_1_3_0_line.xml" name="jusrep_sun_1115_rfif9i.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_environnement" value="BEONE"/>
+    <set_variable name="date_travail" value="@SKIP@"/>
+    <execution name="SAIENVMYH" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/SAIENV.xml">
+      <option id="19" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="0">
+          <actions time="0">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="BEONE"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="skipped" value="15/11/2018"/>
+            <field_input name="DATE_ANOMALIE_FRM" option="SAIENV" type="skipped" value="15/11/2018"/>
+            <field_input name="OKC" option="SAIENV" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESENV_SAIENV-corecstr0hvs.xml" time="0">
+            <db_obs execution="True" id="19.1" metadata="execution/19_SAIENV_1_19_query_part_00001.sqlite3" nb_inst="2" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SAIENV_1_19_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="DGIL"/>
+    <set_variable name="type_reporting" value="RAPAIM"/>
+    <set_variable name="devise_reporting" value="USD"/>
+    <execution name="REPGES" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/REPGES.xml">
+      <option id="20" name="REPGES" number="1" prog_name="NEWPORT_GESREP_MAJREP" time="5" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="5">
+          <actions time="4">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJREP" type="input" value="DGIL"/>
+            <field_input name="TYPE_REPORTING_POR" option="MAJREP" type="skipped" value=""/>
+            <field_input memory="type_reporting" name="TYPE_REPORTING" option="MAJREP" type="input" value="RAPAIM"/>
+            <field_input memory="devise_reporting" name="DEVISE_REPORTING" option="MAJREP" type="input" value="USD"/>
+            <field_input name="TYPE_CALCUL_REPORTING" option="MAJREP" type="skipped" value="5"/>
+            <field_input name="PERIODICITE_REPORTING" option="MAJREP" type="skipped" value="4"/>
+            <field_input name="CODE_INTERV_ORIGINAIRE" option="MAJREP" type="skipped" value="DGIL"/>
+            <field_input name="CODE_INTERV_DESTINATAIRE" option="MAJREP" type="skipped" value="DGIL"/>
+            <field_input name="TYPE_STOCK" option="MAJREP" type="skipped" value=""/>
+            <field_input name="DATE_DEBUT_STR" option="MAJREP" type="skipped" value="01/10/2014"/>
+            <field_input name="DATE_CHANGEMENT_STR" option="MAJREP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="MAJREP" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/REPGES-corepjuese1d.xml" time="1">
+            <db_obs execution="True" id="20.1" metadata="execution/20_REPGES_1_20_query_part_00001.sqlite3" nb_inst="14" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/REPGES_1_20_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="20.2" metadata="execution/20_REPGES_1_20_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/REPGES_1_20_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_tableau" value="MI-MRKT"/>
+    <set_variable name="libelle_colonne" value="AUM in EUR"/>
+    <execution name="MAJCOL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJCOL.xml">
+      <option id="21" name="MAJCOL" number="1" prog_name="NEWPORT_GESREP_MAJCOL" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_tableau" name="CODE_TABLEAU" option="MAJCOL" type="input" value="MI-MRKT"/>
+            <field_input name="NUMERO_COLONNE_TMP" option="MAJCOL" type="skipped" value="6"/>
+            <field_input memory="libelle_colonne" name="LIBELLE_COLONNE" option="MAJCOL" type="input" value="AUM in EUR"/>
+            <field_input name="TYPE_DATA" option="MAJCOL" type="skipped" value="MONT"/>
+            <field_input name="FLAG_CUMUL" option="MAJCOL" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="MAJCOL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESREP_MAJCOL-coreqawv3cls.xml" time="0">
+            <db_obs execution="True" id="21.1" metadata="execution/21_MAJCOL_1_21_query_part_00001.sqlite3" nb_inst="2" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJCOL_1_21_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_tableau" value="MI-INST"/>
+    <set_variable name="libelle_colonne" value="AUM in EUR"/>
+    <execution name="MAJCOL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/MAJCOL.xml">
+      <option id="22" name="MAJCOL" number="1" prog_name="NEWPORT_GESREP_MAJCOL" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_tableau" name="CODE_TABLEAU" option="MAJCOL" type="input" value="MI-INST"/>
+            <field_input name="NUMERO_COLONNE_TMP" option="MAJCOL" type="skipped" value="5"/>
+            <field_input memory="libelle_colonne" name="LIBELLE_COLONNE" option="MAJCOL" type="input" value="AUM in EUR"/>
+            <field_input name="TYPE_DATA" option="MAJCOL" type="skipped" value="MONT"/>
+            <field_input name="FLAG_CUMUL" option="MAJCOL" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="MAJCOL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESREP_MAJCOL-coreqawv3cls.xml" time="0">
+            <db_obs execution="True" id="22.1" metadata="execution/22_MAJCOL_1_22_query_part_00001.sqlite3" nb_inst="2" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJCOL_1_22_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_debut" value="31/12/19"/>
+    <set_variable name="slo_objet" value="DGIL"/>
+    <execution name="RAPAIM" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/RAPAIM2.xml">
+      <option id="23" name="RAPAIM" number="1" prog_name="NEWPORT_GESREP_RAPAIM" time="8" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="7">
+          <actions time="7">
+            <field_input memory="date_debut" name="DATE_DEBUT" option="RAPAIM" type="input" value="31/12/19"/>
+            <field_input memory="slo_objet" name="SLO_OBJET" option="RAPAIM" type="input" value="DGIL"/>
+            <field_input name="SLO_OBJET" option="RAPAIM" type="skipped" value="DGIL"/>
+            <field_input last_input="True" name="OK" option="RAPAIM" type="input" value="O"/>
+            <field_input name="OK" option="CRATER" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/RAPAIM-corecagju168.xml" time="0">
+            <db_obs execution="True" id="23.1" metadata="execution/23_RAPAIM_1_23_query_part_00001.sqlite3" nb_inst="347" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/RAPAIM_1_23_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_1" value="RAPAIM"/>
+    <set_variable name="date_fin" value="31/12/19"/>
+    <set_variable name="slo_objet_l1" value="DGIL"/>
+    <execution name="jusrep_myh" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MYH/AIFMD/Ecrans/JUSREP.xml">
+      <option id="24" name="JUSREP" number="1" prog_name="NEWPORT_GESREP_JUSREP" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="choix_1" name="CHOIX_1" option="JUSREP" type="input" value="RAPAIM"/>
+            <field_input memory="date_fin" name="DATE_FIN" option="JUSREP" type="input" value="31/12/19"/>
+            <field_input name="CHOIX_2" option="JUSREP" type="skipped" value="O"/>
+            <field_input memory="slo_objet_l1" name="SLO_OBJET_L1" option="JUSREP" type="input" value="DGIL"/>
+            <field_input name="SLO_OBJET_L1" option="JUSREP" type="skipped" value="DGIL"/>
+            <field_input name="SLO_OBJET_L2" option="JUSREP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSREP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSREP" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSREP_SUN_1115_mzh11p.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/24_JUSREP_ReportObs_1_1_4_0.txt" id="24.4.0" metadata="execution/18_JUSREP_ReportObs_1_1_3_0_line.xml" name="jusrep_sun_1115_mzh11p.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+  </execution>

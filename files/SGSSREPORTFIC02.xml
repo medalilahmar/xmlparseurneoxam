@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-08-14_04-13-20" execution="tst" file="replay/scenario.xml" gp3tester_version="3.5.5" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Scripts/report_fic_2-cbg.xml" time_execution="48,69" title="Script integration bamboo" version="GP4">
+    <execution_label>GP4-20250813-202032</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="SUN" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <set_variable name="type_edition" value="@FIC@"/>
+    <set_variable name="type_edition_treprv" value="6"/>
+    <set_variable name="code_environnement" value="OPCVM"/>
+    <set_variable name="code_traitement" value="TOUS"/>
+    <set_variable name="critere_saisie_1" value="."/>
+    <set_variable name="critere_saisie_2" value="."/>
+    <set_variable name="nom_champ" value="Entete.fichier"/>
+    <set_variable name="valeur_par_defaut" value="@SKIP@"/>
+    <set_variable name="code_gestion" value="OK"/>
+    <execution name="forpct" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/forpct.xml">
+      <option id="1" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="5" title="">
+        <Informations>
+          <Information name="revision" value="284737"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.06"/>
+          <Metric name="ram" value="48"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="TOUS"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="."/>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="."/>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Entete.fichier"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="valeur_par_defaut" name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTAB_MAJPCT-corei4qarbfc.xml" time="3">
+            <db_obs execution="True" id="1.1" metadata="execution/1_FORPCT_1_1_query_part_00001.sqlite3" nb_inst="3" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_1_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="1.2" metadata="execution/1_FORPCT_1_1_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_1_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="LISREM"/>
+    <execution name="forpct" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/forpct.xml">
+      <option id="2" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="2" title="">
+        <Informations>
+          <Information name="revision" value="284737"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.06"/>
+          <Metric name="ram" value="48"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="LISREM"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="."/>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value="."/>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Entete.fichier"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="valeur_par_defaut" name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="code_gestion" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTAB_MAJPCT-corei4qarbfc.xml" time="1">
+            <db_obs execution="True" id="2.1" metadata="execution/2_FORPCT_1_2_query_part_00001.sqlite3" nb_inst="3" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_2_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="2.2" metadata="execution/2_FORPCT_1_2_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_2_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="30/01/16"/>
+    <set_variable name="date_1" value="01/01/16"/>
+    <set_variable name="date_2" value="31/01/16"/>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <set_variable name="date_effet" value="31/01/16"/>
+    <set_variable name="date_valeur" value="31/01/16"/>
+    <set_variable name="date_comptable" value="31/01/16"/>
+    <execution name="saienv" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/saienv.xml">
+      <option id="3" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="1" title="">
+        <Informations>
+          <Information name="revision" value="282440"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.05"/>
+          <Metric name="ram" value="47"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="0">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="OPCVM"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_ANOMALIE_FRM" option="SAIENV" type="input" value="31/01/16"/>
+            <field_input name="OKC" option="SAIENV" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESENV_SAIENV-corecojnl_2q.xml" time="1">
+            <db_obs execution="True" id="3.1" metadata="execution/3_SAIENV_1_3_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SAIENV_1_3_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="nom_option" value="JUSINT"/>
+    <set_variable name="nom_procedure" value="NEWPORT.GESTRE.JUSINT"/>
+    <execution name="MAJPROG" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/MAJPROG.xml">
+      <option id="4" name="MAJPROG" number="1" prog_name="OSER_MENUS_MAJPROG" time="1" title="">
+        <Informations>
+          <Information name="revision" value="280730"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.11"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="nom_option" name="OSE_CODE_PROCEDURE" option="MAJPROG" type="input" value="JUSINT"/>
+            <field_input name="CONSULTATION" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="CONSULTATION2" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="TITRE_PROGRAMME" option="MAJPROG" type="skipped" value="Etat justificatif des interets"/>
+            <field_input memory="nom_procedure" name="OSE_NOM_PROCEDURE" option="MAJPROG" type="input" value="NEWPORT.GESTRE.JUSINT">
+              <area content="compilee le 2024/08/09 16:25:47"/>
+            </field_input>
+            <field_input name="NATURE_OPTION_SAISIE" option="MAJPROG" type="input" value="F"/>
+            <field_input last_input="True" name="OK" option="MAJPROG" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/OSER_MENUS_MAJPROG-corev08hab58.xml" time="0">
+            <db_obs execution="True" id="4.1" metadata="execution/4_MAJPROG_1_4_query_part_00001.sqlite3" nb_inst="2" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJPROG_1_4_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="nom_option" value="JUSCOM"/>
+    <set_variable name="nom_procedure" value="NEWPORT.GESOPC.JUSCOM"/>
+    <execution name="MAJPROG" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/MAJPROG.xml">
+      <option id="5" name="MAJPROG" number="1" prog_name="OSER_MENUS_MAJPROG" time="1" title="">
+        <Informations>
+          <Information name="revision" value="280730"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.10"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="nom_option" name="OSE_CODE_PROCEDURE" option="MAJPROG" type="input" value="JUSCOM"/>
+            <field_input name="CONSULTATION" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="CONSULTATION2" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="TITRE_PROGRAMME" option="MAJPROG" type="skipped" value="Justificatif des frais de gestion"/>
+            <field_input memory="nom_procedure" name="OSE_NOM_PROCEDURE" option="MAJPROG" type="input" value="NEWPORT.GESOPC.JUSCOM">
+              <area content="compilee le 2024/10/15 14:54:18"/>
+            </field_input>
+            <field_input name="NATURE_OPTION_SAISIE" option="MAJPROG" type="input" value="F"/>
+            <field_input last_input="True" name="OK" option="MAJPROG" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/OSER_MENUS_MAJPROG-corev08hab58.xml" time="0">
+            <db_obs execution="True" id="5.1" metadata="execution/5_MAJPROG_1_5_query_part_00001.sqlite3" nb_inst="2" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJPROG_1_5_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_menu" value="GP"/>
+    <set_variable name="numero_option" value="47"/>
+    <set_variable name="nom_option" value="GLIVVL"/>
+    <set_variable name="titre_option" value="@SKIP@"/>
+    <execution name="Mise Ã  jour des menus" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/MAJMENU.xml">
+      <option id="6" name="MAJMENU" number="1" prog_name="OSER_MENUS_MAJMENU" time="3" title="">
+        <Informations>
+          <Information name="revision" value="272353"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.06"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_menu" name="OSE_CODE_MENU" option="MAJMENU" type="input" value="GP"/>
+            <field_input name="OSE_TITRE_MENU" option="MAJMENU" type="skipped" value="Serveur D'Exploitation"/>
+            <field_input name="CONSULTATION" option="MAJMENU" type="skipped" value=""/>
+            <field_input memory="numero_option" name="TABLEAU_OPTION[0]_OSE_NUMERO_OPTION" option="MAJMENU" type="input" value="47"/>
+            <field_input memory="nom_option" name="TABLEAU_OPTION[0]_OSE_CODE_OPTION" option="MAJMENU" type="input" value="GLIVVL"/>
+            <field_input name="TABLEAU_OPTION[1]_OSE_NUMERO_OPTION" option="MAJMENU" type="action" value="@DOWN@"/>
+            <field_input last_input="True" name="OK" option="MAJMENU" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJMENU-coreb133pzf8.xml" time="0">
+            <db_obs execution="True" id="6.1" metadata="execution/6_MAJMENU_1_6_query_part_00001.sqlite3" nb_inst="24" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJMENU_1_6_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_menu" value="GP"/>
+    <set_variable name="numero_option" value="81"/>
+    <set_variable name="code_menu" value="GP"/>
+    <set_variable name="numero_option" value="48"/>
+    <set_variable name="nom_option" value="BALAVL"/>
+    <execution name="Mise Ã  jour des menus" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/MAJMENU.xml">
+      <option id="7" name="MAJMENU" number="1" prog_name="OSER_MENUS_MAJMENU" time="2" title="">
+        <Informations>
+          <Information name="revision" value="272353"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.07"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="code_menu" name="OSE_CODE_MENU" option="MAJMENU" type="input" value="GP"/>
+            <field_input name="OSE_TITRE_MENU" option="MAJMENU" type="skipped" value="Serveur D'Exploitation"/>
+            <field_input name="CONSULTATION" option="MAJMENU" type="skipped" value=""/>
+            <field_input memory="numero_option" name="TABLEAU_OPTION[0]_OSE_NUMERO_OPTION" option="MAJMENU" type="input" value="48"/>
+            <field_input memory="nom_option" name="TABLEAU_OPTION[0]_OSE_CODE_OPTION" option="MAJMENU" type="input" value="BALAVL"/>
+            <field_input name="TABLEAU_OPTION[1]_OSE_NUMERO_OPTION" option="MAJMENU" type="action" value="@DOWN@"/>
+            <field_input last_input="True" name="OK" option="MAJMENU" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJMENU-coreb133pzf8.xml" time="0">
+            <db_obs execution="True" id="7.1" metadata="execution/7_MAJMENU_1_7_query_part_00001.sqlite3" nb_inst="26" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJMENU_1_7_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="MAJOPT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/MAJOPT.xml">
+      <option id="8" name="MAJOPT" number="1" prog_name="OSER_MENUS_MAJOPT" time="4" title="">
+        <Informations>
+          <Information name="revision" value="271719"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.23"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="2">
+            <field_input name="SLO_OBJET" option="MAJOPT" type="input" value="SUN"/>
+            <field_input name="OSE_CODE_MENU" option="MAJOPT" type="skipped" value="GP"/>
+            <field_input name="FLAG_INTERDICTION" option="MAJOPT" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="MAJOPT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/MAJOPT-cored0r9nph2.xml" time="1">
+            <db_obs execution="True" id="8.1" metadata="execution/8_MAJOPT_1_8_query_part_00001.sqlite3" nb_inst="1624" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJOPT_1_8_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="liste_portefeuilles" value="453046"/>
+    <set_variable append="true" name="liste_portefeuilles" value="453039"/>
+    <set_variable append="true" name="liste_portefeuilles" value="453040"/>
+    <set_variable name="code_trame" value="FICRP"/>
+    <execution name="TRAME" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/trame.xml">
+      <option id="9" name="TRAME" number="1" prog_name="NEWPORT_GESPOR_TRAME" time="1" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.06"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CHOIX_MENU" option="TRAME" type="input" value="1"/>
+            <field_input memory="code_trame" name="CODE_TRAME" option="TRAME" type="input" value="FICRP"/>
+            <field_input name="LIBELLE_TRAME_L" option="TRAME" type="input" value="TRAME RECETTE"/>
+            <field_input name="CODE_TRAME_REFERENCE" option="TRAME" type="skipped" value=""/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET" option="TRAME" type="input" value="453046"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET" option="TRAME" type="input" value="453039"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET" option="TRAME" type="input" value="453040"/>
+            <field_input name="SLO_OBJET" option="TRAME" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="TRAME" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_TRAME-cores52vk0ei.xml" time="0">
+            <db_obs execution="True" id="9.1" metadata="execution/9_TRAME_1_9_query_part_00001.sqlite3" nb_inst="11" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/TRAME_1_9_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="liste_bascule" value="PIO22S"/>
+    <set_variable append="true" name="liste_bascule" value="PIO22C"/>
+    <set_variable append="true" name="liste_bascule" value="PIO22E"/>
+    <set_variable append="true" name="liste_bascule" value="PIO22M"/>
+    <set_variable append="true" name="liste_bascule" value="PIOOBL"/>
+    <set_variable name="liste_sicav" value="330087"/>
+    <set_variable append="true" name="liste_sicav" value="453048"/>
+    <set_variable name="ptf_fisc_gr" value="453044"/>
+    <set_variable append="true" name="ptf_fisc_gr" value="453040"/>
+    <set_variable append="true" name="ptf_fisc_gr" value="453042"/>
+    <set_variable name="liste_fund_fund" value="453051"/>
+    <set_variable append="true" name="liste_fund_fund" value="453017"/>
+    <set_variable append="true" name="liste_fund_fund" value="453031"/>
+    <execution name="MAJANX_INVAMO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/MAJANX_INVAMO.xml">
+      <option id="10" name="MAJANX" number="1" prog_name="NEWPORT_GESTAB_MAJANX" time="1" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.06"/>
+          <Metric name="ram" value="52"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CODE_TABLE_TMP" option="MAJANX" type="input" value="ETAFIC"/>
+            <field_input name="LIB_TABLE_TMP" option="MAJANX" type="input" value="ETATS FICHIERS"/>
+            <field_input name="CODE_FORMAT" option="MAJANX" type="input" value="6"/>
+            <field_input name="CODE_DETAIL_TMP" option="MAJANX" type="input" value="INVAMO"/>
+            <field_input name="LIB_DETAIL_C_TMP" option="MAJANX" type="input" value=""/>
+            <field_input name="LIB_DETAIL_L_TMP" option="MAJANX" type="input" value=""/>
+            <field_input name="CODE_TABLE_REF" option="MAJANX" type="input" value=""/>
+            <field_input last_input="True" name="OK" option="MAJANX" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTAB_MAJANX-core83um59kc.xml" time="0">
+            <db_obs execution="True" id="10.1" metadata="execution/10_MAJANX_1_10_query_part_00001.sqlite3" nb_inst="7" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJANX_1_10_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_trame" value="*FICRP"/>
+    <execution name="ENTSOR" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/entsor.xml">
+      <option id="11" name="ENTSOR" number="1" prog_name="NEWPORT_ETASTK_ENTSOR" time="10" title="">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="1.09"/>
+          <Metric name="ram" value="74"/>
+        </Metrics>
+        <step number="1" time="10">
+          <actions time="9">
+            <field_input name="FICHIER_TRAME_SLO" option="ENTSOR" type="input" value="1"/>
+            <field_input name="CHOIX_1" option="ENTSOR" type="input" value="EFFT"/>
+            <field_input memory="date_travail" name="DATE_DEBUT" option="ENTSOR" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN" option="ENTSOR" type="input" value="31/01/16"/>
+            <field_input name="CHOIX_DEV" option="ENTSOR" type="input" value="P"/>
+            <field_input name="DEVISE_TOTALISATION" option="ENTSOR" type="skipped" value=""/>
+            <field_input name="CHOIX_ETAT" option="ENTSOR" type="input" value="D"/>
+            <field_input name="CHOIX_2" option="ENTSOR" type="skipped" value="U"/>
+            <field_input memory="code_trame" name="SLO_OBJET_L1" option="ENTSOR" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET_L1" option="ENTSOR" type="input" value="FIN"/>
+            <field_input name="CHOIX_3" option="ENTSOR" type="skipped" value="TOUS"/>
+            <field_input name="CHOIX_EXT" option="ENTSOR" type="skipped" value="N"/>
+            <field_input name="SLO_OBJET_L2" option="ENTSOR" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="ENTSOR" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="ENTSOR" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:ENTSOR_SUN_1115_iu93f3.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETASTK_ENTSOR-reporto6kxcdzb.xml" time="1">
+            <raw_data_obs db_source="execution/11_ENTSOR_RawDataObs_1_1_3_0.sqlite3" execution="True" id="11.3.0" metadata="execution/11_ENTSOR_RawDataObs_1_1_3_0_columns.xml" name="entsor_sun_1115_iu93f3.fic" number="2" source="execution/11_ENTSOR_RawDataObs_1_1_3_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="18/05/17"/>
+    <set_variable name="date_travail" value="19/05/17"/>
+    <execution name="HISDVD" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/hisdvd.xml">
+      <option id="12" name="HISDVD" number="1" prog_name="NEWPORT_GESCLO_HISDVD" time="2" title="">
+        <Informations>
+          <Information name="revision" value="285017"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.14"/>
+          <Metric name="ram" value="73"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input label="Code portefeuille ou *trame" memory="code_trame" name="SLO_OBJET" option="HISDVD" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="HISDVD" type="input" value="FIN"/>
+            <field_input memory="date_veille" name="DATE_DEBUT_STR" option="HISDVD" type="input" value="18/05/17"/>
+            <field_input memory="date_travail" name="DATE_FIN_STR" option="HISDVD" type="input" value="19/05/17"/>
+            <field_input name="TYPE_FIC_SLO" option="HISDVD" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="HISDVD" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:HISDVD_SUN_1115_awb7sg.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCLO_HISDVD-reportiyb22js5.xml" time="0">
+            <db_obs execution="True" id="12.1" metadata="execution/12_HISDVD_1_12_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/HISDVD_1_12_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/12_HISDVD_RawDataObs_1_1_4_0.sqlite3" execution="True" id="12.4.0" metadata="execution/12_HISDVD_RawDataObs_1_1_4_0_columns.xml" name="hisdvd_sun_1115_awb7sg.fic" number="1" source="execution/12_HISDVD_RawDataObs_1_1_4_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="INVAMO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/invamo.xml">
+      <option id="13" name="INVAMO" number="1" prog_name="NEWPORT_ETASTK_INVAMO" time="69" title="">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="23.46"/>
+          <Metric name="ram" value="204"/>
+        </Metrics>
+        <step number="1" time="69">
+          <actions time="67">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="INVAMO" type="input" value="19/05/17"/>
+            <field_input name="FICHIER_TRAME_SLO" option="INVAMO" type="input" value="1"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVAMO" type="skipped" value=""/>
+            <field_input name="CHOIX" option="INVAMO" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVAMO" type="input" value="N"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="INVAMO" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="INVAMO" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="INVAMO" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVAMO" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:INVAMO_SUN_1115_1wbgj7.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETASTK_INVAMO-reportg21b4piv.xml" time="2">
+            <db_obs execution="True" id="13.1" metadata="execution/13_INVAMO_1_13_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/INVAMO_1_13_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/13_INVAMO_RawDataObs_1_1_7_0.sqlite3" execution="True" id="13.7.0" metadata="execution/13_INVAMO_RawDataObs_1_1_7_0_columns.xml" name="invamo_sun_1115_1wbgj7.fic" number="2" source="execution/13_INVAMO_RawDataObs_1_1_7_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_comptable" value="29/12/17"/>
+    <execution name="Calendrier de valorisation" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/calpor.xml">
+      <option id="14" name="CALPOR" number="1" prog_name="NEWPORT_GESTAB_CALPOR" time="1" title="Consultation du calendrier de valorisation">
+        <Informations>
+          <Information name="revision" value="287742"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.19"/>
+          <Metric name="ram" value="204"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="date_comptable" name="DATE_DEBUT" option="CALPOR" type="input" value="29/12/17"/>
+            <field_input memory="date_comptable" name="DATE_FIN" option="CALPOR" type="input" value="29/12/17"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET" option="CALPOR" type="input" value="453046"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET" option="CALPOR" type="input" value="453039"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET" option="CALPOR" type="input" value="453040"/>
+            <field_input name="SLO_OBJET" option="CALPOR" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="CALPOR" type="input" value="+"/>
+            <field_input label="OK O/N" last_input="True" name="OK" option="CALPOR" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:CALPOR_SUN_1115_fclil6.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTAB_CALPOR-report5yzbf4de.xml" time="0">
+            <raw_data_obs db_source="execution/14_CALPOR_RawDataObs_1_1_9_0.sqlite3" execution="True" id="14.9.0" metadata="execution/14_CALPOR_RawDataObs_1_1_9_0_columns.xml" name="calpor_sun_1115_fclil6.fic" number="2" source="execution/14_CALPOR_RawDataObs_1_1_9_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="30/01/16"/>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <execution name="GLIVVL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/glivvl.xml">
+      <option id="15" name="GLIVVL" number="1" prog_name="NEWPORT_GESCPT_GLIVVL" time="129" title="">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="47.47"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="128">
+          <actions time="128">
+            <field_input memory="code_trame" name="SLO_OBJET" option="GLIVVL" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="GLIVVL" type="input" value="FIN"/>
+            <field_input name="CHOIX_ETAT" option="GLIVVL" type="input" value="S"/>
+            <field_input name="CHOIX_DEVISE" option="GLIVVL" type="input" value="G"/>
+            <field_input name="SLO_OBJET1" option="GLIVVL" type="input" value="EUR"/>
+            <field_input name="SLO_OBJET1" option="GLIVVL" type="input" value="FIN"/>
+            <field_input memory="date_veille" name="DATE_DEBUT" option="GLIVVL" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN" option="GLIVVL" type="input" value="31/01/16"/>
+            <field_input name="MOUVEMENT_NUL" option="GLIVVL" type="input" value="N"/>
+            <field_input name="TYPE_ECRITURE" option="GLIVVL" type="input" value="N"/>
+            <field_input name="SLO_OBJET2" option="GLIVVL" type="input" value="1"/>
+            <field_input name="SLO_OBJET2" option="GLIVVL" type="input" value="3"/>
+            <field_input name="SLO_OBJET2" option="GLIVVL" type="input" value="4"/>
+            <field_input name="SLO_OBJET2" option="GLIVVL" type="input" value="5"/>
+            <field_input name="SLO_OBJET2" option="GLIVVL" type="input" value="FIN"/>
+            <field_input name="CATEGORIE_VALEUR" option="GLIVVL" type="input" value="VMOB"/>
+            <field_input name="SLO_OBJET3" option="GLIVVL" type="input" value="ALL"/>
+            <field_input name="CATEGORIE_VALEUR" option="GLIVVL" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="GLIVVL" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="GLIVVL" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:GLIVVL_SUN_1115_7btagt.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCPT_GLIVVL-report5sjd0f8s.xml" time="0">
+            <db_obs execution="True" id="15.1" metadata="execution/15_GLIVVL_1_15_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/GLIVVL_1_15_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/15_GLIVVL_RawDataObs_1_1_11_0.sqlite3" execution="True" id="15.11.0" metadata="execution/15_GLIVVL_RawDataObs_1_1_11_0_columns.xml" name="glivvl_sun_1115_7btagt.fic" number="2" source="execution/15_GLIVVL_RawDataObs_1_1_11_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="01/01/17"/>
+    <set_variable name="date_travail" value="02/01/17"/>
+    <execution name="JUSCOM" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/juscom.xml">
+      <option id="16" name="JUSCOM" number="1" prog_name="NEWPORT_GESOPC_JUSCOM" time="5" title="">
+        <Informations>
+          <Information name="revision" value="287680"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="1.03"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="5">
+          <actions time="5">
+            <field_input memory="date_veille" name="DATE_DEBUT" option="JUSCOM" type="input" value="01/01/17">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN" option="JUSCOM" type="input" value="02/01/17"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="JUSCOM" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="JUSCOM" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSCOM" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSCOM" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSCOM_SUN_1115_gsd7kv.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESOPC_JUSCOM-report4ee39r8l.xml" time="0">
+            <db_obs execution="True" id="16.1" metadata="execution/16_JUSCOM_1_16_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/JUSCOM_1_16_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/16_JUSCOM_RawDataObs_1_1_13_0.sqlite3" execution="True" id="16.13.0" metadata="execution/16_JUSCOM_RawDataObs_1_1_13_0_columns.xml" name="juscom_sun_1115_gsd7kv.fic" number="2" source="execution/16_JUSCOM_RawDataObs_1_1_13_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="30/01/16"/>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <execution name="JUSINT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/jusint.xml">
+      <option id="17" name="JUSINT" number="1" prog_name="NEWPORT_GESTRE_JUSINT" time="65" title="">
+        <Informations>
+          <Information name="revision" value="285137"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="7.59"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="65">
+          <actions time="65">
+            <field_input memory="date_veille" name="DATE_DEBUT" option="JUSINT" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN" option="JUSINT" type="input" value="31/01/16"/>
+            <field_input memory="code_trame" name="SLO_OBJET_L1" option="JUSINT" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET_L1" option="JUSINT" type="input" value="FIN"/>
+            <field_input name="SLO_OBJET_L2" option="JUSINT" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSINT" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSINT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSINT_SUN_1115_p7sbg1.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRE_JUSINT-report1jzi002s.xml" time="0">
+            <db_obs execution="True" id="17.1" metadata="execution/17_JUSINT_1_17_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/JUSINT_1_17_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/17_JUSINT_RawDataObs_1_1_15_0.sqlite3" execution="True" id="17.15.0" metadata="execution/17_JUSINT_RawDataObs_1_1_15_0_columns.xml" name="jusint_sun_1115_p7sbg1.fic" number="2" source="execution/17_JUSINT_RawDataObs_1_1_15_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="JUSRAT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/jusrat.xml">
+      <option id="18" name="JUSRAT" number="1" prog_name="NEWPORT_GESRAT_JUSRAT" time="5" title="">
+        <Informations>
+          <Information name="revision" value="279038"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="1.28"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="4">
+            <field_input name="CHOIX_VL" option="JUSRAT" type="input" value="1">
+              <area content="Derniere VL Connue"/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN_STR" option="JUSRAT" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="code_trame" name="CODE_PORTEFEUILLE" option="JUSRAT" type="input" value="*FICRP"/>
+            <field_input name="CODE_PORTEFEUILLE" option="JUSRAT" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="JUSRAT" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="JUSRAT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:JUSRAT_SUN_1115_3ic6x6.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESRAT_JUSRAT-report5keutlwm.xml" time="0">
+            <db_obs execution="True" id="18.1" metadata="execution/18_JUSRAT_1_18_query_part_00001.sqlite3" nb_inst="3" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/JUSRAT_1_18_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/18_JUSRAT_RawDataObs_1_1_17_0.sqlite3" execution="True" id="18.17.0" metadata="execution/18_JUSRAT_RawDataObs_1_1_17_0_columns.xml" name="jusrat_sun_1115_3ic6x6.fic" number="2" source="execution/18_JUSRAT_RawDataObs_1_1_17_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="LISCOU" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/liscou.xml">
+      <option id="19" name="LISCOU" number="1" prog_name="NEWPORT_GESCOU_LISCOU" time="4" title="">
+        <Informations>
+          <Information name="revision" value="282175"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.35"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="3">
+            <field_input name="REPONSE_1" option="LISCOU" type="input" value="P"/>
+            <field_input memory="date_veille" name="DATE_1" option="LISCOU" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_2" option="LISCOU" type="input" value="31/01/16"/>
+            <field_input name="SLO_OBJET" option="LISCOU" type="input" value="100001"/>
+            <field_input name="SLO_OBJET" option="LISCOU" type="input" value="450001"/>
+            <field_input name="SLO_OBJET" option="LISCOU" type="input" value="453001"/>
+            <field_input name="SLO_OBJET" option="LISCOU" type="input" value="920081"/>
+            <field_input name="SLO_OBJET" option="LISCOU" type="input" value="FIN"/>
+            <field_input name="REPONSE_3" option="LISCOU" type="skipped" value=""/>
+            <field_input name="REPONSE_4" option="LISCOU" type="input" value="VMOB"/>
+            <field_input name="SLO_OBJET2" option="LISCOU" type="input" value="ALL"/>
+            <field_input label="Format" name="TYPE_FIC_SLO" option="LISCOU" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISCOU" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISCOU_SUN_1115_f3l6c9.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_LISCOU-report1wx_k2er.xml" time="1">
+            <db_obs execution="True" id="19.1" metadata="execution/19_LISCOU_1_19_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/LISCOU_1_19_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/19_LISCOU_RawDataObs_1_1_19_0.sqlite3" execution="True" id="19.19.0" metadata="execution/19_LISCOU_RawDataObs_1_1_19_0_columns.xml" name="liscou_sun_1115_f3l6c9.fic" number="2" source="execution/19_LISCOU_RawDataObs_1_1_19_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="Consultation des actifs reserves" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lacthdg.xml">
+      <option id="20" name="LACTHDG" number="1" prog_name="NEWPORT_GESHDG_LACTHDG" time="3" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.41"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="3">
+            <field_input memory="liste_fund_fund" name="SLO_OBJET" option="LACTHDG" type="input" value="453051"/>
+            <field_input memory="liste_fund_fund" name="SLO_OBJET" option="LACTHDG" type="input" value="453017"/>
+            <field_input memory="liste_fund_fund" name="SLO_OBJET" option="LACTHDG" type="input" value="453031"/>
+            <field_input name="SLO_OBJET" option="LACTHDG" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="LACTHDG" type="input" value="+"/>
+            <field_input label="OK O/N" last_input="True" name="OK" option="LACTHDG" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LACTHD_SUN_1115_m5mkbq.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESHDG_LACTHDG-report9eg9zn1m.xml" time="0">
+            <raw_data_obs db_source="execution/20_LACTHDG_RawDataObs_1_1_21_0.sqlite3" execution="True" id="20.21.0" metadata="execution/20_LACTHDG_RawDataObs_1_1_21_0_columns.xml" name="lacthd_sun_1115_m5mkbq.fic" number="2" source="execution/20_LACTHDG_RawDataObs_1_1_21_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="lisfrais" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lisfrais.xml">
+      <option id="21" name="LISFRAIS" number="1" prog_name="NEWPORT_GESOPC_LISFRAIS" time="3" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.65"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="code_trame" name="SLO_OBJET" option="LISFRAIS" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="LISFRAIS" type="input" value="fin"/>
+            <field_input name="TYPE_FIC_SLO" option="LISFRAIS" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISFRAIS" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISFRA_SUN_1115_yhmqnj.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESOPC_LISFRAIS-report74wx9f4e.xml" time="0">
+            <raw_data_obs db_source="execution/21_LISFRAIS_RawDataObs_1_1_23_0.sqlite3" execution="True" id="21.23.0" metadata="execution/21_LISFRAIS_RawDataObs_1_1_23_0_columns.xml" name="lisfra_sun_1115_yhmqnj.fic" number="2" source="execution/21_LISFRAIS_RawDataObs_1_1_23_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="LISINT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lisint.xml">
+      <option id="22" name="LISINT" number="1" prog_name="NEWPORT_GESINT_LISINT" time="1" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.12"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input label="" name="CHOIX_A" option="LISINT" type="input" value="TOUT"/>
+            <field_input label="" name="SLO_OBJET" option="LISINT" type="input" value="INTERM"/>
+            <field_input label="" name="SLO_OBJET" option="LISINT" type="input" value="FIN"/>
+            <field_input label="" name="SLO_OBJET1" option="LISINT" type="input" value="065"/>
+            <field_input label="" name="SLO_OBJET1" option="LISINT" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="LISINT" type="input" value="+"/>
+            <field_input label="OK O/N" last_input="True" name="OK" option="LISINT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISINT_SUN_1115_rfuxi6.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESINT_LISINT-reportbll8yous.xml" time="0">
+            <raw_data_obs db_source="execution/22_LISINT_RawDataObs_1_1_25_0.sqlite3" execution="True" id="22.25.0" metadata="execution/22_LISINT_RawDataObs_1_1_25_0_columns.xml" name="lisint_sun_1115_rfuxi6.fic" number="2" source="execution/22_LISINT_RawDataObs_1_1_25_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="LISPOR" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lispor.xml">
+      <option id="23" name="LISPOR" number="1" prog_name="NEWPORT_GESPOR_LISPOR" time="2" title="">
+        <Informations>
+          <Information name="revision" value="286043"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.17"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="CHOIX" option="LISPOR" type="input" value="COUR"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="LISPOR" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="LISPOR" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="LISPOR" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISPOR" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISPOR_SUN_1115_58q1gj.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/LISPOR-report5wfvzc8b.xml" time="0">
+            <db_obs execution="True" id="23.1" metadata="execution/23_LISPOR_1_23_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/LISPOR_1_23_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/23_LISPOR_RawDataObs_1_1_27_0.sqlite3" execution="True" id="23.27.0" metadata="execution/23_LISPOR_RawDataObs_1_1_27_0_columns.xml" name="lispor_sun_1115_58q1gj.fic" number="2" source="execution/23_LISPOR_RawDataObs_1_1_27_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_pret" value="PIA-00000150"/>
+    <execution name="majprt" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/majprt-sgssfic.xml">
+      <option id="24" name="MAJPRT" number="1" prog_name="NEWPORT_GESPRT_MAJPRT" time="4" title="">
+        <Informations>
+          <Information name="revision" value="288894"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.30"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="3">
+            <field_input memory="code_pret" name="CODE_VALEUR" option="MAJPRT" type="input" value="PIA-00000150"/>
+            <field_input name="LIB_PRET_C_ECRAN" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="FLAG_AUTORISATION" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="OK2" option="MAJPRT" type="input" value="O">
+              <msgbox message="Etes vous sur de vouloir recalculer l'echancier après avoir modifié des caractéristiques (O/N)?" value="YES"/>
+            </field_input>
+            <field_input name="CODE_VALEUR_SOURCE" option="MAJVAE" type="action" value="@DOWN@"/>
+            <field_input name="OK" option="MAJVAE" type="input" value="O">
+              <area content="Calcul de l'echeancier a la validation"/>
+            </field_input>
+            <field_input name="CODE_VALEUR" option="MAJPRT" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPRT_MAJPRT-corenox6u2a1.xml" time="1">
+            <db_obs execution="True" id="24.1" metadata="execution/24_MAJPRT_1_24_query_part_00001.sqlite3" nb_inst="42" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJPRT_1_24_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_pret" value="PIA-00000151"/>
+    <execution name="majprt" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/majprt-sgssfic.xml">
+      <option id="25" name="MAJPRT" number="1" prog_name="NEWPORT_GESPRT_MAJPRT" time="2" title="">
+        <Informations>
+          <Information name="revision" value="288894"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.24"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_pret" name="CODE_VALEUR" option="MAJPRT" type="input" value="PIA-00000151"/>
+            <field_input name="LIB_PRET_C_ECRAN" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="FLAG_AUTORISATION" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="OK2" option="MAJPRT" type="input" value="O">
+              <msgbox message="Etes vous sur de vouloir recalculer l'echancier après avoir modifié des caractéristiques (O/N)?" value="YES"/>
+            </field_input>
+            <field_input name="CODE_VALEUR_SOURCE" option="MAJVAE" type="action" value="@DOWN@"/>
+            <field_input name="OK" option="MAJVAE" type="input" value="O">
+              <area content="Calcul de l'echeancier a la validation"/>
+            </field_input>
+            <field_input name="CODE_VALEUR" option="MAJPRT" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPRT_MAJPRT-corenox6u2a1.xml" time="1">
+            <db_obs execution="True" id="25.1" metadata="execution/25_MAJPRT_1_25_query_part_00001.sqlite3" nb_inst="42" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJPRT_1_25_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_pret" value="PIA-00000152"/>
+    <execution name="majprt" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/majprt-sgssfic.xml">
+      <option id="26" name="MAJPRT" number="1" prog_name="NEWPORT_GESPRT_MAJPRT" time="2" title="">
+        <Informations>
+          <Information name="revision" value="288894"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.27"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_pret" name="CODE_VALEUR" option="MAJPRT" type="input" value="PIA-00000152"/>
+            <field_input name="LIB_PRET_C_ECRAN" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="FLAG_AUTORISATION" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="OK2" option="MAJPRT" type="input" value="O">
+              <msgbox message="Etes vous sur de vouloir recalculer l'echancier après avoir modifié des caractéristiques (O/N)?" value="YES"/>
+            </field_input>
+            <field_input name="CODE_VALEUR_SOURCE" option="MAJVAE" type="action" value="@DOWN@"/>
+            <field_input name="OK" option="MAJVAE" type="input" value="O">
+              <area content="Calcul de l'echeancier a la validation"/>
+            </field_input>
+            <field_input name="CODE_VALEUR" option="MAJPRT" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPRT_MAJPRT-corenox6u2a1.xml" time="1">
+            <db_obs execution="True" id="26.1" metadata="execution/26_MAJPRT_1_26_query_part_00001.sqlite3" nb_inst="42" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJPRT_1_26_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_pret" value="PIA-00000153"/>
+    <execution name="majprt" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/majprt-sgssfic.xml">
+      <option id="27" name="MAJPRT" number="1" prog_name="NEWPORT_GESPRT_MAJPRT" time="1" title="">
+        <Informations>
+          <Information name="revision" value="288894"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.28"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="code_pret" name="CODE_VALEUR" option="MAJPRT" type="input" value="PIA-00000153"/>
+            <field_input name="LIB_PRET_C_ECRAN" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="FLAG_AUTORISATION" option="MAJPRT" type="action" value="@DOWN@"/>
+            <field_input name="OK2" option="MAJPRT" type="input" value="O">
+              <msgbox message="Etes vous sur de vouloir recalculer l'echancier après avoir modifié des caractéristiques (O/N)?" value="YES"/>
+            </field_input>
+            <field_input name="CODE_VALEUR_SOURCE" option="MAJVAE" type="action" value="@DOWN@"/>
+            <field_input name="OK" option="MAJVAE" type="input" value="O">
+              <area content="Calcul de l'echeancier a la validation"/>
+            </field_input>
+            <field_input name="CODE_VALEUR" option="MAJPRT" type="action" value="@QUIT@"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPRT_MAJPRT-corenox6u2a1.xml" time="0">
+            <db_obs execution="True" id="27.1" metadata="execution/27_MAJPRT_1_27_query_part_00001.sqlite3" nb_inst="42" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJPRT_1_27_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="LISPRT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lisprt.xml">
+      <option id="28" name="LISPRT" number="1" prog_name="NEWPORT_GESPRT_LISPRT" time="1" title="">
+        <Informations>
+          <Information name="revision" value="278669"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.12"/>
+          <Metric name="ram" value="253"/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="LISPRT" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="SLO_OBJET" option="LISPRT" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="LISPRT" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISPRT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISPRT_SUN_1115_2bnjpq.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPRT_LISPRT-reportrz_16aud.xml" time="0">
+            <raw_data_obs db_source="execution/28_LISPRT_RawDataObs_1_1_28_0.sqlite3" execution="True" id="28.28.0" metadata="execution/28_LISPRT_RawDataObs_1_1_28_0_columns.xml" name="lisprt_sun_1115_2bnjpq.fic" number="1" source="execution/28_LISPRT_RawDataObs_1_1_28_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="16/06/14"/>
+    <set_variable name="date_1" value="01/06/14"/>
+    <execution name="LISREM" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lisrem.xml">
+      <option id="29" name="LISREM" number="1" prog_name="NEWPORT_GESREM_LISREM" time="79" title="">
+        <Informations>
+          <Information name="revision" value="276930"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="58.83"/>
+          <Metric name="ram" value="283"/>
+        </Metrics>
+        <step number="1" time="78">
+          <actions time="78">
+            <field_input label="" name="QUESTION_1" option="LISREM" type="input" value="O"/>
+            <field_input label="" memory="date_travail" name="QUESTION_1BIS" option="LISREM" type="input" value="16/06/14"/>
+            <field_input label="" name="SLO_OBJET" option="LISREM" type="input" value="MPLIV"/>
+            <field_input label="" name="SLO_OBJET" option="LISREM" type="input" value="PPLIV"/>
+            <field_input label="" name="SLO_OBJET" option="LISREM" type="input" value="FIN"/>
+            <field_input label="" memory="code_trame" name="SLO_OBJET1" option="LISREM" type="input" value="*FICRP"/>
+            <field_input label="" name="SLO_OBJET1" option="LISREM" type="input" value="FIN"/>
+            <field_input label="" name="SLO_OBJET2" option="LISREM" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="LISREM" type="input" value="+"/>
+            <field_input label="OK O/N" name="OK" option="LISREM" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISREM_SUN_1115_5tv1b4.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="O"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESREM_LISREM-reportv1k8us9n.xml" time="0">
+            <raw_data_obs db_source="execution/29_LISREM_RawDataObs_1_1_31_0.sqlite3" execution="True" id="29.31.0" metadata="execution/29_LISREM_RawDataObs_1_1_31_0_columns.xml" name="lisrem_sun_1115_5tv1b4.fic" number="2" source="execution/29_LISREM_RawDataObs_1_1_31_0.fic"/>
+          </observations>
+        </step>
+      </option>
+      <option id="30" name="LISREM" number="2" prog_name="NEWPORT_GESREM_LISREM" time="146" title="">
+        <Informations>
+          <Information name="revision" value="276930"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="88.97"/>
+          <Metric name="ram" value="594"/>
+        </Metrics>
+        <step number="1" time="145">
+          <actions time="145">
+            <field_input label="" name="QUESTION_1" option="LISREM" type="input" value="N"/>
+            <field_input label="" name="SLO_OBJET" option="LISREM" type="input" value="MPLIV"/>
+            <field_input label="" name="SLO_OBJET" option="LISREM" type="input" value="PPLIV"/>
+            <field_input label="" name="SLO_OBJET" option="LISREM" type="input" value="FIN"/>
+            <field_input label="" name="SLO_OBJET2" option="LISREM" type="input" value="ALL"/>
+            <field_input label="" name="TYPE_DATE" option="LISREM" type="input" value="EFFT"/>
+            <field_input label="" memory="date_1" name="DATE_DEBUT_TXT" option="LISREM" type="input" value="01/06/14">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input label="" memory="date_travail" name="DATE_FIN_TXT" option="LISREM" type="input" value="16/06/14"/>
+            <field_input name="TYPE_FIC_SLO" option="LISREM" type="input" value="+"/>
+            <field_input label="OK O/N" name="OK" option="LISREM" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISREM_SUN_1115_rco6ir.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="O"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESREM_LISREM-reportv1k8us9n.xml" time="0">
+            <raw_data_obs db_source="execution/30_LISREM_RawDataObs_1_1_31_0.sqlite3" execution="True" id="30.31.0" metadata="execution/29_LISREM_RawDataObs_1_1_31_0_columns.xml" name="lisrem_sun_1115_rco6ir.fic" number="2" source="execution/30_LISREM_RawDataObs_1_1_31_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <set_variable name="date_1" value="01/01/16"/>
+    <execution name="LISSTK" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lisstk.xml">
+      <option id="31" name="LISSTK" number="1" prog_name="NEWPORT_GESPOR_LISSTK" time="2" title="">
+        <Informations>
+          <Information name="revision" value="280675"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.12"/>
+          <Metric name="ram" value="594"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="2">
+            <field_input memory="code_trame" name="SLO_OBJET" option="LISSTK" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="LISSTK" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="LISSTK" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISSTK" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISSTK_SUN_1115_2vzjmt.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_LISSTK-reportabshi5wa.xml" time="0">
+            <db_obs execution="True" id="31.1" metadata="execution/31_LISSTK_1_31_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/LISSTK_1_31_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/31_LISSTK_RawDataObs_1_1_33_0.sqlite3" execution="True" id="31.33.0" metadata="execution/31_LISSTK_RawDataObs_1_1_33_0_columns.xml" name="lisstk_sun_1115_2vzjmt.fic" number="2" source="execution/31_LISSTK_RawDataObs_1_1_33_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="LISVPP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/lisvpp-V2.xml">
+      <option id="32" name="LISVPP" number="1" prog_name="NEWPORT_GESPOR_LISVPP" time="15" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="5.98"/>
+          <Metric name="ram" value="594"/>
+        </Metrics>
+        <step number="1" time="14">
+          <actions time="14">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="LISVPP" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="SENS_LECTURE" option="LISVPP" type="input" value="I"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="LISVPP" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="LISVPP" type="input" value="FIN"/>
+            <field_input name="CHOIX_B" option="LISVPP" type="input" value="ALL">
+              <msgbox message="Valeur incorrecte" value="OK"/>
+            </field_input>
+            <field_input name="CHOIX_B" option="LISVPP" type="input" value="VMOB"/>
+            <field_input name="SLO_OBJET1" option="LISVPP" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="LISVPP" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="LISVPP" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:LISVPP_SUN_1115_rrci0i.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_LISVPP-reportfzw0y763.xml" time="0">
+            <raw_data_obs db_source="execution/32_LISVPP_RawDataObs_1_1_35_0.sqlite3" execution="True" id="32.35.0" metadata="execution/32_LISVPP_RawDataObs_1_1_35_0_columns.xml" name="lisvpp_sun_1115_rrci0i.fic" number="2" source="execution/32_LISVPP_RawDataObs_1_1_35_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="PARFEN" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/parfen.xml">
+      <option id="33" name="PARFEN" number="1" prog_name="NEWPORT_GESOPC_PARFEN" time="4" title="">
+        <Informations>
+          <Information name="revision" value="280968"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.52"/>
+          <Metric name="ram" value="594"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="4">
+            <field_input name="CHOIX" option="PARFEN" type="skipped" value="V"/>
+            <field_input memory="date_travail" name="DATE_STOCK_ECR" option="PARFEN" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="CHOIX1" option="PARFEN" type="skipped" value="O"/>
+            <field_input name="SLO_OBJET" option="PARFEN" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="PARFEN" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="PARFEN" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:PARFEN_SUN_1115_gwe1ka.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESOPC_PARFEN-report_z39uy4k.xml" time="0">
+            <db_obs execution="True" id="33.1" metadata="execution/33_PARFEN_1_33_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/PARFEN_1_33_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/33_PARFEN_RawDataObs_1_1_37_0.sqlite3" execution="True" id="33.37.0" metadata="execution/33_PARFEN_RawDataObs_1_1_37_0_columns.xml" name="parfen_sun_1115_gwe1ka.fic" number="2" source="execution/33_PARFEN_RawDataObs_1_1_37_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="PASSIF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/passif.xml">
+      <option id="34" name="PASSIF" number="1" prog_name="NEWPORT_GESOPC_PASSIF" time="12" title="">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="3.90"/>
+          <Metric name="ram" value="594"/>
+        </Metrics>
+        <step number="1" time="12">
+          <actions time="9">
+            <field_input memory="code_trame" name="SLO_OBJET" option="PASSIF" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="PASSIF" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="PASSIF" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="PASSIF" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:PASSIF_SUN_1115_pkgpm7.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESOPC_PASSIF-reportv5tjbx88.xml" time="3">
+            <db_obs execution="True" id="34.1" metadata="execution/34_PASSIF_1_34_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/PASSIF_1_34_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/34_PASSIF_RawDataObs_1_1_39_0.sqlite3" execution="True" id="34.39.0" metadata="execution/34_PASSIF_RawDataObs_1_1_39_0_columns.xml" name="passif_sun_1115_pkgpm7.fic" number="2" source="execution/34_PASSIF_RawDataObs_1_1_39_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="pluval2" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/pluval2.xml">
+      <option id="35" name="PLUVAL2" number="1" prog_name="NEWPORT_ETASTK_PLUVAL2" time="6" title="">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.89"/>
+          <Metric name="ram" value="594"/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="6">
+            <field_input memory="date_veille" name="DATE_DEBUT" option="PLUVAL2" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN" option="PLUVAL2" type="input" value="31/01/16"/>
+            <field_input name="FICHIER_TRAME_SLO" option="PLUVAL2" type="input" value="1"/>
+            <field_input name="EXTOURNE" option="PLUVAL2" type="skipped" value="N"/>
+            <field_input name="CHOIX_TYPE_DATE" option="PLUVAL2" type="input" value="E"/>
+            <field_input name="DEMANDE_TT_TMP" option="PLUVAL2" type="input" value="O"/>
+            <field_input name="CHOIX_DEVISE" option="PLUVAL2" type="input" value="P"/>
+            <field_input name="REPARTITION_PMV_TMP" option="PLUVAL2" type="input" value="1"/>
+            <field_input memory="code_trame" name="CODE_PORTEFEUILLE" option="PLUVAL2" type="input" value="*FICRP"/>
+            <field_input name="CODE_PORTEFEUILLE" option="PLUVAL2" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="PLUVAL2" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="PLUVAL2" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:PLUVAL_SUN_1115_5b5sy1.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETASTK_PLUVAL2-reportanthix6e.xml" time="0">
+            <db_obs execution="True" id="35.1" metadata="execution/35_PLUVAL2_1_35_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/PLUVAL2_1_35_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/35_PLUVAL2_RawDataObs_1_1_41_0.sqlite3" execution="True" id="35.41.0" metadata="execution/35_PLUVAL2_RawDataObs_1_1_41_0_columns.xml" name="pluval_sun_1115_5b5sy1.fic" number="2" source="execution/35_PLUVAL2_RawDataObs_1_1_41_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="PREREV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/prerev.xml">
+      <option id="36" name="PREREV" number="1" prog_name="NEWPORT_NEWREV_PREREV" time="597" title="">
+        <Informations>
+          <Information name="revision" value="288890"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="241.68"/>
+          <Metric name="ram" value="693"/>
+        </Metrics>
+        <step number="1" time="597">
+          <actions time="597">
+            <field_input name="FICHIER_TRAME_SLO" option="PREREV" type="input" value="1"/>
+            <field_input memory="date_veille" name="DATE_DEBUT" option="PREREV" type="input" value="30/01/16"/>
+            <field_input memory="date_travail" name="DATE_FIN" option="PREREV" type="input" value="31/01/16"/>
+            <field_input name="CHOIX_DEV" option="PREREV" type="input" value="P"/>
+            <field_input name="DEVISE_TOTALISATION" option="PREREV" type="input" value="EUR"/>
+            <field_input memory="code_trame" name="SLO_OBJET_L1" option="PREREV" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET_L1" option="PREREV" type="input" value="fin"/>
+            <field_input name="CHOIX_3" option="PREREV" type="skipped" value="T"/>
+            <field_input name="TYPE_FIC_SLO" option="PREREV" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="PREREV" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:PREREV_SUN_1115_i6u3u6.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_NEWREV_PREREV-reportc3ulpc9e.xml" time="0">
+            <db_obs execution="True" id="36.1" metadata="execution/36_PREREV_1_36_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/PREREV_1_36_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="36.2" metadata="execution/36_PREREV_1_36_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/PREREV_1_36_1_part_00002.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/36_PREREV_RawDataObs_1_1_43_0.sqlite3" execution="True" id="36.43.0" metadata="execution/36_PREREV_RawDataObs_1_1_43_0_columns.xml" name="prerev_sun_1115_i6u3u6.fic" number="2" source="execution/36_PREREV_RawDataObs_1_1_43_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="19/05/17"/>
+    <execution name="Justificatif Interet " source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/proint.xml">
+      <option id="37" name="PROINT" number="1" prog_name="NEWPORT_ETASTK_PROINT" time="14" title="">
+        <Informations>
+          <Information name="revision" value="285919"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="7.54"/>
+          <Metric name="ram" value="675"/>
+        </Metrics>
+        <step number="1" time="14">
+          <actions time="14">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="PROINT" type="input" value="19/05/17"/>
+            <field_input name="FICHIER_TRAME_SLO" option="PROINT" type="input" value="1"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="PROINT" type="skipped" value=""/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="PROINT" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="PROINT" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="PROINT" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="PROINT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:PROINT_SUN_1115_ne2web.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="O"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_ETASTK_PROINT-reportnz83u28i.xml" time="0">
+            <raw_data_obs db_source="execution/37_PROINT_RawDataObs_1_1_45_0.sqlite3" execution="True" id="37.45.0" metadata="execution/37_PROINT_RawDataObs_1_1_45_0_columns.xml" name="proint_sun_1115_ne2web.fic" number="2" source="execution/37_PROINT_RawDataObs_1_1_45_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="RESVAL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/resval.xml">
+      <option id="38" name="RESVAL" number="1" prog_name="NEWPORT_GESOPC_RESVAL" time="2" title="">
+        <Informations>
+          <Information name="revision" value="277364"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.27"/>
+          <Metric name="ram" value="675"/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_FIN" option="RESVAL" type="input" value="19/05/17"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="RESVAL" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="RESVAL" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="RESVAL" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="RESVAL" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:RESVAL_SUN_1115_zs1yjz.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESOPC_RESVAL-report_4ru6p6w.xml" time="1">
+            <db_obs execution="True" id="38.1" metadata="execution/38_RESVAL_1_38_query_part_00001.sqlite3" nb_inst="4" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/RESVAL_1_38_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/38_RESVAL_RawDataObs_1_1_47_0.sqlite3" execution="True" id="38.47.0" metadata="execution/38_RESVAL_RawDataObs_1_1_47_0_columns.xml" name="resval_sun_1115_zs1yjz.fic" number="2" source="execution/38_RESVAL_RawDataObs_1_1_47_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <execution name="BALAVL" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/balavl.xml">
+      <option id="39" name="BALAVL" number="1" prog_name="NEWPORT_GESCPT_BALAVL" time="252" title="">
+        <Informations>
+          <Information name="revision" value="289003"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="116.48"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="251">
+          <actions time="251">
+            <field_input memory="code_trame" name="SLO_OBJET" option="BALAVL" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="BALAVL" type="input" value="FIN"/>
+            <field_input name="CHOIX_1" option="BALAVL" type="skipped" value="S"/>
+            <field_input name="CHOIX_DEVISE" option="BALAVL" type="skipped" value="G"/>
+            <field_input name="SLO_OBJET1" option="BALAVL" type="input" value="EUR"/>
+            <field_input name="SLO_OBJET1" option="BALAVL" type="input" value="FIN"/>
+            <field_input memory="date_veille" name="DATE_DEBUT" option="BALAVL" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_travail" name="DATE_FIN" option="BALAVL" type="input" value="31/01/16"/>
+            <field_input name="CHOIX_3" option="BALAVL" type="input" value="N"/>
+            <field_input name="SLO_OBJET2" option="BALAVL" type="input" value="3"/>
+            <field_input name="SLO_OBJET2" option="BALAVL" type="input" value="4"/>
+            <field_input name="SLO_OBJET2" option="BALAVL" type="input" value="5"/>
+            <field_input name="SLO_OBJET2" option="BALAVL" type="input" value="FIN"/>
+            <field_input name="CATEGORIE_VALEUR" option="BALAVL" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="BALAVL" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="BALAVL" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:BALAVL_SUN_1115_0frfi0.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCPT_BALAVL-reportvlg9hlk8.xml" time="0">
+            <db_obs execution="True" id="39.1" metadata="execution/39_BALAVL_1_39_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/BALAVL_1_39_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/39_BALAVL_RawDataObs_1_1_49_0.sqlite3" execution="True" id="39.49.0" metadata="execution/39_BALAVL_RawDataObs_1_1_49_0_columns.xml" name="balavl_sun_1115_0frfi0.fic" number="2" source="execution/39_BALAVL_RawDataObs_1_1_49_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_comptable" value="31/01/16"/>
+    <set_variable name="type_etat" value="S"/>
+    <execution name="EDITION BALANS DES COMPTES" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/BALANS.xml">
+      <option id="40" name="BALANS" number="1" prog_name="NEWPORT_GESCPT_BALANS" time="7" title="Edition balance des comptes">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="2.62"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="7">
+          <actions time="5">
+            <field_input memory="date_veille" name="DATE_DEBUT" option="BALANS" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_comptable" name="DATE_FIN" option="BALANS" type="input" value="31/01/16"/>
+            <field_input memory="type_etat" name="CHOIX_2" option="BALANS" type="input" value="S"/>
+            <field_input memory="code_trame" name="SLO_OBJET_L1" option="BALANS" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET_L1" option="BALANS" type="input" value="FIN"/>
+            <field_input name="CHOIX_3" option="BALANS" type="input" value="N"/>
+            <field_input name="SLO_OBJET_L2" option="BALANS" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="BALANS" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="BALANS" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:BALANS_SUN_1115_fufuf3.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/BALANS-report0ljklalv.xml" time="2">
+            <db_obs execution="True" id="40.1" metadata="execution/40_BALANS_1_40_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/BALANS_1_40_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/40_BALANS_RawDataObs_1_1_51_0.sqlite3" execution="True" id="40.51.0" metadata="execution/40_BALANS_RawDataObs_1_1_51_0_columns.xml" name="balans_sun_1115_fufuf3.fic" number="2" source="execution/40_BALANS_RawDataObs_1_1_51_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_etat" value="C"/>
+    <execution name="EDITION BALANS DES COMPTES" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/BALANS.xml">
+      <option id="41" name="BALANS" number="1" prog_name="NEWPORT_GESCPT_BALANS" time="4" title="Edition balance des comptes">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="1.92"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="3">
+            <field_input memory="date_veille" name="DATE_DEBUT" option="BALANS" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_comptable" name="DATE_FIN" option="BALANS" type="input" value="31/01/16"/>
+            <field_input memory="type_etat" name="CHOIX_2" option="BALANS" type="input" value="C"/>
+            <field_input memory="code_trame" name="SLO_OBJET_L1" option="BALANS" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET_L1" option="BALANS" type="input" value="FIN"/>
+            <field_input name="CHOIX_3" option="BALANS" type="input" value="N"/>
+            <field_input name="SLO_OBJET_L2" option="BALANS" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="BALANS" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="BALANS" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:BALANS_SUN_1115_fo09ru.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/BALANS-report0ljklalv.xml" time="1">
+            <db_obs execution="True" id="41.1" metadata="execution/41_BALANS_1_41_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/BALANS_1_41_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/41_BALANS_RawDataObs_1_1_51_0.sqlite3" execution="True" id="41.51.0" metadata="execution/40_BALANS_RawDataObs_1_1_51_0_columns.xml" name="balans_sun_1115_fo09ru.fic" number="2" source="execution/41_BALANS_RawDataObs_1_1_51_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_etat" value="D"/>
+    <execution name="EDITION BALANS DES COMPTES" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/BALANS.xml">
+      <option id="42" name="BALANS" number="1" prog_name="NEWPORT_GESCPT_BALANS" time="5" title="Edition balance des comptes">
+        <Informations>
+          <Information name="revision" value="288981"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="2.54"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="4">
+          <actions time="4">
+            <field_input memory="date_veille" name="DATE_DEBUT" option="BALANS" type="input" value="30/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_comptable" name="DATE_FIN" option="BALANS" type="input" value="31/01/16"/>
+            <field_input memory="type_etat" name="CHOIX_2" option="BALANS" type="input" value="D"/>
+            <field_input memory="code_trame" name="SLO_OBJET_L1" option="BALANS" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET_L1" option="BALANS" type="input" value="FIN"/>
+            <field_input name="CHOIX_3" option="BALANS" type="input" value="N"/>
+            <field_input name="SLO_OBJET_L2" option="BALANS" type="input" value="ALL"/>
+            <field_input name="TYPE_FIC_SLO" option="BALANS" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="BALANS" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:BALANS_SUN_1115_2adsyq.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/BALANS-report0ljklalv.xml" time="0">
+            <db_obs execution="True" id="42.1" metadata="execution/42_BALANS_1_42_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/BALANS_1_42_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/42_BALANS_RawDataObs_1_1_51_0.sqlite3" execution="True" id="42.51.0" metadata="execution/40_BALANS_RawDataObs_1_1_51_0_columns.xml" name="balans_sun_1115_2adsyq.fic" number="2" source="execution/42_BALANS_RawDataObs_1_1_51_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <execution name="CRSDIF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/crsdif.xml">
+      <option id="43" name="CRSDIF" number="1" prog_name="NEWPORT_GESCOU_CRSDIF" time="13" title="">
+        <Informations>
+          <Information name="revision" value="288598"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="5.21"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="12">
+          <actions time="12">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="CRSDIF" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_veille" name="DATE_FIN" option="CRSDIF" type="input" value="30/01/16"/>
+            <field_input name="CHOIX" option="CRSDIF" type="input" value="N"/>
+            <field_input name="FICHIER_TRAME_SLO" option="CRSDIF" type="input" value="1"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="CRSDIF" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="CRSDIF" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="CRSDIF" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="CRSDIF" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:CRSDIF_SUN_1115_1zb15y.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_CRSDIF-report_y4x1oaq.xml" time="0">
+            <db_obs execution="True" id="43.1" metadata="execution/43_CRSDIF_1_43_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/CRSDIF_1_43_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/43_CRSDIF_RawDataObs_1_1_53_0.sqlite3" execution="True" id="43.53.0" metadata="execution/43_CRSDIF_RawDataObs_1_1_53_0_columns.xml" name="crsdif_sun_1115_1zb15y.fic" number="2" source="execution/43_CRSDIF_RawDataObs_1_1_53_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="18/05/17"/>
+    <set_variable name="date_travail" value="19/05/17"/>
+    <execution name="CTRINT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/ctrint-V1.xml">
+      <option id="44" name="CTRINT" number="1" prog_name="NEWPORT_GESAOP_CTRINT" time="6" title="">
+        <Informations>
+          <Information name="revision" value="282816"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="1.39"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="5">
+            <field_input memory="date_veille" name="DATE1_FRM" option="CTRINT" type="input" value="18/05/17"/>
+            <field_input memory="date_travail" name="DATE2_FRM" option="CTRINT" type="input" value="19/05/17"/>
+            <field_input name="SLO_OBJET" option="CTRINT" type="input" value="ALL"/>
+            <field_input name="SLO_OBJET1" option="CTRINT" type="input" value="OK"/>
+            <field_input name="SLO_OBJET1" option="CTRINT" type="input" value="FIN"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET2" option="CTRINT" type="input" value="453046"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET2" option="CTRINT" type="input" value="453039"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET2" option="CTRINT" type="input" value="453040"/>
+            <field_input name="SLO_OBJET2" option="CTRINT" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="CTRINT" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="CTRINT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:CTRINT_SUN_1115_hhet5b.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="O"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESAOP_CTRINT-reportsgo0_6ve.xml" time="1">
+            <db_obs execution="True" id="44.1" metadata="execution/44_CTRINT_1_44_query_part_00001.sqlite3" nb_inst="1" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/CTRINT_1_44_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/44_CTRINT_RawDataObs_1_1_55_0.sqlite3" execution="True" id="44.55.0" metadata="execution/44_CTRINT_RawDataObs_1_1_55_0_columns.xml" name="ctrint_sun_1115_hhet5b.fic" number="2" source="execution/44_CTRINT_RawDataObs_1_1_55_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_veille" value="30/01/16"/>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <execution name="DEFRAT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/DEFRAT.xml">
+      <option id="45" name="DEFRAT" number="1" prog_name="NEWPORT_GESRAT_DEFRAT" time="6" title="">
+        <Informations>
+          <Information name="revision" value="276098"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="0.11"/>
+          <Metric name="ram" value="662"/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="5">
+            <field_input name="CODE_RATIO" option="DEFRAT" type="input" value="COORD">
+              <area content="Ratio existant."/>
+            </field_input>
+            <field_input name="CHAMP_DANS_PORT" option="DEFRAT" type="skipped" value=""/>
+            <field_input name="LIBELLE_RATIO" option="DEFRAT" type="skipped" value="UCIT IV"/>
+            <field_input name="SLO_OBJET" option="DEFRAT" type="input" value="ACT10"/>
+            <field_input name="SLO_OBJET" option="DEFRAT" type="skipped" value="ACT10"/>
+            <field_input name="FLAG_SAISIE_LISTE_PTF" option="DEFRAT" type="skipped" value="P"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET1" option="DEFRAT" type="input" value="453046"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET1" option="DEFRAT" type="input" value="453039"/>
+            <field_input memory="liste_portefeuilles" name="SLO_OBJET1" option="DEFRAT" type="input" value="453040"/>
+            <field_input name="SLO_OBJET1" option="DEFRAT" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="DEFRAT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/DEFRAT-coreqvfrzn5k.xml" time="1">
+            <db_obs execution="True" id="45.1" metadata="execution/45_DEFRAT_1_45_query_part_00001.sqlite3" nb_inst="805" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DEFRAT_1_45_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="19/05/17"/>
+    <execution name="VERDIV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/verdiv.xml">
+      <option id="46" name="VERDIV" number="1" prog_name="NEWPORT_GESRAT_VERRAT" time="385" title="">
+        <Informations>
+          <Information name="revision" value="288804"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="337.05"/>
+          <Metric name="ram" value="716"/>
+        </Metrics>
+        <step number="1" time="385">
+          <actions time="371">
+            <field_input name="FICHIER_VALO" option="VERRAT" type="skipped" value=""/>
+            <field_input memory="date_travail" name="DATE_DEBUT" option="VERRAT" type="input" value="19/05/17">
+              <area content="Date superieure a la date de travail"/>
+            </field_input>
+            <field_input name="CODE_RATIO" option="VERRAT" type="input" value="COORD"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="VERRAT" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="VERRAT" type="skipped" value="FIN"/>
+            <field_input name="FLAG_EXCEPTIONS" option="VERRAT" type="skipped" value="N"/>
+            <field_input name="FLAG_EXCEPTIONS_REGLES" option="VERRAT" type="skipped" value="N"/>
+            <field_input name="FLAG_DETAIL_VALEURS" option="VERRAT" type="skipped" value="O"/>
+            <field_input name="TYPE_FIC_SLO" option="VERRAT" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="VERRAT" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:VERDIV_SUN_1115_pz5y1b.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VERDIV-reportj287r2_v.xml" time="14">
+            <db_obs execution="True" id="46.1" metadata="execution/46_VERDIV_1_46_query_part_00001.sqlite3" nb_inst="21723" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VERDIV_1_46_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/46_VERDIV_RawDataObs_1_1_57_0.sqlite3" execution="True" id="46.57.0" metadata="execution/46_VERDIV_RawDataObs_1_1_57_0_columns.xml" name="verdiv_sun_1115_pz5y1b.fic" number="2" source="execution/46_VERDIV_RawDataObs_1_1_57_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="31/01/16"/>
+    <set_variable name="date_effet" value="31/12/15"/>
+    <set_variable name="date_valeur" value="31/12/15"/>
+    <set_variable name="date_comptable" value="31/12/15"/>
+    <execution name="INVCLO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/invclo.xml">
+      <option id="47" name="INVCLO" number="1" prog_name="NEWPORT_ETASTK_HISINV" time="22" title="">
+        <Informations>
+          <Information name="revision" value="289011"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="11.82"/>
+          <Metric name="ram" value="726"/>
+        </Metrics>
+        <step number="1" time="22">
+          <actions time="21">
+            <field_input memory="date_comptable" name="DATE_DEBUT" option="HISINV" type="input" value="31/12/15"/>
+            <field_input name="FICHIER_TRAME_SLO" option="HISINV" type="skipped" value="1"/>
+            <field_input name="CHOIX" option="HISINV" type="skipped" value="P"/>
+            <field_input name="CHOIX2" option="HISINV" type="skipped" value="1"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="HISINV" type="input" value="*FICRP"/>
+            <field_input name="SLO_OBJET" option="HISINV" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="HISINV" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="HISINV" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:INVCLO_SUN_1115_o9ix9r.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/INVCLO-reporth9p4uno9.xml" time="1">
+            <db_obs execution="True" id="47.1" metadata="execution/47_INVCLO_1_47_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/INVCLO_1_47_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/47_INVCLO_RawDataObs_1_1_59_0.sqlite3" execution="True" id="47.59.0" metadata="execution/47_INVCLO_RawDataObs_1_1_59_0_columns.xml" name="invclo_sun_1115_o9ix9r.fic" number="2" source="execution/47_INVCLO_RawDataObs_1_1_59_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_trame" value="453040"/>
+    <execution name="SIMINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/siminv.xml">
+      <option id="48" name="SIMINV" number="1" prog_name="NEWPORT_ETASTK_HISINV" time="243" title="">
+        <Informations>
+          <Information name="revision" value="289011"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="63.75"/>
+          <Metric name="ram" value="742"/>
+        </Metrics>
+        <step number="1" time="243">
+          <actions time="240">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="HISINV" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="DATE_FIN" option="HISINV" type="skipped" value="31/01/2016"/>
+            <field_input name="FICHIER_TRAME_SLO" option="HISINV" type="skipped" value="1"/>
+            <field_input name="CHOIX" option="HISINV" type="skipped" value="P"/>
+            <field_input name="CHOIX2" option="HISINV" type="skipped" value="1"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="HISINV" type="input" value="453040"/>
+            <field_input name="SLO_OBJET" option="HISINV" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="HISINV" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="HISINV" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:SIMINV_SUN_1115_9ux963.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+            <field_input last_input="True" name="OK" option="SAIFOR" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/SIMINV-reporth5kmagey.xml" time="3">
+            <db_obs execution="True" id="48.1" metadata="execution/48_SIMINV_1_48_query_part_00001.sqlite3" nb_inst="95" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SIMINV_1_48_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/48_SIMINV_RawDataObs_1_1_61_0.sqlite3" execution="True" id="48.61.0" metadata="execution/48_SIMINV_RawDataObs_1_1_61_0_columns.xml" name="siminv_sun_1115_9ux963.fic" number="2" source="execution/48_SIMINV_RawDataObs_1_1_61_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_trame" value="453039"/>
+    <execution name="SIMINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/CBG/Scripts/Specifiques/SGSS/template-nxia-sgss-v40_GP4/Ecrans/siminv.xml">
+      <option id="49" name="SIMINV" number="1" prog_name="NEWPORT_ETASTK_HISINV" time="768" title="">
+        <Informations>
+          <Information name="revision" value="289011"/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value="260.43"/>
+          <Metric name="ram" value="973"/>
+        </Metrics>
+        <step number="1" time="767">
+          <actions time="764">
+            <field_input memory="date_travail" name="DATE_DEBUT" option="HISINV" type="input" value="31/01/16">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input name="DATE_FIN" option="HISINV" type="skipped" value="31/01/2016"/>
+            <field_input name="FICHIER_TRAME_SLO" option="HISINV" type="skipped" value="1"/>
+            <field_input name="CHOIX" option="HISINV" type="skipped" value="P"/>
+            <field_input name="CHOIX2" option="HISINV" type="skipped" value="1"/>
+            <field_input memory="code_trame" name="SLO_OBJET" option="HISINV" type="input" value="453039"/>
+            <field_input name="SLO_OBJET" option="HISINV" type="input" value="FIN"/>
+            <field_input name="TYPE_FIC_SLO" option="HISINV" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="HISINV" type="input" value="O"/>
+            <field_input memory="type_edition" name="FICHIER_SLO" option="FICSUP" type="input" value="GPFETAT:SIMINV_SUN_1115_9llrr0.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+            <field_input last_input="True" name="OK" option="SAIFOR" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/SIMINV-reporth5kmagey.xml" time="3">
+            <db_obs execution="True" id="49.1" metadata="execution/49_SIMINV_1_49_query_part_00001.sqlite3" nb_inst="354" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SIMINV_1_49_1_part_00001.sqlite3"/>
+            </db_obs>
+            <raw_data_obs db_source="execution/49_SIMINV_RawDataObs_1_1_61_0.sqlite3" execution="True" id="49.61.0" metadata="execution/48_SIMINV_RawDataObs_1_1_61_0_columns.xml" name="siminv_sun_1115_9llrr0.fic" number="2" source="execution/49_SIMINV_RawDataObs_1_1_61_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+  </execution>

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pdf
+*.xlsx
+*.csv
+xml_content_qrcode.png  # Ignore spécifiquement les QR codes générés
+venv/

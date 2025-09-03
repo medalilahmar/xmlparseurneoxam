@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-07-30_22-31-08" execution="tst" file="replay/scenario.xml" gp3tester_version="3.7.7" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MHO/TestAPI/version_finalle/GP4/script/API-TRAITEMENT.xml" time_execution="0,00" title="API " version="GP4">
+    <execution_label>GP4-20250730-210830</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="SUN" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <set_variable name="date_debut" value="2024/01/01"/>
+    <set_variable name="date_fin" value="2024/03/31"/>
+    <set_variable name="etat" value="D"/>
+    <set_variable name="ptf" value="I00005"/>
+    <set_variable name="movementNull" value="N"/>
+    <set_variable name="compte_ou_calsse" value="ALL"/>
+    <execution name="BALANS" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MHO/TestAPI/version_finalle/GP4/API/BALANS.xml">
+      <api id="1" name="getSimplifiedBalanceAccounting" report="CSV" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+      <api id="2" name="getSimplifiedBalanceAccounting" report="PDF" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+    </execution>
+    <set_variable name="date_vl" value="2016/06/15"/>
+    <set_variable name="fichier_trame" value="713"/>
+    <set_variable name="devide_gestion" value="P"/>
+    <set_variable name="configuration" value="1"/>
+    <set_variable name="ptf" value="I10616"/>
+    <execution name="HISINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MHO/TestAPI/version_finalle/GP4/API/HISINV.xml">
+      <api id="3" name="getDetailedNavReport" report="PDF" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+      <api id="4" name="getDetailedNavReport" report="CSV" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+    </execution>
+    <set_variable name="marginDate" value="2015/06/30"/>
+    <set_variable name="navDate" value="2015/06/30"/>
+    <set_variable name="accountingdate" value="2015/06/30"/>
+    <set_variable name="fundCodeList" value="I00005"/>
+    <set_variable name="instrumentType" value="@SKIP@"/>
+    <set_variable name="assetCodeList" value="@SKIP@"/>
+    <execution name="Appmar" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MHO/TestAPI/version_finalle/GP4/API/Appmar.xml">
+      <api id="5" name="getMargCallProcessing" report="PDF" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+    </execution>
+    <set_variable name="dateEndPeriod" value="2024/03/31"/>
+    <set_variable name="fundAccCodeList" value="I00005"/>
+    <execution name="CALPER" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/MHO/TestAPI/version_finalle/GP4/API/CALPER.xml">
+      <api id="6" name="getPeriodicAccBalaCalc" report="PDF" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+      <api id="7" name="getPeriodicAccBalaCalc" report="CSV" service="APIFacade" time="0">
+        <step number="1" time="0">
+          <actions time="0"/>
+          <observations number="1" time="0"/>
+        </step>
+        <message text="ord() expected string of length 1, but int found"/>
+      </api>
+    </execution>
+  </execution>

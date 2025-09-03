@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-08-14_16-02-05" execution="tst" file="replay/scenario.xml" gp3tester_version="3.7.7" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Scripts/GROUPAMA-NEW.xml" time_execution="396,78" title="Scenario GROUPAMA 2023 " version="GP4">
+    <execution_label>GP4-20250813-202032</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="NX" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <set_variable name="code_environnement" value="GRPAMA"/>
+    <set_variable name="date_travail" value="28-02-2023"/>
+    <execution name="Mise a jour de l environnement de travail" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/SAIENV.xml">
+      <option id="1" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="GRPAMA"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="input" value="28-02-2023"/>
+            <field_input name="DATE_ANOMALIE_FRM" option="SAIENV" type="skipped" value="28/02/2023"/>
+            <field_input name="OKC" option="SAIENV" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESENV_SAIENV-core6sbihf3d.xml" time="1">
+            <db_obs execution="True" id="1.1" metadata="execution/1_SAIENV_1_1_query_part_00001.sqlite3" nb_inst="33" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/SAIENV_1_1_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_menu" value="1"/>
+    <set_variable name="code_trame" value="ICNXW"/>
+    <set_variable name="libelle_trame" value="Trame IC groupama "/>
+    <set_variable name="code_trame_reference" value="@SKIP@"/>
+    <set_variable name="code_portefeuille" value="14005"/>
+    <set_variable append="true" name="code_portefeuille" value="I1075"/>
+    <set_variable append="true" name="code_portefeuille" value="ROM01"/>
+    <set_variable append="true" name="code_portefeuille" value="V1400"/>
+    <set_variable append="true" name="code_portefeuille" value="I3100"/>
+    <set_variable append="true" name="code_portefeuille" value="I1999"/>
+    <set_variable name="ok_liste" value="O"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="TRAME" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/TRAME.xml">
+      <option id="2" name="TRAME" number="1" prog_name="NEWPORT_GESPOR_TRAME" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="1">
+            <field_input memory="choix_menu" name="CHOIX_MENU" option="TRAME" type="input" value="1"/>
+            <field_input memory="code_trame" name="CODE_TRAME" option="TRAME" type="input" value="ICNXW"/>
+            <field_input memory="libelle_trame" name="LIBELLE_TRAME_L" option="TRAME" type="input" value="Trame IC groupama"/>
+            <field_input memory="code_trame_reference" name="CODE_TRAME_REFERENCE" option="TRAME" type="skipped" value=""/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="14005"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="I1075"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="ROM01"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="V1400"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="I3100"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="I1999"/>
+            <field_input name="SLO_OBJET" option="TRAME" type="input" value="FIN"/>
+            <field_input last_input="True" memory="ok_ecran" name="OK" option="TRAME" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_TRAME-corevc7kei7t.xml" time="2">
+            <db_obs execution="True" id="2.1" metadata="execution/2_TRAME_1_2_query_part_00001.sqlite3" nb_inst="21" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/TRAME_1_2_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_menu" value="1"/>
+    <set_variable name="code_trame" value="ICNXX"/>
+    <set_variable name="libelle_trame" value="Trame IC groupama "/>
+    <set_variable name="code_trame_reference" value="@SKIP@"/>
+    <set_variable name="code_portefeuille" value="FI100"/>
+    <set_variable name="ok_liste" value="O"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="TRAME" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/TRAME.xml">
+      <option id="3" name="TRAME" number="1" prog_name="NEWPORT_GESPOR_TRAME" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="choix_menu" name="CHOIX_MENU" option="TRAME" type="input" value="1"/>
+            <field_input memory="code_trame" name="CODE_TRAME" option="TRAME" type="input" value="ICNXX"/>
+            <field_input memory="libelle_trame" name="LIBELLE_TRAME_L" option="TRAME" type="input" value="Trame IC groupama"/>
+            <field_input memory="code_trame_reference" name="CODE_TRAME_REFERENCE" option="TRAME" type="skipped" value=""/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="FI100"/>
+            <field_input name="SLO_OBJET" option="TRAME" type="input" value="FIN"/>
+            <field_input last_input="True" memory="ok_ecran" name="OK" option="TRAME" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_TRAME-corevc7kei7t.xml" time="1">
+            <db_obs execution="True" id="3.1" metadata="execution/3_TRAME_1_3_query_part_00001.sqlite3" nb_inst="12" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/TRAME_1_3_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_menu" value="1"/>
+    <set_variable name="code_trame" value="ICNXY"/>
+    <set_variable name="libelle_trame" value="Trame IC groupama "/>
+    <set_variable name="code_trame_reference" value="@SKIP@"/>
+    <set_variable name="code_portefeuille" value="V1005"/>
+    <set_variable name="ok_liste" value="O"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="TRAME" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/TRAME.xml">
+      <option id="4" name="TRAME" number="1" prog_name="NEWPORT_GESPOR_TRAME" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="choix_menu" name="CHOIX_MENU" option="TRAME" type="input" value="1"/>
+            <field_input memory="code_trame" name="CODE_TRAME" option="TRAME" type="input" value="ICNXY"/>
+            <field_input memory="libelle_trame" name="LIBELLE_TRAME_L" option="TRAME" type="input" value="Trame IC groupama"/>
+            <field_input memory="code_trame_reference" name="CODE_TRAME_REFERENCE" option="TRAME" type="skipped" value=""/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="V1005"/>
+            <field_input name="SLO_OBJET" option="TRAME" type="input" value="FIN"/>
+            <field_input last_input="True" memory="ok_ecran" name="OK" option="TRAME" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_TRAME-corevc7kei7t.xml" time="0">
+            <db_obs execution="True" id="4.1" metadata="execution/4_TRAME_1_4_query_part_00001.sqlite3" nb_inst="12" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/TRAME_1_4_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="choix_menu" value="1"/>
+    <set_variable name="code_trame" value="ICNXZ"/>
+    <set_variable name="libelle_trame" value="Trame IC groupama "/>
+    <set_variable name="code_trame_reference" value="@SKIP@"/>
+    <set_variable name="code_portefeuille" value="14005"/>
+    <set_variable append="true" name="code_portefeuille" value="V1005"/>
+    <set_variable append="true" name="code_portefeuille" value="FI100"/>
+    <set_variable append="true" name="code_portefeuille" value="I1075"/>
+    <set_variable append="true" name="code_portefeuille" value="I3100"/>
+    <set_variable append="true" name="code_portefeuille" value="ROM01"/>
+    <set_variable append="true" name="code_portefeuille" value="V1400"/>
+    <set_variable append="true" name="code_portefeuille" value="I1999"/>
+    <set_variable name="ok_liste" value="O"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="TRAME" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/TRAME.xml">
+      <option id="5" name="TRAME" number="1" prog_name="NEWPORT_GESPOR_TRAME" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="choix_menu" name="CHOIX_MENU" option="TRAME" type="input" value="1"/>
+            <field_input memory="code_trame" name="CODE_TRAME" option="TRAME" type="input" value="ICNXZ"/>
+            <field_input memory="libelle_trame" name="LIBELLE_TRAME_L" option="TRAME" type="input" value="Trame IC groupama"/>
+            <field_input memory="code_trame_reference" name="CODE_TRAME_REFERENCE" option="TRAME" type="skipped" value=""/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="14005"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="V1005"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="FI100"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="I1075"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="I3100"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="ROM01"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="V1400"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="TRAME" type="input" value="I1999"/>
+            <field_input name="SLO_OBJET" option="TRAME" type="input" value="FIN"/>
+            <field_input last_input="True" memory="ok_ecran" name="OK" option="TRAME" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_TRAME-corevc7kei7t.xml" time="1">
+            <db_obs execution="True" id="5.1" metadata="execution/5_TRAME_1_5_query_part_00001.sqlite3" nb_inst="26" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/TRAME_1_5_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28-02-23"/>
+    <set_variable name="type_stocks" value="AD1"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <set_variable name="Ok_ecran" value="O"/>
+    <execution name="DVLINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/DVLINV.xml">
+      <option id="6" name="DVLINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28-02-23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD1"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN"/>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <msgbox message="Voulez vous vraiment detruire ces donnees (O/N) ?" value="YES"/>
+              <area content="Destruction effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="1">
+            <db_obs execution="True" id="6.1" metadata="execution/6_DVLINV_1_6_query_part_00001.sqlite3" nb_inst="31" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DVLINV_1_6_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stocks" value="AD3"/>
+    <execution name="DVLINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/DVLINV.xml">
+      <option id="7" name="DVLINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28-02-23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD3"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN"/>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <msgbox message="Voulez vous vraiment detruire ces donnees (O/N) ?" value="YES"/>
+              <area content="Destruction effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="1">
+            <db_obs execution="True" id="7.1" metadata="execution/7_DVLINV_1_7_query_part_00001.sqlite3" nb_inst="31" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DVLINV_1_7_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stocks" value="AD4"/>
+    <execution name="DVLINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/DVLINV.xml">
+      <option id="8" name="DVLINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28-02-23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD4"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN">
+              <area content="Ce Portefeuille n a pas ete valorise a cette date"/>
+            </field_input>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <msgbox message="Voulez vous vraiment detruire ces donnees (O/N) ?" value="YES"/>
+              <area content="Destruction effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="1">
+            <db_obs execution="True" id="8.1" metadata="execution/8_DVLINV_1_8_query_part_00001.sqlite3" nb_inst="25" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DVLINV_1_8_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stocks" value="AD9"/>
+    <execution name="DVLINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/DVLINV.xml">
+      <option id="9" name="DVLINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28-02-23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD9"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN">
+              <area content="Ce Portefeuille n a pas ete valorise a cette date"/>
+            </field_input>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <msgbox message="Voulez vous vraiment detruire ces donnees (O/N) ?" value="YES"/>
+              <area content="Destruction effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="1">
+            <db_obs execution="True" id="9.1" metadata="execution/9_DVLINV_1_9_query_part_00001.sqlite3" nb_inst="28" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DVLINV_1_9_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="valorisation_partielle" value="N"/>
+    <set_variable name="code_portefeuille" value="*ICNXW"/>
+    <set_variable name="cristalisation_latent" value="N"/>
+    <set_variable name="cristalisation_valeur" value="N"/>
+    <set_variable name="type_vl_source" value="@SKIP@"/>
+    <set_variable name="date_valo_source" value="28.02.2023"/>
+    <set_variable name="date_interet" value="28.02.2023"/>
+    <set_variable name="date_de_cours" value="28.02.2023"/>
+    <set_variable name="type_stock" value="ALL"/>
+    <set_variable name="remonte_hist" value="C"/>
+    <set_variable name="type_trans_lat" value="@SKIP@"/>
+    <set_variable name="calcul_prix" value="@SKIP@"/>
+    <set_variable name="categorie_valeur" value="@SKIP@"/>
+    <set_variable name="code_valeur" value="@SKIP@"/>
+    <execution name="VALEXP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALEXP.xml">
+      <option id="10" name="VALEXP" number="1" prog_name="NEWPORT_GESOPC_VALALL" time="12423" title="Valorisation des portefeuilles">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="12422">
+          <actions time="12375">
+            <field_input memory="date_travail" name="DATE_VALO_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALALL" type="input" value="VLOFF"/>
+            <field_input memory="valorisation_partielle" name="VALORISATION_PARTIELLE" option="VALALL" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALALL" type="input" value="*ICNXW"/>
+            <field_input name="SLO_OBJET" option="VALALL" type="input" value="FIN">
+              <area content="Chargement des dates du calendrier du portefeuille 14005  type valorisation VLOFF"/>
+            </field_input>
+            <field_input memory="cristalisation_latent" name="CRISTALISATION_LATENT" option="VALALL" type="input" value="N"/>
+            <field_input memory="cristalisation_valeur" name="CRISTALLISATION_CARAC" option="VALALL" type="input" value="N"/>
+            <field_input memory="date_interet" name="DATE_INTERETS_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_TITRE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_CHANGE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_stock" name="SLO_OBJET1" option="VALALL" type="input" value="ALL"/>
+            <field_input memory="remonte_hist" name="REMONTEE_HISTORIQUE" option="VALALL" type="input" value="C">
+              <area content="Remontee historique en date comptable"/>
+            </field_input>
+            <field_input memory="type_trans_lat" name="SLO_OBJET2" option="VALALL" type="skipped" value=""/>
+            <field_input name="CALCUL_FRAIS" option="VALALL" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="VALALL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALEXP-coreyfrtqdur.xml" time="47">
+            <db_obs execution="True" id="10.1" metadata="execution/10_VALEXP_1_10_query_part_00001.sqlite3" nb_inst="79982" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_10_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="10.2" metadata="execution/10_VALEXP_1_10_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_10_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="valorisation_partielle" value="N"/>
+    <set_variable name="code_portefeuille" value="*ICNXX"/>
+    <set_variable name="cristalisation_latent" value="N"/>
+    <set_variable name="cristalisation_valeur" value="N"/>
+    <set_variable name="type_vl_source" value="@SKIP@"/>
+    <set_variable name="date_valo_source" value="28.02.2023"/>
+    <set_variable name="date_interet" value="28.02.2023"/>
+    <set_variable name="date_de_cours" value="28.02.2023"/>
+    <set_variable name="type_stock" value="ALL"/>
+    <set_variable name="remonte_hist" value="C"/>
+    <set_variable name="type_trans_lat" value="@SKIP@"/>
+    <set_variable name="calcul_prix" value="@SKIP@"/>
+    <set_variable name="categorie_valeur" value="@SKIP@"/>
+    <set_variable name="code_valeur" value="@SKIP@"/>
+    <execution name="VALEXP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALEXP.xml">
+      <option id="11" name="VALEXP" number="1" prog_name="NEWPORT_GESOPC_VALALL" time="3356" title="Valorisation des portefeuilles">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="3356">
+          <actions time="3292">
+            <field_input memory="date_travail" name="DATE_VALO_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALALL" type="input" value="VLOFF"/>
+            <field_input memory="valorisation_partielle" name="VALORISATION_PARTIELLE" option="VALALL" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALALL" type="input" value="*ICNXX"/>
+            <field_input name="SLO_OBJET" option="VALALL" type="input" value="FIN">
+              <area content="Chargement des dates du calendrier du portefeuille FI100  type valorisation VLOFF"/>
+            </field_input>
+            <field_input memory="cristalisation_latent" name="CRISTALISATION_LATENT" option="VALALL" type="input" value="N"/>
+            <field_input memory="cristalisation_valeur" name="CRISTALLISATION_CARAC" option="VALALL" type="input" value="N"/>
+            <field_input memory="date_interet" name="DATE_INTERETS_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_TITRE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_CHANGE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_stock" name="SLO_OBJET1" option="VALALL" type="input" value="ALL"/>
+            <field_input memory="remonte_hist" name="REMONTEE_HISTORIQUE" option="VALALL" type="input" value="C">
+              <area content="Remontee historique en date comptable"/>
+            </field_input>
+            <field_input memory="type_trans_lat" name="SLO_OBJET2" option="VALALL" type="skipped" value=""/>
+            <field_input name="CALCUL_FRAIS" option="VALALL" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="VALALL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALEXP-coreyfrtqdur.xml" time="64">
+            <db_obs execution="True" id="11.1" metadata="execution/11_VALEXP_1_11_query_part_00001.sqlite3" nb_inst="121594" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_11_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="11.2" metadata="execution/11_VALEXP_1_11_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_11_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="valorisation_partielle" value="N"/>
+    <set_variable name="code_portefeuille" value="*ICNXY"/>
+    <set_variable name="cristalisation_latent" value="N"/>
+    <set_variable name="cristalisation_valeur" value="N"/>
+    <set_variable name="type_vl_source" value="@SKIP@"/>
+    <set_variable name="date_valo_source" value="28.02.2023"/>
+    <set_variable name="date_interet" value="28.02.2023"/>
+    <set_variable name="date_de_cours" value="28.02.2023"/>
+    <set_variable name="type_stock" value="AD1"/>
+    <set_variable name="remonte_hist" value="C"/>
+    <set_variable name="type_trans_lat" value="@SKIP@"/>
+    <set_variable name="calcul_prix" value="@SKIP@"/>
+    <set_variable name="categorie_valeur" value="@SKIP@"/>
+    <set_variable name="code_valeur" value="@SKIP@"/>
+    <execution name="VALEXP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALEXP.xml">
+      <option id="12" name="VALEXP" number="1" prog_name="NEWPORT_GESOPC_VALALL" time="999" title="Valorisation des portefeuilles">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="998">
+          <actions time="971">
+            <field_input memory="date_travail" name="DATE_VALO_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALALL" type="input" value="VLOFF"/>
+            <field_input memory="valorisation_partielle" name="VALORISATION_PARTIELLE" option="VALALL" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALALL" type="input" value="*ICNXY"/>
+            <field_input name="SLO_OBJET" option="VALALL" type="input" value="FIN">
+              <area content="Chargement des dates du calendrier du portefeuille V1005  type valorisation VLOFF"/>
+            </field_input>
+            <field_input memory="cristalisation_latent" name="CRISTALISATION_LATENT" option="VALALL" type="input" value="N"/>
+            <field_input memory="cristalisation_valeur" name="CRISTALLISATION_CARAC" option="VALALL" type="input" value="N"/>
+            <field_input memory="date_interet" name="DATE_INTERETS_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_TITRE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_CHANGE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_stock" name="SLO_OBJET1" option="VALALL" type="input" value="AD1"/>
+            <field_input name="SLO_OBJET1" option="VALALL" type="input" value="FIN"/>
+            <field_input memory="remonte_hist" name="REMONTEE_HISTORIQUE" option="VALALL" type="input" value="C">
+              <area content="Remontee historique en date comptable"/>
+            </field_input>
+            <field_input memory="type_trans_lat" name="SLO_OBJET2" option="VALALL" type="skipped" value=""/>
+            <field_input name="CALCUL_FRAIS" option="VALALL" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="VALALL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALEXP-coreyfrtqdur.xml" time="27">
+            <db_obs execution="True" id="12.1" metadata="execution/12_VALEXP_1_12_query_part_00001.sqlite3" nb_inst="46661" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_12_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="12.2" metadata="execution/12_VALEXP_1_12_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_12_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="valorisation_partielle" value="N"/>
+    <set_variable name="code_portefeuille" value="*ICNXY"/>
+    <set_variable name="cristalisation_latent" value="N"/>
+    <set_variable name="cristalisation_valeur" value="N"/>
+    <set_variable name="type_vl_source" value="@SKIP@"/>
+    <set_variable name="date_valo_source" value="28.02.2023"/>
+    <set_variable name="date_interet" value="28.02.2023"/>
+    <set_variable name="date_de_cours" value="28.02.2023"/>
+    <set_variable name="type_stock" value="AD3"/>
+    <set_variable name="remonte_hist" value="C"/>
+    <set_variable name="type_trans_lat" value="@SKIP@"/>
+    <set_variable name="calcul_prix" value="@SKIP@"/>
+    <set_variable name="categorie_valeur" value="@SKIP@"/>
+    <set_variable name="code_valeur" value="@SKIP@"/>
+    <execution name="VALEXP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALEXP.xml">
+      <option id="13" name="VALEXP" number="1" prog_name="NEWPORT_GESOPC_VALALL" time="1338" title="Valorisation des portefeuilles">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1336">
+          <actions time="1298">
+            <field_input memory="date_travail" name="DATE_VALO_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALALL" type="input" value="VLOFF"/>
+            <field_input memory="valorisation_partielle" name="VALORISATION_PARTIELLE" option="VALALL" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALALL" type="input" value="*ICNXY"/>
+            <field_input name="SLO_OBJET" option="VALALL" type="input" value="FIN">
+              <area content="Chargement des dates du calendrier du portefeuille V1005  type valorisation VLOFF"/>
+            </field_input>
+            <field_input memory="cristalisation_latent" name="CRISTALISATION_LATENT" option="VALALL" type="input" value="N"/>
+            <field_input memory="cristalisation_valeur" name="CRISTALLISATION_CARAC" option="VALALL" type="input" value="N"/>
+            <field_input memory="date_interet" name="DATE_INTERETS_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_TITRE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_CHANGE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_stock" name="SLO_OBJET1" option="VALALL" type="input" value="AD3"/>
+            <field_input name="SLO_OBJET1" option="VALALL" type="input" value="FIN"/>
+            <field_input memory="remonte_hist" name="REMONTEE_HISTORIQUE" option="VALALL" type="input" value="C">
+              <area content="Remontee historique en date comptable"/>
+            </field_input>
+            <field_input memory="type_trans_lat" name="SLO_OBJET2" option="VALALL" type="skipped" value=""/>
+            <field_input name="CALCUL_FRAIS" option="VALALL" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="VALALL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALEXP-coreyfrtqdur.xml" time="38">
+            <db_obs execution="True" id="13.1" metadata="execution/13_VALEXP_1_13_query_part_00001.sqlite3" nb_inst="65948" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_13_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="13.2" metadata="execution/13_VALEXP_1_13_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_13_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="valorisation_partielle" value="N"/>
+    <set_variable name="code_portefeuille" value="*ICNXY"/>
+    <set_variable name="cristalisation_latent" value="N"/>
+    <set_variable name="cristalisation_valeur" value="N"/>
+    <set_variable name="type_vl_source" value="@SKIP@"/>
+    <set_variable name="date_valo_source" value="28.02.2023"/>
+    <set_variable name="date_interet" value="28.02.2023"/>
+    <set_variable name="date_de_cours" value="28.02.2023"/>
+    <set_variable name="type_stock" value="AD4"/>
+    <set_variable name="remonte_hist" value="C"/>
+    <set_variable name="type_trans_lat" value="@SKIP@"/>
+    <set_variable name="calcul_prix" value="@SKIP@"/>
+    <set_variable name="categorie_valeur" value="@SKIP@"/>
+    <set_variable name="code_valeur" value="@SKIP@"/>
+    <execution name="VALEXP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALEXP.xml">
+      <option id="14" name="VALEXP" number="1" prog_name="NEWPORT_GESOPC_VALALL" time="655" title="Valorisation des portefeuilles">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="655">
+          <actions time="643">
+            <field_input memory="date_travail" name="DATE_VALO_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALALL" type="input" value="VLOFF"/>
+            <field_input memory="valorisation_partielle" name="VALORISATION_PARTIELLE" option="VALALL" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALALL" type="input" value="*ICNXY"/>
+            <field_input name="SLO_OBJET" option="VALALL" type="input" value="FIN">
+              <area content="Chargement des dates du calendrier du portefeuille V1005  type valorisation VLOFF"/>
+            </field_input>
+            <field_input memory="cristalisation_latent" name="CRISTALISATION_LATENT" option="VALALL" type="input" value="N"/>
+            <field_input memory="cristalisation_valeur" name="CRISTALLISATION_CARAC" option="VALALL" type="input" value="N"/>
+            <field_input memory="date_interet" name="DATE_INTERETS_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_TITRE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_CHANGE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_stock" name="SLO_OBJET1" option="VALALL" type="input" value="AD4"/>
+            <field_input name="SLO_OBJET1" option="VALALL" type="input" value="FIN"/>
+            <field_input memory="remonte_hist" name="REMONTEE_HISTORIQUE" option="VALALL" type="input" value="C">
+              <area content="Remontee historique en date comptable"/>
+            </field_input>
+            <field_input memory="type_trans_lat" name="SLO_OBJET2" option="VALALL" type="skipped" value=""/>
+            <field_input name="CALCUL_FRAIS" option="VALALL" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="VALALL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALEXP-coreyfrtqdur.xml" time="12">
+            <db_obs execution="True" id="14.1" metadata="execution/14_VALEXP_1_14_query_part_00001.sqlite3" nb_inst="16251" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_14_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="14.2" metadata="execution/14_VALEXP_1_14_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_14_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="valorisation_partielle" value="N"/>
+    <set_variable name="code_portefeuille" value="*ICNXY"/>
+    <set_variable name="cristalisation_latent" value="N"/>
+    <set_variable name="cristalisation_valeur" value="N"/>
+    <set_variable name="type_vl_source" value="@SKIP@"/>
+    <set_variable name="date_valo_source" value="28.02.2023"/>
+    <set_variable name="date_interet" value="28.02.2023"/>
+    <set_variable name="date_de_cours" value="28.02.2023"/>
+    <set_variable name="type_stock" value="AD9"/>
+    <set_variable name="remonte_hist" value="C"/>
+    <set_variable name="type_trans_lat" value="@SKIP@"/>
+    <set_variable name="calcul_prix" value="@SKIP@"/>
+    <set_variable name="categorie_valeur" value="@SKIP@"/>
+    <set_variable name="code_valeur" value="@SKIP@"/>
+    <execution name="VALEXP" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALEXP.xml">
+      <option id="15" name="VALEXP" number="1" prog_name="NEWPORT_GESOPC_VALALL" time="1868" title="Valorisation des portefeuilles">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1867">
+          <actions time="1828">
+            <field_input memory="date_travail" name="DATE_VALO_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALALL" type="input" value="VLOFF"/>
+            <field_input memory="valorisation_partielle" name="VALORISATION_PARTIELLE" option="VALALL" type="input" value="N"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALALL" type="input" value="*ICNXY"/>
+            <field_input name="SLO_OBJET" option="VALALL" type="input" value="FIN">
+              <area content="Chargement des dates du calendrier du portefeuille V1005  type valorisation VLOFF"/>
+            </field_input>
+            <field_input memory="cristalisation_latent" name="CRISTALISATION_LATENT" option="VALALL" type="input" value="N"/>
+            <field_input memory="cristalisation_valeur" name="CRISTALLISATION_CARAC" option="VALALL" type="input" value="N"/>
+            <field_input memory="date_interet" name="DATE_INTERETS_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_TITRE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="date_de_cours" name="DATE_COURS_CHANGE_SAISIE" option="VALALL" type="input" value="28.02.2023"/>
+            <field_input memory="type_stock" name="SLO_OBJET1" option="VALALL" type="input" value="AD9"/>
+            <field_input name="SLO_OBJET1" option="VALALL" type="input" value="FIN"/>
+            <field_input memory="remonte_hist" name="REMONTEE_HISTORIQUE" option="VALALL" type="input" value="C">
+              <area content="Remontee historique en date comptable"/>
+            </field_input>
+            <field_input memory="type_trans_lat" name="SLO_OBJET2" option="VALALL" type="skipped" value=""/>
+            <field_input name="CALCUL_FRAIS" option="VALALL" type="input" value="N"/>
+            <field_input last_input="True" name="OK" option="VALALL" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/VALEXP-coreyfrtqdur.xml" time="39">
+            <db_obs execution="True" id="15.1" metadata="execution/15_VALEXP_1_15_query_part_00001.sqlite3" nb_inst="72447" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_15_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="15.2" metadata="execution/15_VALEXP_1_15_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALEXP_1_15_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="type_trans_lat" value="LAT1"/>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <execution name="GÃ©nÃ©ration de la transaction du latent" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/MAJLAT.xml">
+      <option id="16" name="MAJLAT" number="1" prog_name="NEWPORT_GESTRA_MAJLAT" time="19" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="18">
+          <actions time="11">
+            <field_input memory="date_travail" name="DATE_1" option="MAJLAT" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL_ECR" option="MAJLAT" type="input" value="VLOFF"/>
+            <field_input memory="type_trans_lat" name="SLO_OBJET1" option="MAJLAT" type="input" value="LAT1"/>
+            <field_input name="SLO_OBJET1" option="MAJLAT" type="input" value="FIN"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="MAJLAT" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="MAJLAT" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="MAJLAT" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJLAT-core3mi93ixw.xml" time="7">
+            <db_obs execution="True" id="16.1" metadata="execution/16_MAJLAT_1_16_query_part_00001.sqlite3" nb_inst="170" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJLAT_1_16_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="type_trans_lat" value="LAT9"/>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <execution name="GÃ©nÃ©ration de la transaction du latent" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/MAJLAT.xml">
+      <option id="17" name="MAJLAT" number="1" prog_name="NEWPORT_GESTRA_MAJLAT" time="7" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="7">
+          <actions time="3">
+            <field_input memory="date_travail" name="DATE_1" option="MAJLAT" type="input" value="28.02.2023"/>
+            <field_input memory="type_vl" name="TYPE_VL_ECR" option="MAJLAT" type="input" value="VLOFF"/>
+            <field_input memory="type_trans_lat" name="SLO_OBJET1" option="MAJLAT" type="input" value="LAT9"/>
+            <field_input name="SLO_OBJET1" option="MAJLAT" type="input" value="FIN"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="MAJLAT" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="MAJLAT" type="input" value="FIN"/>
+            <field_input last_input="True" name="OK" option="MAJLAT" type="input" value="O"/>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJLAT-core3mi93ixw.xml" time="4">
+            <db_obs execution="True" id="17.1" metadata="execution/17_MAJLAT_1_17_query_part_00001.sqlite3" nb_inst="153" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJLAT_1_17_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <execution name="GÃ©nÃ©ration des Ã©critures comptables" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/GENECR.xml">
+      <option id="18" name="GENECR" number="1" prog_name="NEWPORT_GESCPT_GENECR" time="7" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="5">
+            <field_input memory="code_portefeuille" name="SLOB_OBJET" option="GENECR" type="input" value="*ICNXZ"/>
+            <field_input name="SLOB_OBJET" option="GENECR" type="input" value="FIN"/>
+            <field_input memory="date_travail" name="DATE_COMPTA_MAX_ECRAN" option="GENECR" type="input" value="28.02.2023"/>
+            <field_input name="MAJANO_INF_OU_PAS_ECRAN" option="GENECR" type="skipped" value="N"/>
+            <field_input name="FLAG_REPORT" option="GENECR" type="input" value="O"/>
+            <field_input name="TYPE_FIC_SLO" option="GENECR" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="GENECR" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:GENECR_NX_1115_006i9c.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="1">
+            <report_obs execution="True" file="execution/18_GENECR_ReportObs_1_1_2_0.txt" id="18.2.0" metadata="execution/18_GENECR_ReportObs_1_1_2_0_line.xml" name="genecr_nx_1115_006i9c.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="date_travail" value="28/02/23"/>
+    <set_variable name="CODE_COMPTABILITES" value=""/>
+    <set_variable name="flag_simlas" value=""/>
+    <set_variable name="type_trans_lat" value=""/>
+    <execution name="CALBAD" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/CALBAD.xml">
+      <option id="19" name="CALBAD" number="1" prog_name="NEWPORT_GESCPT_CALBAD" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="0">
+          <actions time="0">
+            <field_input memory="type_vl" name="CHOIX_TYPE" option="CALBAD" type="input" value="VLOFF"/>
+            <field_input memory="date_travail" name="DATE_FIN" option="CALBAD" type="input" value="28/02/23"/>
+            <field_input memory="CODE_COMPTABILITES" name="SLO_OBJET" option="CALBAD" type="input" value=""/>
+            <field_input name="SLO_OBJET" option="CALBAD" type="input" value="FIN">
+              <area content="La liste est vide"/>
+            </field_input>
+            <field_input name="SLO_OBJET" option="CALBAD" type="input" value="">
+              <message code="" text="warning: no data for the current field..." type="ERFT"/>
+            </field_input>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28/02/23"/>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <execution name="RAPPRI" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/RAPPRI.xml">
+      <option id="20" name="RAPPRI" number="1" prog_name="NEWPORT_CACEIS_RAPPRI" time="33" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="33">
+          <actions time="33">
+            <field_input name="CHOIX_VL" option="RAPPRI" type="input" value="1"/>
+            <field_input memory="date_travail" name="DATE_FIN" option="RAPPRI" type="input" value="28/02/23"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="RAPPRI" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="RAPPRI" type="input" value="FIN"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="RAPPRI" type="input" value="VLOFF"/>
+            <field_input name="SLO_OBJET1" option="RAPPRI" type="input" value="AD1"/>
+            <field_input name="SLO_OBJET1" option="RAPPRI" type="input" value="FIN"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="EUR"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="USD"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="GBP"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="FIN"/>
+            <field_input name="FLAG_ETAT_SYN_DET" option="RAPPRI" type="skipped" value="1"/>
+            <field_input name="FLAG_PORT_EN_ERREUR" option="RAPPRI" type="skipped" value="N"/>
+            <field_input name="TYPE_FIC_SLO" option="RAPPRI" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="RAPPRI" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:RAPPRI_NX_1115_7v5bq2.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+      <option id="21" name="RAPPRI" number="2" prog_name="NEWPORT_CACEIS_RAPPRI" time="19" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="18">
+          <actions time="18">
+            <field_input name="CHOIX_VL" option="RAPPRI" type="input" value="1"/>
+            <field_input memory="date_travail" name="DATE_FIN" option="RAPPRI" type="input" value="28/02/23"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="RAPPRI" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="RAPPRI" type="input" value="FIN"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="RAPPRI" type="input" value="VLOFF"/>
+            <field_input name="SLO_OBJET1" option="RAPPRI" type="input" value="AD1"/>
+            <field_input name="SLO_OBJET1" option="RAPPRI" type="input" value="FIN"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="EUR"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="USD"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="GBP"/>
+            <field_input name="SLO_OBJET2" option="RAPPRI" type="input" value="FIN"/>
+            <field_input name="FLAG_ETAT_SYN_DET" option="RAPPRI" type="skipped" value="1"/>
+            <field_input name="FLAG_PORT_EN_ERREUR" option="RAPPRI" type="skipped" value="N"/>
+            <field_input name="TYPE_FIC_SLO" option="RAPPRI" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="RAPPRI" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:RAPPRI_NX_1115_ofilrf.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <raw_data_obs db_source="execution/21_RAPPRI_RawDataObs_1_1_5_0.sqlite3" execution="True" id="21.5.0" metadata="execution/21_RAPPRI_RawDataObs_1_1_5_0_columns.xml" name="rappri_nx_1115_ofilrf.fic" number="2" source="execution/21_RAPPRI_RawDataObs_1_1_5_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="fichier_trame" value="31"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="date_travail" value="28.02.2023"/>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <execution name="INVREF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/INVREF.xml">
+      <option id="22" name="INVREF" number="1" prog_name="NEWPORT_ETASTK_INVREF" time="919" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="917">
+          <actions time="916">
+            <field_input memory="fichier_trame" name="FICHIER_TRAME_SLO" option="INVREF" type="input" value="31"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVREF" type="skipped" value=""/>
+            <field_input memory="type_vl" name="TYPE_VL" option="INVREF" type="input" value="VLOFF"/>
+            <field_input memory="date_travail" name="DATE_DEBUT" option="INVREF" type="input" value="28.02.2023"/>
+            <field_input name="CHOIX" option="INVREF" type="input" value="O">
+              <area content="Les choix possibles sont P, G, C ou D"/>
+            </field_input>
+            <field_input name="CHOIX" option="INVREF" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVREF" type="skipped" value="INVREF"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="INVREF" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="INVREF" type="input" value="FIN"/>
+            <field_input name="CATEGORIE_VALEUR" option="INVREF" type="input" value="ALL"/>
+            <field_input name="FLAG_ETAT_DETAILLE" option="INVREF" type="input" value="O"/>
+            <field_input name="TYPE_FIC_SLO" option="INVREF" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVREF" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:INVREF_NX_1115_0f63oc.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="1">
+            <report_obs execution="True" file="execution/22_INVREF_ReportObs_1_1_6_0.txt" id="22.6.0" metadata="execution/22_INVREF_ReportObs_1_1_6_0_line.xml" name="invref_nx_1115_0f63oc.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+      <option id="23" name="INVREF" number="2" prog_name="NEWPORT_ETASTK_INVREF" time="1031" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1031">
+          <actions time="996">
+            <field_input memory="fichier_trame" name="FICHIER_TRAME_SLO" option="INVREF" type="input" value="31"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVREF" type="skipped" value=""/>
+            <field_input memory="type_vl" name="TYPE_VL" option="INVREF" type="input" value="VLOFF"/>
+            <field_input memory="date_travail" name="DATE_DEBUT" option="INVREF" type="input" value="28.02.2023"/>
+            <field_input name="CHOIX" option="INVREF" type="input" value="O">
+              <area content="Les choix possibles sont P, G, C ou D"/>
+            </field_input>
+            <field_input name="CHOIX" option="INVREF" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVREF" type="skipped" value="INVREF"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="INVREF" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="INVREF" type="input" value="FIN"/>
+            <field_input name="CATEGORIE_VALEUR" option="INVREF" type="input" value="ALL"/>
+            <field_input name="FLAG_ETAT_DETAILLE" option="INVREF" type="input" value="O"/>
+            <field_input name="TYPE_FIC_SLO" option="INVREF" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVREF" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:INVREF_NX_1115_ym4zv8.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="35">
+            <raw_data_obs db_source="execution/23_INVREF_RawDataObs_1_1_9_0.sqlite3" execution="True" id="23.9.0" metadata="execution/23_INVREF_RawDataObs_1_1_9_0_columns.xml" name="invref_nx_1115_ym4zv8.fic" number="2" source="execution/23_INVREF_RawDataObs_1_1_9_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="fichier_trame" value="33"/>
+    <execution name="INVREF" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/INVREF.xml">
+      <option id="24" name="INVREF" number="1" prog_name="NEWPORT_ETASTK_INVREF" time="510" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="509">
+          <actions time="509">
+            <field_input memory="fichier_trame" name="FICHIER_TRAME_SLO" option="INVREF" type="input" value="33"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVREF" type="skipped" value=""/>
+            <field_input memory="type_vl" name="TYPE_VL" option="INVREF" type="input" value="VLOFF"/>
+            <field_input memory="date_travail" name="DATE_DEBUT" option="INVREF" type="input" value="28.02.2023"/>
+            <field_input name="CHOIX" option="INVREF" type="input" value="O">
+              <area content="Les choix possibles sont P, G, C ou D"/>
+            </field_input>
+            <field_input name="CHOIX" option="INVREF" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVREF" type="skipped" value="INVREF"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="INVREF" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="INVREF" type="input" value="FIN"/>
+            <field_input name="CATEGORIE_VALEUR" option="INVREF" type="input" value="ALL"/>
+            <field_input name="FLAG_ETAT_DETAILLE" option="INVREF" type="input" value="O"/>
+            <field_input name="TYPE_FIC_SLO" option="INVREF" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVREF" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:INVREF_NX_1115_qhym72.TXT"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0">
+            <report_obs execution="True" file="execution/24_INVREF_ReportObs_1_1_10_0.txt" id="24.10.0" metadata="execution/22_INVREF_ReportObs_1_1_6_0_line.xml" name="invref_nx_1115_qhym72.txt" number="1"/>
+          </observations>
+        </step>
+      </option>
+      <option id="25" name="INVREF" number="2" prog_name="NEWPORT_ETASTK_INVREF" time="586" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="586">
+          <actions time="567">
+            <field_input memory="fichier_trame" name="FICHIER_TRAME_SLO" option="INVREF" type="input" value="33"/>
+            <field_input name="FICHIER_VALO_SAISIE_SLO" option="INVREF" type="skipped" value=""/>
+            <field_input memory="type_vl" name="TYPE_VL" option="INVREF" type="input" value="VLOFF"/>
+            <field_input memory="date_travail" name="DATE_DEBUT" option="INVREF" type="input" value="28.02.2023"/>
+            <field_input name="CHOIX" option="INVREF" type="input" value="O">
+              <area content="Les choix possibles sont P, G, C ou D"/>
+            </field_input>
+            <field_input name="CHOIX" option="INVREF" type="input" value="P"/>
+            <field_input name="CHOIX2" option="INVREF" type="skipped" value="INVREF"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="INVREF" type="input" value="*ICNXZ"/>
+            <field_input name="SLO_OBJET" option="INVREF" type="input" value="FIN"/>
+            <field_input name="CATEGORIE_VALEUR" option="INVREF" type="input" value="ALL"/>
+            <field_input name="FLAG_ETAT_DETAILLE" option="INVREF" type="input" value="O"/>
+            <field_input name="TYPE_FIC_SLO" option="INVREF" type="input" value="+"/>
+            <field_input last_input="True" name="OK" option="INVREF" type="input" value="O"/>
+            <field_input name="FICHIER_SLO" option="FICSUP" type="input" value="GPF_OUTPUT:INVREF_NX_1115_dba4yn.FIC"/>
+            <field_input name="MODE_DE_TRAITEMENT" option="FICSUP" type="skipped" value="IMM"/>
+            <field_input name="OK_SPOOL" option="FICSUP" type="input" value="N"/>
+            <field_input name="OSE_REPERTOIRE_ECRAN" option="FICSUP" type="skipped" value=""/>
+            <field_input last_input="True" name="OK" option="FICSUP" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="19">
+            <raw_data_obs db_source="execution/25_INVREF_RawDataObs_1_1_13_0.sqlite3" execution="True" id="25.13.0" metadata="execution/23_INVREF_RawDataObs_1_1_9_0_columns.xml" name="invref_nx_1115_dba4yn.fic" number="2" source="execution/25_INVREF_RawDataObs_1_1_13_0.fic"/>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="date_travail" value="28/02/23"/>
+    <set_variable name="type_stocks" value="AD1"/>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="code_portefeuille" value="*ICNXZ"/>
+    <set_variable name="Ok_ecran" value="O"/>
+    <execution name="VALINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALINV.xml">
+      <option id="26" name="VALINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="6" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="5">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28/02/23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD1"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN"/>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="4">
+            <db_obs execution="True" id="26.1" metadata="execution/26_VALINV_1_26_query_part_00001.sqlite3" nb_inst="6385" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALINV_1_26_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stocks" value="AD3"/>
+    <execution name="VALINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALINV.xml">
+      <option id="27" name="VALINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="3" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28/02/23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD3"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN"/>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="1">
+            <db_obs execution="True" id="27.1" metadata="execution/27_VALINV_1_27_query_part_00001.sqlite3" nb_inst="41" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALINV_1_27_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stocks" value="AD4"/>
+    <execution name="VALINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALINV.xml">
+      <option id="28" name="VALINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28/02/23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD4"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN">
+              <area content="Ce Portefeuille n a pas ete valorise a cette date"/>
+            </field_input>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="1">
+            <db_obs execution="True" id="28.1" metadata="execution/28_VALINV_1_28_query_part_00001.sqlite3" nb_inst="37" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALINV_1_28_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_stocks" value="AD9"/>
+    <execution name="VALINV" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KBS/Scripts/Specifiques/GROUPAMA/Ecrans/VALINV.xml">
+      <option id="29" name="VALINV" number="1" prog_name="NEWPORT_GESCOU_VALINV" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input memory="date_travail" name="DATE_VALO_ECR" option="VALINV" type="input" value="28/02/23"/>
+            <field_input memory="type_stocks" name="TYPE_STOCK_VALO" option="VALINV" type="input" value="AD9"/>
+            <field_input memory="type_vl" name="TYPE_VL" option="VALINV" type="input" value="VLOFF"/>
+            <field_input memory="code_portefeuille" name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="*ICNXZ"/>
+            <field_input name="PORTEF_TRAME_ECR" option="VALINV" type="input" value="FIN">
+              <area content="Ce Portefeuille n a pas ete valorise a cette date"/>
+            </field_input>
+            <field_input last_input="True" memory="Ok_ecran" name="OK" option="VALINV" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALINV-core_hubjzxw.xml" time="0">
+            <db_obs execution="True" id="29.1" metadata="execution/29_VALINV_1_29_query_part_00001.sqlite3" nb_inst="37" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALINV_1_29_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+  </execution>

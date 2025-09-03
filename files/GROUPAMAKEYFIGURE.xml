@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE execution>
+  <execution comparison="GP4-GP4" date_exe="2025-08-14_01-58-05" execution="tst" file="replay/scenario.xml" gp3tester_version="3.8.2" language="en" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Scripts/Scenario-GROUPAMA-KEYFIG.xml" time_execution="4,24" title="Scenario KF " version="GP4">
+    <execution_label>GP4-20250813-202032</execution_label>
+    <connexion environnement="/home/testauto/nxat/config/gp3tester/environment.config" login_gp="NX" login_webintake="neoxam"/>
+    <file type="log" value="execution.log"/>
+    <file type="xml" value="execution.xml"/>
+    <comment>Scenario KF</comment>
+    <set_variable name="code_environnement" value="GRPAMA"/>
+    <set_variable name="date_veille" value="12/01/20"/>
+    <set_variable name="date_travail" value="13/01/20"/>
+    <set_variable name="date_effet" value="13/01/20"/>
+    <set_variable name="date_valeur" value="13/01/20"/>
+    <set_variable name="date_comptable" value="13/01/20"/>
+    <execution name="Mise Ã  jour de l'environnement de travail" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/saienv.xml">
+      <option id="1" name="SAIENV" number="1" prog_name="NEWPORT_GESENV_SAIENV" time="1" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="0">
+          <actions time="0">
+            <field_input memory="code_environnement" name="CODE_ENVIRONNEMENT" option="SAIENV" type="input" value="GRPAMA"/>
+            <field_input memory="date_travail" name="DATE_TRAVAIL_FRM" option="SAIENV" type="input" value="13/01/20"/>
+            <field_input name="DATE_ANOMALIE_FRM" option="SAIENV" type="skipped" value="13/01/2020"/>
+            <field_input name="OKC" option="SAIENV" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="SAIENV" type="input" value="O"/>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+    </execution>
+    <execution name="PRERQUIS" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Parametrages/pres_requis_KF.xml">
+      <option id="2" name="MAJPROG" number="1" prog_name="OSER_MENUS_MAJPROG" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="1">
+          <actions time="1">
+            <field_input name="OSE_CODE_PROCEDURE" option="MAJPROG" type="input" value="GESPRO"/>
+            <field_input name="CONSULTATION" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="CONSULTATION2" option="MAJPROG" type="skipped" value=""/>
+            <field_input name="TITRE_PROGRAMME" option="MAJPROG" type="skipped" value="Gestion des provisions"/>
+            <field_input name="OSE_NOM_PROCEDURE" option="MAJPROG" type="input" value="NEWPORT.GESTRA.GESPRO">
+              <area content="compilee le 2024/06/11 08:55:31"/>
+            </field_input>
+            <field_input name="NATURE_OPTION_SAISIE" option="MAJPROG" type="skipped" value="F"/>
+            <field_input last_input="True" name="OK" option="MAJPROG" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+      <option id="3" name="MAJMENU" number="2" prog_name="OSER_MENUS_MAJMENU" time="4" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="3">
+          <actions time="3">
+            <field_input name="OSE_CODE_MENU" option="MAJMENU" type="input" value="NX"/>
+            <field_input name="OSE_TITRE_MENU" option="MAJMENU" type="skipped" value="Menu GP3 NeoXam"/>
+            <field_input name="CONSULTATION" option="MAJMENU" type="skipped" value=""/>
+            <field_input name="TABLEAU_OPTION[0]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="001"/>
+            <field_input name="TABLEAU_OPTION[0]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="SERV"/>
+            <field_input name="TABLEAU_OPTION[1]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="003"/>
+            <field_input name="TABLEAU_OPTION[1]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="COMM"/>
+            <field_input name="TABLEAU_OPTION[2]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="004"/>
+            <field_input name="TABLEAU_OPTION[2]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="INST"/>
+            <field_input name="TABLEAU_OPTION[3]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="005"/>
+            <field_input name="TABLEAU_OPTION[3]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="BASE"/>
+            <field_input name="TABLEAU_OPTION[4]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="006"/>
+            <field_input name="TABLEAU_OPTION[4]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="PERI"/>
+            <field_input name="TABLEAU_OPTION[5]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="007"/>
+            <field_input name="TABLEAU_OPTION[5]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="GCOL"/>
+            <field_input name="TABLEAU_OPTION[6]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="009"/>
+            <field_input name="TABLEAU_OPTION[6]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="NEW"/>
+            <field_input name="TABLEAU_OPTION[7]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="010"/>
+            <field_input name="TABLEAU_OPTION[7]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="UTILM"/>
+            <field_input name="TABLEAU_OPTION[8]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="011"/>
+            <field_input name="TABLEAU_OPTION[8]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="API"/>
+            <field_input name="TABLEAU_OPTION[9]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="012"/>
+            <field_input name="TABLEAU_OPTION[9]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="IFRS"/>
+            <field_input name="TABLEAU_OPTION[10]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="014"/>
+            <field_input name="TABLEAU_OPTION[10]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="MINSTI"/>
+            <field_input name="TABLEAU_OPTION[11]_OSE_NUMERO_OPTION" option="MAJMENU" type="skipped" value="020"/>
+            <field_input name="TABLEAU_OPTION[11]_OSE_CODE_OPTION" option="MAJMENU" type="skipped" value="ECL"/>
+            <field_input name="TABLEAU_OPTION[12]_OSE_NUMERO_OPTION" option="MAJMENU" type="input" value="013"/>
+            <field_input last_input="True" name="TABLEAU_OPTION[12]_OSE_CODE_OPTION" option="MAJMENU" type="input" value="GESPRO"/>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+      <option id="4" name="MAJOPT" number="3" prog_name="OSER_MENUS_MAJOPT" time="6" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="6">
+          <actions time="6">
+            <field_input name="SLO_OBJET" option="MAJOPT" type="input" value="NXADM"/>
+            <field_input name="OSE_CODE_MENU" option="MAJOPT" type="skipped" value="GPDEV"/>
+            <field_input name="FLAG_INTERDICTION" option="MAJOPT" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="MAJOPT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" time="0"/>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="portefuille_reference" value="14005"/>
+    <execution name="test" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/DUPPOR.xml">
+      <option id="5" name="DUPPOR" number="1" prog_name="NEWPORT_GESPOR_DUPPOR" time="10" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="10">
+          <actions time="3">
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="DUPPOR" type="input" value="KF002"/>
+            <field_input name="LIBELLE_PORT_C" option="DUPPOR" type="input" value="Test RGA PC"/>
+            <field_input name="LIBELLE_PORT_L" option="DUPPOR" type="skipped" value="Test RGA PC"/>
+            <field_input memory="portefuille_reference" name="CODE_PORTEFEUILLE_REF" option="DUPPOR" type="input" value="14005"/>
+            <field_input name="TABLEAU[0]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[1]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[2]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[3]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[4]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[5]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[6]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[7]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[8]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input name="TABLEAU[9]_OK_TABLEAU" option="DUPPOR" type="skipped" value="O"/>
+            <field_input last_input="True" name="OK" option="DUPPOR" type="input" value="O">
+              <area content="Duplication terminee."/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESPOR_DUPPOR-coren2m4dw8x.xml" time="7">
+            <db_obs execution="True" id="5.1" metadata="execution/5_DUPPOR_1_5_query_part_00001.sqlite3" nb_inst="1986" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/DUPPOR_1_5_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="code_traitement" value="GESPRO"/>
+    <set_variable name="critere_saisie_1" value="."/>
+    <set_variable name="critere_saisie_2" value="."/>
+    <set_variable name="nom_champ" value="Code.marche.ope"/>
+    <set_variable name="valeur_par_defaut" value="@SKIP@"/>
+    <set_variable name="type_saisie" value="@SKIP@"/>
+    <set_variable name="type_traitement" value="OK"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="FORPCT" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/FORPCT.xml">
+      <option id="6" name="FORPCT" number="1" prog_name="NEWPORT_GESTAB_MAJPCT" time="2" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="2">
+          <actions time="1">
+            <field_input memory="code_traitement" name="CODE_TRAITEMENT" option="MAJPCT" type="input" value="GESPRO"/>
+            <field_input memory="critere_saisie_1" name="CRITERE_SAISIE_1" option="MAJPCT" type="input" value="."/>
+            <field_input memory="critere_saisie_2" name="CRITERE_SAISIE_2" option="MAJPCT" type="input" value=".">
+              <area content="ATTENTION : Vous avez saisi un champ qui n'est pas un type de transaction !"/>
+            </field_input>
+            <field_input memory="nom_champ" name="NOM_CHAMP" option="MAJPCT" type="input" value="Code.marche.ope"/>
+            <field_input name="LIB_PARAMETRE_CHAMP_C" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="valeur_par_defaut" name="VALEUR_PAR_DEFAUT" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="type_saisie" name="TYPE_SAISIE" option="MAJPCT" type="skipped" value=""/>
+            <field_input memory="type_traitement" name="CODE_GESTION" option="MAJPCT" type="input" value="OK"/>
+            <field_input name="KRONECKER_1" option="MAJPCT" type="input" value="0"/>
+            <field_input name="KRONECKER_2" option="MAJPCT" type="input" value="0"/>
+            <field_input last_input="True" memory="ok_ecran" name="OK" option="MAJPCT" type="input" value="O">
+              <area content="Mise a jour effectuee"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/FORPCT-report5tdyxjw3.xml" time="1">
+            <db_obs execution="True" id="6.1" metadata="execution/6_FORPCT_1_6_query_part_00001.sqlite3" nb_inst="8" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_6_1_part_00001.sqlite3"/>
+            </db_obs>
+            <db_obs execution="True" id="6.2" metadata="execution/6_FORPCT_1_6_query_part_00001.sqlite3" nb_inst="0" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/FORPCT_1_6_1_part_00002.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="AOB1"/>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011059088"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="type_transaction" value="AOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_contrepartie" value="@SKIP@"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="place_cotation" value="@SKIP@"/>
+    <set_variable name="quantite" value="3M"/>
+    <set_variable name="cours" value="98"/>
+    <set_variable name="date_travail" value="13/01/20"/>
+    <set_variable name="date_effet" value="13/01/20"/>
+    <set_variable name="date_valeur" value="13/01/20"/>
+    <set_variable name="date_comptable" value="13/01/20"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="7" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="23" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="22">
+          <actions time="14">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011059088"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="AOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="13/01/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="15/01/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="3M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 0."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="98"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   13/01/20   1)                    2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="LANCE_IFRS9" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR">
+              <area content="Valeur NR incorrect pour MAJANX : CLRISK"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O">
+              <area content="Calcul du nombre de jours courus :          82.0       
+Calcul coupon au 15/01/20 ; Methode coupon: EXI"/>
+            </field_input>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="0.72814208">
+              <area content="Nominal Valeur : 1. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="2,940,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="21,844.26"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="MAJTIN" type="skipped" value="4.43861566"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="13/01/20">
+              <area content="PR: 2,961,844.26 PVCT: 0. EffetTitre: 0.
+Qt: 3,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="AOB/3,000,000./FR0011059088/OAT 3.25 25/10/21"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="8">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="7.4" label="" number="4" verify="True">
+              <screen_obs_list value="3390603"/>
+            </screen_obs>
+            <db_obs execution="True" id="7.1" metadata="execution/7_MAJTIN_1_7_query_part_00001.sqlite3" nb_inst="111" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_7_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="AOB1"/>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011059088"/>
+    <set_variable name="type_transaction" value="AOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="code_marche_ope" value="AATS"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="quantite" value="2M"/>
+    <set_variable name="cours" value="103"/>
+    <set_variable name="date_effet" value="20/01/20"/>
+    <set_variable name="date_valeur" value="20/01/20"/>
+    <set_variable name="date_comptable" value="20/01/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="8" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="16" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="15">
+          <actions time="8">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011059088"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="AOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="13/01/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="15/01/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="2M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 3,000,000."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="103"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   13/01/20   1)                    2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="LANCE_IFRS9" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR">
+              <area content="Valeur NR incorrect pour MAJANX : CLRISK"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O">
+              <area content="Calcul du nombre de jours courus :          82.0       
+Calcul coupon au 15/01/20 ; Methode coupon: EXI"/>
+            </field_input>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="0.72814208">
+              <area content="Nominal Valeur : 1. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="2,060,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="14,562.84"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="MAJTIN" type="skipped" value="1.5225504"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="20/01/20">
+              <area content="PR: 5,014,562.84 PVCT: 0. EffetTitre: 0.
+Qt: 5,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="AOB/2,000,000./FR0011059088/OAT 3.25 25/10/21"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="7">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="8.5" label="" number="5" verify="True">
+              <screen_obs_list value="3390605"/>
+            </screen_obs>
+            <db_obs execution="True" id="8.1" metadata="execution/8_MAJTIN_1_8_query_part_00001.sqlite3" nb_inst="104" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_8_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="categorie_valeur" value="VMOB"/>
+    <set_variable name="code_valeur" value="FR0011059088"/>
+    <set_variable name="portefuille_reference" value="KF002"/>
+    <set_variable name="type_transaction" value="D9MT"/>
+    <set_variable name="classification_1" value="NOR"/>
+    <set_variable name="classification_2" value="AFS"/>
+    <set_variable name="classification_3" value="NOR"/>
+    <set_variable name="classification_4" value="NJVR"/>
+    <set_variable name="code_externe_origine" value="01"/>
+    <set_variable name="notre_depot" value="ISAEFRPP"/>
+    <set_variable name="date_effet" value="22/01/20"/>
+    <set_variable name="date_valeur" value="22/01/20"/>
+    <set_variable name="date_comptable" value="22/01/20"/>
+    <set_variable name="cours_valeur_source" value="100"/>
+    <set_variable name="CP_COURU_SOURCE" value="@SKIP@"/>
+    <set_variable name="INTERETS_DV_ECR" value="@SKIP@"/>
+    <set_variable name="montant_provision" value="1100"/>
+    <execution name="gespro" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/GESPRO-MBM.xml">
+      <option id="9" name="GESPRO" number="1" prog_name="NEWPORT_GESTRA_GESPRO" time="13" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="12">
+          <actions time="7">
+            <field_input name="NOM_INTERFACE" option="GESPRO" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="AOB1.code_transaction" name="CODE_TRANSACTION" option="GESPRO" type="input" value="0"/>
+            <field_input memory="categorie_valeur" name="CATEGORIE_VALEUR" option="GESPRO" type="input" value="VMOB"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="GESPRO" type="input" value="FR0011059088"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="GESPRO" type="input" value="KF002"/>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="GESPRO" type="input" value="D9MT"/>
+            <field_input memory="code_externe_origine" name="CODE_EXTERNE_ORIGINE_ECR" option="GESPRO" type="input" value="01"/>
+            <field_input name="LANCE_CLACPT" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input name="MODELE_ECONOMIQUE" option="GESPRO" type="skipped" value="BM__2"/>
+            <field_input memory="code_marche_ope" name="CODE_MARCHE_OPE" option="GESPRO" type="input" value="AATS"/>
+            <field_input memory="date_effet" name="DATE_EFFET_ECR" option="GESPRO" type="input" value="22/01/20"/>
+            <field_input memory="date_valeur" name="DATE_VALEUR_ECR" option="GESPRO" type="input" value="22/01/20"/>
+            <field_input name="LANCE_IFRS9" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="montant_provision" name="MONTANT_PROVISION_ECR" option="GESPRO" type="input" value="1100"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="date_comptable" name="DATE_COMPTA_ECR" option="GESPRO" type="input" value="22/01/20"/>
+            <field_input name="LIB_TRANSACTION" option="GESPRO" type="skipped" value="D9MT  FR0011059088 OAT 3.25 25/10/21"/>
+            <field_input last_input="True" name="OK" option="GESPRO" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_GESPRO-coret77i3aj2.xml" time="5">
+            <db_obs execution="True" id="9.1" metadata="execution/9_GESPRO_1_9_query_part_00001.sqlite3" nb_inst="70" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/GESPRO_1_9_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="categorie_valeur" value="VMOB"/>
+    <set_variable name="code_valeur" value="FR0011059088"/>
+    <set_variable name="portefuille_reference" value="KF002"/>
+    <set_variable name="type_transaction" value="D9MT"/>
+    <set_variable name="code_externe_origine" value="02"/>
+    <set_variable name="notre_depot" value="ISAEFRPP"/>
+    <set_variable name="date_effet" value="23/01/20"/>
+    <set_variable name="date_valeur" value="23/01/20"/>
+    <set_variable name="date_comptable" value="23/01/20"/>
+    <set_variable name="cours_valeur_source" value="100"/>
+    <set_variable name="montant_provision" value="3000"/>
+    <execution name="gespro" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/GESPRO-MBM.xml">
+      <option id="10" name="GESPRO" number="1" prog_name="NEWPORT_GESTRA_GESPRO" time="11" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="10">
+          <actions time="5">
+            <field_input name="NOM_INTERFACE" option="GESPRO" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="AOB1.code_transaction" name="CODE_TRANSACTION" option="GESPRO" type="input" value="0"/>
+            <field_input memory="categorie_valeur" name="CATEGORIE_VALEUR" option="GESPRO" type="input" value="VMOB"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="GESPRO" type="input" value="FR0011059088"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="GESPRO" type="input" value="KF002"/>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="GESPRO" type="input" value="D9MT"/>
+            <field_input memory="code_externe_origine" name="CODE_EXTERNE_ORIGINE_ECR" option="GESPRO" type="input" value="02"/>
+            <field_input name="LANCE_CLACPT" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input name="MODELE_ECONOMIQUE" option="GESPRO" type="skipped" value="BM__2"/>
+            <field_input memory="code_marche_ope" name="CODE_MARCHE_OPE" option="GESPRO" type="input" value="AATS"/>
+            <field_input memory="date_effet" name="DATE_EFFET_ECR" option="GESPRO" type="input" value="23/01/20"/>
+            <field_input memory="date_valeur" name="DATE_VALEUR_ECR" option="GESPRO" type="input" value="23/01/20"/>
+            <field_input name="LANCE_IFRS9" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="montant_provision" name="MONTANT_PROVISION_ECR" option="GESPRO" type="input" value="3000"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="date_comptable" name="DATE_COMPTA_ECR" option="GESPRO" type="input" value="23/01/20"/>
+            <field_input name="LIB_TRANSACTION" option="GESPRO" type="skipped" value="D9MT  FR0011059088 OAT 3.25 25/10/21"/>
+            <field_input last_input="True" name="OK" option="GESPRO" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_GESPRO-coret77i3aj2.xml" time="5">
+            <db_obs execution="True" id="10.1" metadata="execution/10_GESPRO_1_10_query_part_00001.sqlite3" nb_inst="65" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/GESPRO_1_10_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="VOB1"/>
+    <set_variable name="VOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011059088"/>
+    <set_variable name="type_transaction" value="VOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="code_marche_ope" value="AATS"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="quantite" value="1M"/>
+    <set_variable name="cours" value="102"/>
+    <set_variable name="date_effet" value="27/01/20"/>
+    <set_variable name="date_valeur" value="27/01/20"/>
+    <set_variable name="date_comptable" value="27/01/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="11" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="23" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="22">
+          <actions time="10">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011059088"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="VOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="13/01/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="15/01/2020"/>
+            <field_input name="DATE_PROPRIETE_SAISIE" option="MAJTIN" type="skipped" value="15/01/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="1M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 5,000,000."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="102"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   13/01/20   1)                    2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="0.72814208">
+              <area content="Nominal Valeur : 1. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="1,020,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="7,281.42"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="27/01/20">
+              <area content="PR: 4,020,000. PVCT: 47,281.42 EffetTitre: 47,281.42
+Qt: 4,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="VOB/1,000,000./FR0011059088/OAT 3.25 25/10/21"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="12">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="11.6" label="" number="6" verify="True">
+              <screen_obs_list value="3390608"/>
+            </screen_obs>
+            <db_obs execution="True" id="11.1" metadata="execution/11_MAJTIN_1_11_query_part_00001.sqlite3" nb_inst="251" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_11_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="VOB1"/>
+    <set_variable name="VOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011059088"/>
+    <set_variable name="type_transaction" value="VOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="code_marche_ope" value="AATS"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="quantite" value="1M"/>
+    <set_variable name="cours" value="97"/>
+    <set_variable name="date_effet" value="30/01/20"/>
+    <set_variable name="date_valeur" value="30/01/20"/>
+    <set_variable name="date_comptable" value="30/01/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="12" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="24" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="23">
+          <actions time="12">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011059088"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="VOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="13/01/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="15/01/2020"/>
+            <field_input name="DATE_PROPRIETE_SAISIE" option="MAJTIN" type="skipped" value="15/01/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="1M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 4,000,000."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="97"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   13/01/20   1)                    2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="0.72814208">
+              <area content="Nominal Valeur : 1. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="970,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="7,281.42"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="30/01/20">
+              <area content="PR: 3,040,000. PVCT: -2,718.58 EffetTitre: -2,718.58
+Qt: 3,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="VOB/1,000,000./FR0011059088/OAT 3.25 25/10/21"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="11">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="12.7" label="" number="7" verify="True">
+              <screen_obs_list value="3390618"/>
+            </screen_obs>
+            <db_obs execution="True" id="12.1" metadata="execution/12_MAJTIN_1_12_query_part_00001.sqlite3" nb_inst="243" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_12_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="AOB1"/>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011755156"/>
+    <set_variable name="type_transaction" value="AOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="code_marche_ope" value="AATS"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="quantite" value="1M"/>
+    <set_variable name="cours" value="97"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="date_veille" value="02/02/20"/>
+    <set_variable name="date_travail" value="02/02/20"/>
+    <set_variable name="date_effet" value="02/02/20"/>
+    <set_variable name="date_valeur" value="02/02/20"/>
+    <set_variable name="date_comptable" value="02/02/20"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="13" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="16" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="15">
+          <actions time="8">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011755156"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="AOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="02/02/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="04/02/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="1M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 0."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="97"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   02/02/20   1) S&amp;P    NR          2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="LANCE_IFRS9" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR">
+              <area content="Valeur NR incorrect pour MAJANX : CLRISK"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O">
+              <area content="Calcul du nombre de jours courus :         255.0       
+Calcul coupon au 04/02/20 ; Methode coupon: EXI"/>
+            </field_input>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="1.65471311">
+              <area content="Nominal Valeur : 100000. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="970,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="16,547.13"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="MAJTIN" type="skipped" value="3.12901377"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="02/02/20">
+              <area content="PR: 986,547.13 PVCT: 0. EffetTitre: 0.
+Qt: 1,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="AOB/1,000,000./FR0011755156/UNEDIC 2.375 05/24"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="7">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="13.8" label="" number="8" verify="True">
+              <screen_obs_list value="3390624"/>
+            </screen_obs>
+            <db_obs execution="True" id="13.1" metadata="execution/13_MAJTIN_1_13_query_part_00001.sqlite3" nb_inst="107" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_13_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="AOB1"/>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011755156"/>
+    <set_variable name="type_transaction" value="AOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="code_marche_ope" value="AATS"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="quantite" value="2M"/>
+    <set_variable name="cours" value="104"/>
+    <set_variable name="date_effet" value="05/02/20"/>
+    <set_variable name="date_valeur" value="05/02/20"/>
+    <set_variable name="date_comptable" value="05/02/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="14" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="16" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="15">
+          <actions time="8">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011755156"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="AOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="02/02/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="04/02/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="2M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 1,000,000."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="104"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   02/02/20   1) S&amp;P    NR          2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="LANCE_IFRS9" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR">
+              <area content="Valeur NR incorrect pour MAJANX : CLRISK"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O">
+              <area content="Calcul du nombre de jours courus :         255.0       
+Calcul coupon au 04/02/20 ; Methode coupon: EXI"/>
+            </field_input>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="1.65471311">
+              <area content="Nominal Valeur : 100000. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="2,080,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="33,094.26"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="MAJTIN" type="skipped" value="1.40961707"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="05/02/20">
+              <area content="PR: 3,083,094.26 PVCT: 0. EffetTitre: 0.
+Qt: 3,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="AOB/2,000,000./FR0011755156/UNEDIC 2.375 05/24"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="7">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="14.9" label="" number="9" verify="True">
+              <screen_obs_list value="3390626"/>
+            </screen_obs>
+            <db_obs execution="True" id="14.1" metadata="execution/14_MAJTIN_1_14_query_part_00001.sqlite3" nb_inst="105" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_14_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="categorie_valeur" value="VMOB"/>
+    <set_variable name="code_valeur" value="FR0011755156"/>
+    <set_variable name="portefuille_reference" value="KF002"/>
+    <set_variable name="type_transaction" value="D9MT"/>
+    <set_variable name="classification_1" value="NOR"/>
+    <set_variable name="classification_2" value="AFS"/>
+    <set_variable name="classification_3" value="NOR"/>
+    <set_variable name="classification_4" value="NJVR"/>
+    <set_variable name="code_externe_origine" value="01"/>
+    <set_variable name="notre_depot" value="ISAEFRPP"/>
+    <set_variable name="date_effet" value="10/02/20"/>
+    <set_variable name="date_valeur" value="10/02/20"/>
+    <set_variable name="date_comptable" value="10/02/20"/>
+    <set_variable name="cours_valeur_source" value="100"/>
+    <set_variable name="CP_COURU_SOURCE" value="@SKIP@"/>
+    <set_variable name="INTERETS_DV_ECR" value="@SKIP@"/>
+    <set_variable name="montant_provision" value="4000"/>
+    <set_variable name="cours_dc_en_dn_ecr" value="200"/>
+    <set_variable name="montant_net_port_bis" value="@SKIP@"/>
+    <execution name="gespro" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/GESPRO-MBM.xml">
+      <option id="15" name="GESPRO" number="1" prog_name="NEWPORT_GESTRA_GESPRO" time="10" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="10">
+          <actions time="4">
+            <field_input name="NOM_INTERFACE" option="GESPRO" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="AOB1.code_transaction" name="CODE_TRANSACTION" option="GESPRO" type="input" value="0"/>
+            <field_input memory="categorie_valeur" name="CATEGORIE_VALEUR" option="GESPRO" type="input" value="VMOB"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="GESPRO" type="input" value="FR0011755156"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="GESPRO" type="input" value="KF002"/>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="GESPRO" type="input" value="D9MT"/>
+            <field_input memory="code_externe_origine" name="CODE_EXTERNE_ORIGINE_ECR" option="GESPRO" type="input" value="01"/>
+            <field_input name="LANCE_CLACPT" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input name="MODELE_ECONOMIQUE" option="GESPRO" type="skipped" value="BM__2"/>
+            <field_input memory="code_marche_ope" name="CODE_MARCHE_OPE" option="GESPRO" type="input" value="AATS"/>
+            <field_input memory="date_effet" name="DATE_EFFET_ECR" option="GESPRO" type="input" value="10/02/20"/>
+            <field_input memory="date_valeur" name="DATE_VALEUR_ECR" option="GESPRO" type="input" value="10/02/20"/>
+            <field_input name="LANCE_IFRS9" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="montant_provision" name="MONTANT_PROVISION_ECR" option="GESPRO" type="input" value="4000"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="date_comptable" name="DATE_COMPTA_ECR" option="GESPRO" type="input" value="10/02/20"/>
+            <field_input name="LIB_TRANSACTION" option="GESPRO" type="skipped" value="D9MT  FR0011755156 UNEDIC 2.375 05/24"/>
+            <field_input last_input="True" name="OK" option="GESPRO" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_GESPRO-coret77i3aj2.xml" time="6">
+            <db_obs execution="True" id="15.1" metadata="execution/15_GESPRO_1_15_query_part_00001.sqlite3" nb_inst="70" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/GESPRO_1_15_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="AOB1.code_transaction" value="0"/>
+    <set_variable name="categorie_valeur" value="VMOB"/>
+    <set_variable name="code_valeur" value="FR0011755156"/>
+    <set_variable name="portefuille_reference" value="KF002"/>
+    <set_variable name="type_transaction" value="D9MT"/>
+    <set_variable name="code_externe_origine" value="02"/>
+    <set_variable name="notre_depot" value="ISAEFRPP"/>
+    <set_variable name="date_effet" value="15/02/20"/>
+    <set_variable name="date_valeur" value="15/02/20"/>
+    <set_variable name="date_comptable" value="15/02/20"/>
+    <set_variable name="cours_valeur_source" value="90"/>
+    <set_variable name="montant_provision" value="6500"/>
+    <execution name="gespro" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/GESPRO-MBM.xml">
+      <option id="16" name="GESPRO" number="1" prog_name="NEWPORT_GESTRA_GESPRO" time="10" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="10">
+          <actions time="4">
+            <field_input name="NOM_INTERFACE" option="GESPRO" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="AOB1.code_transaction" name="CODE_TRANSACTION" option="GESPRO" type="input" value="0"/>
+            <field_input memory="categorie_valeur" name="CATEGORIE_VALEUR" option="GESPRO" type="input" value="VMOB"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR" option="GESPRO" type="input" value="FR0011755156"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="GESPRO" type="input" value="KF002"/>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="GESPRO" type="input" value="D9MT"/>
+            <field_input memory="code_externe_origine" name="CODE_EXTERNE_ORIGINE_ECR" option="GESPRO" type="input" value="02"/>
+            <field_input name="LANCE_CLACPT" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input name="MODELE_ECONOMIQUE" option="GESPRO" type="skipped" value="BM__2"/>
+            <field_input memory="code_marche_ope" name="CODE_MARCHE_OPE" option="GESPRO" type="input" value="AATS"/>
+            <field_input memory="date_effet" name="DATE_EFFET_ECR" option="GESPRO" type="input" value="15/02/20">
+              <area content="Attention, cette date n'est pas un jour ouvre."/>
+            </field_input>
+            <field_input memory="date_valeur" name="DATE_VALEUR_ECR" option="GESPRO" type="input" value="15/02/20"/>
+            <field_input name="LANCE_IFRS9" option="GESPRO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="BUCK_1"/>
+            <field_input name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="montant_provision" name="MONTANT_PROVISION_ECR" option="GESPRO" type="input" value="6500"/>
+            <field_input name="TAUX_ACTUARIEL_ECRAN" option="GESPRO" type="skipped" value=""/>
+            <field_input memory="date_comptable" name="DATE_COMPTA_ECR" option="GESPRO" type="input" value="15/02/20"/>
+            <field_input name="LIB_TRANSACTION" option="GESPRO" type="skipped" value="D9MT  FR0011755156 UNEDIC 2.375 05/24"/>
+            <field_input last_input="True" name="OK" option="GESPRO" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_GESPRO-coret77i3aj2.xml" time="6">
+            <db_obs execution="True" id="16.1" metadata="execution/16_GESPRO_1_16_query_part_00001.sqlite3" nb_inst="65" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/GESPRO_1_16_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="operation" value="VOB1"/>
+    <set_variable name="VOB1.code_transaction" value="0"/>
+    <set_variable name="code_valeur" value="FR0011755156"/>
+    <set_variable name="type_transaction" value="VOB"/>
+    <set_variable name="code_intermediaire" value="ISAEFRPP"/>
+    <set_variable name="code_depositaire" value="IS000000"/>
+    <set_variable name="modele_economique" value="BM__1"/>
+    <set_variable name="code_marche_ope" value="AATS"/>
+    <set_variable name="devise_negoce" value="EUR"/>
+    <set_variable name="quantite" value="1M"/>
+    <set_variable name="cours" value="102"/>
+    <set_variable name="date_effet" value="24/02/20"/>
+    <set_variable name="date_valeur" value="24/02/20"/>
+    <set_variable name="date_comptable" value="24/02/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <set_variable name="compte_tresorerie_reglement_dp" value="030PV001.EUR"/>
+    <set_variable name="ok_ecran" value="O"/>
+    <execution name="majtin" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/MAJTIN_ECH.xml">
+      <option id="17" name="MAJTIN" number="1" prog_name="NEWPORT_GESTRA_MAJTIN" time="23" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="22">
+          <actions time="11">
+            <field_input name="NOM_INTERFACE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_EXTERNE" option="MAJTIN" type="skipped" value=""/>
+            <field_input name="CODE_TRANSACTION" option="MAJTIN" type="input" value="0"/>
+            <field_input memory="code_valeur" name="CODE_VALEUR_SOURCE" option="MAJTIN" type="input" value="FR0011755156"/>
+            <field_input memory="code_portefeuille" name="CODE_PORTEFEUILLE" option="MAJTIN" type="input" value="KF002">
+              <area content="Env. BV.INS Fond BV.INS Cours BV.INS AO &gt;&gt;"/>
+            </field_input>
+            <field_input memory="type_transaction" name="TYPE_TRANSACTION" option="MAJTIN" type="input" value="VOB">
+              <area content="Quantite a solder sur ce portefeuille :                    0.          
+Prix de revient a solder total :                    0."/>
+            </field_input>
+            <field_input name="LANCE_CLACPT" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NOR"/>
+            <field_input name="TABLEAU_TRI[1]_TAB_CODE_COL2" option="TRANSCO" type="input" value="AFS"/>
+            <field_input name="TABLEAU_TRI[2]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input name="TABLEAU_TRI[3]_TAB_CODE_COL2" option="TRANSCO" type="skipped" value="NOR"/>
+            <field_input last_input="True" name="OK" option="TRANSCO" type="input" value="O"/>
+            <field_input memory="code_intermediaire" name="CODE_INTERM_NEGOCE_1" option="MAJTIN" type="input" value="ISAEFRPP"/>
+            <field_input memory="code_depositaire" name="NOTRE_DEPOT" option="MAJTIN" type="input" value="IS000000"/>
+            <field_input memory="modele_economique" name="MODELE_ECONOMIQUE" option="MAJTIN" type="input" value="BM__1"/>
+            <field_input memory="devise_negoce" name="CODE_DEVISE_NEGOCE" option="MAJTIN" type="input" value="EUR"/>
+            <field_input memory="date_travail" name="DATE_EFFET_SAISIE" option="MAJTIN" type="input" value="02/02/20"/>
+            <field_input name="DATE_DE_VALEUR_SAISIE" option="MAJTIN" type="skipped" value="04/02/2020"/>
+            <field_input name="DATE_PROPRIETE_SAISIE" option="MAJTIN" type="skipped" value="04/02/2020"/>
+            <field_input memory="quantite" name="QUANTITE_EXERCEE_BIS" option="MAJTIN" type="input" value="1M">
+              <area content="Quantite a solder sur le portefeuille KF002  pour le depositaire IS000000, le BM BM__1  et le statut NOR    : 3,000,000."/>
+            </field_input>
+            <field_input memory="cours" name="COURS_VALEUR_SOURCE_DN_BIS" option="MAJTIN" type="input" value="102"/>
+            <field_input name="LANCE_RATING" option="MAJTIN" type="skipped" value="O">
+              <area content="PROPOSE rating   02/02/20   1) S&amp;P    NR          2)                    3) MOODYS Aa2         4)"/>
+            </field_input>
+            <field_input name="TABLEAU_TRI[0]_TAB_CODE_COL2" option="TRANSCO" type="input" value="NR"/>
+            <field_input name="CP_COURU_SOURCE_C" option="MAJTIN" type="skipped" value="1.65471311">
+              <area content="Nominal Valeur : 100000. , Coeff : 000001 ."/>
+            </field_input>
+            <field_input name="MONTANT_BRUT_DN_BIS" option="MAJTIN" type="skipped" value="1,020,000."/>
+            <field_input name="INTERETS_DN_BIS" option="MAJTIN" type="skipped" value="16,547.13"/>
+            <field_input name="LANCE_COURTA2" option="MAJTIN" type="skipped" value="O"/>
+            <field_input name="TABLEAU_FORCAGE[0]_DEVISE_FRAIS" option="COURTA3" type="skipped" value="EUR"/>
+            <field_input name="TABLEAU_FORCAGE[0]_FRAIS_DEV_FRAIS_ECR" option="COURTA3" type="skipped" value="0."/>
+            <field_input name="TABLEAU_FORCAGE[0]_CODE_POSTE" option="COURTA3" type="skipped" value="COURTA"/>
+            <field_input last_input="True" name="OK" option="COURTA3" type="input" value="O"/>
+            <field_input name="CODE_DEVISE_REGL" option="MAJTIN" type="skipped" value="EUR"/>
+            <field_input memory="compte_tresorerie_reglement_dp" name="COMPTE_REGLEMENT_DP" option="MAJTIN" type="input" value="030PV001.EUR"/>
+            <field_input memory="date_comptable" name="DATE_COMPTABLE_SAISIE" option="MAJTIN" type="input" value="24/02/20">
+              <area content="PR: 2,080,000. PVCT: 66,547.13 EffetTitre: 66,547.13
+Qt: 2,000,000. PVLT: 0. EffetChge : 0. Reserv: 0."/>
+            </field_input>
+            <field_input name="LIB_TRANSACTION" option="MAJTIN" type="skipped" value="VOB/1,000,000./FR0011755156/UNEDIC 2.375 05/24"/>
+            <field_input last_input="True" name="OK" option="MAJTIN" type="input" value="O">
+              <area content="Attention, ne pas se deconnecter, traitement en cours !"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESTRA_MAJTIN-coremgc7gg0x.xml" time="11">
+            <screen_obs execution="True" field="CODE_TRANSACTION" id="17.10" label="" number="10" verify="True">
+              <screen_obs_list value="3390634"/>
+            </screen_obs>
+            <db_obs execution="True" id="17.1" metadata="execution/17_MAJTIN_1_17_query_part_00001.sqlite3" nb_inst="243" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/MAJTIN_1_17_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_vl" value="@SKIP@"/>
+    <set_variable name="date_vl" value="31/03/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <execution name="VALO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/VALO-MBM.xml">
+      <option id="18" name="VALO" number="1" prog_name="NEWPORT_GESCOU_VALO" time="24" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="23">
+          <actions time="15">
+            <field_input memory="type_vl" name="TYPE_VL" option="VALO" type="skipped" value=""/>
+            <field_input name="SAUVEGARDE" option="VALO" type="skipped" value="O"/>
+            <field_input name="SLO_OBJET1" option="VALO" type="skipped" value=""/>
+            <field_input name="BV_REMONTEE_HISTORIQUE" option="VALO" type="skipped" value="C"/>
+            <field_input name="SLO_OBJET2" option="VALO" type="input" value="ALL"/>
+            <field_input name="V_TYPE_DEVISE" option="VALO" type="skipped" value="GEST"/>
+            <field_input name="CODE_DEVISE_FIXING" option="VALO" type="skipped" value=""/>
+            <field_input memory="date_vl" name="DATE_DEBUT" option="VALO" type="input" value="31/03/20"/>
+            <field_input name="DATE_INTERETS_STR" option="VALO" type="skipped" value=""/>
+            <field_input name="DATE_COTATION_STR" option="VALO" type="skipped" value="31/03/2020"/>
+            <field_input name="DATE_CHANGE_STR" option="VALO" type="skipped" value="31/03/2020"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALO" type="input" value="KF002"/>
+            <field_input name="SLO_OBJET" option="VALO" type="skipped" value="KF002"/>
+            <field_input name="FLAG_VALO_PARTIELLE" option="VALO" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="VALO" type="input" value="O">
+              <area content="Traitement OK"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALO-corev2m84fwe.xml" time="8">
+            <db_obs execution="True" id="18.1" metadata="execution/18_VALO_1_18_query_part_00001.sqlite3" nb_inst="570" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALO_1_18_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+    <set_variable name="type_vl" value="VLOFF"/>
+    <set_variable name="date_vl" value="01/04/20"/>
+    <set_variable name="code_portefeuille" value="KF002"/>
+    <execution name="VALO" source="B:/01_Dept_Developpement/10_Recette/Gp3tester/Archives/KGU/Scripts/GROUPAMA-KEYFIG/Ecrans/VALO-MBM.xml">
+      <option id="19" name="VALO" number="1" prog_name="NEWPORT_GESCOU_VALO" time="16" title="">
+        <Informations>
+          <Information name="revision" value=""/>
+        </Informations>
+        <Metrics>
+          <Metric name="cpu" value=""/>
+          <Metric name="ram" value=""/>
+        </Metrics>
+        <step number="1" time="16">
+          <actions time="10">
+            <field_input memory="type_vl" name="TYPE_VL" option="VALO" type="input" value="VLOFF"/>
+            <field_input name="SLO_OBJET1" option="VALO" type="skipped" value=""/>
+            <field_input name="BV_REMONTEE_HISTORIQUE" option="VALO" type="skipped" value="C"/>
+            <field_input name="SLO_OBJET2" option="VALO" type="input" value="ALL"/>
+            <field_input name="V_TYPE_DEVISE" option="VALO" type="skipped" value="GEST"/>
+            <field_input name="CODE_DEVISE_FIXING" option="VALO" type="skipped" value=""/>
+            <field_input memory="date_vl" name="DATE_DEBUT" option="VALO" type="input" value="01/04/20"/>
+            <field_input name="DATE_INTERETS_STR" option="VALO" type="skipped" value=""/>
+            <field_input name="DATE_COTATION_STR" option="VALO" type="skipped" value="01/04/2020"/>
+            <field_input name="DATE_CHANGE_STR" option="VALO" type="skipped" value="01/04/2020"/>
+            <field_input memory="code_portefeuille" name="SLO_OBJET" option="VALO" type="input" value="KF002"/>
+            <field_input name="SLO_OBJET" option="VALO" type="skipped" value="KF002"/>
+            <field_input name="FLAG_VALO_PARTIELLE" option="VALO" type="skipped" value="N"/>
+            <field_input last_input="True" name="OK" option="VALO" type="input" value="O">
+              <area content="Traitement OK"/>
+            </field_input>
+          </actions>
+          <observations number="1" source="/home/testauto/nxat/data/citf/target/Test/GP3Tester/replay/scenario/NEWPORT_GESCOU_VALO-corev2m84fwe.xml" time="6">
+            <db_obs execution="True" id="19.1" metadata="execution/19_VALO_1_19_query_part_00001.sqlite3" nb_inst="651" number="1" step_id="1">
+              <db_obs_file nb_err="0" path="execution/VALO_1_19_1_part_00001.sqlite3"/>
+            </db_obs>
+          </observations>
+        </step>
+      </option>
+    </execution>
+  </execution>
